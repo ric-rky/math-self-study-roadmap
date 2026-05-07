@@ -2,15 +2,15 @@
 <html lang="pt-BR">
 <head>
 <meta charset="UTF-8">
-  <meta name="description" content="Roadmap de matemática pura para self study, do ensino médio à pós-graduação. 33 fases, dezenas de livros, 3 trilhas. Organizado por Ricardo Bertolucci.">
+  <meta name="description" content="Roadmap de matemática pura para self study, do ensino médio à pós-graduação. 34 fases, dezenas de livros, 3 trilhas. Organizado por Ricardo Bertolucci.">
   <meta name="author" content="Ricardo Bertolucci">
   <meta name="keywords" content="matemática, self study, roadmap, análise, álgebra, topologia, geometria diferencial, livros de matemática">
   <meta property="og:title" content="Do Zero à Matemática Real · Roadmap de Self Study">
-  <meta property="og:description" content="33 fases, dezenas de livros, 3 trilhas. Um roteiro gradual para quem quer aprender matemática de verdade, do ensino médio até os fundamentos da pós-graduação.">
+  <meta property="og:description" content="34 fases, dezenas de livros, 3 trilhas. Um roteiro gradual para quem quer aprender matemática de verdade, do ensino médio até os fundamentos da pós-graduação.">
   <meta property="og:type" content="website">
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="Do Zero à Matemática Real · Roadmap de Self Study">
-  <meta name="twitter:description" content="33 fases, dezenas de livros, 3 trilhas. Um roteiro gradual para quem quer aprender matemática de verdade.">
+  <meta name="twitter:description" content="34 fases, dezenas de livros, 3 trilhas. Um roteiro gradual para quem quer aprender matemática de verdade.">
   <link rel="canonical" href="https://ric-rky.github.io/math-self-study-roadmap/">
   <meta name="robots" content="index, follow">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -721,6 +721,31 @@ footer a:hover { color: var(--text2) !important; }
 }
 .fluxo-box .mermaid {
   min-width: 720px; display: flex; justify-content: center;
+  transform-origin: top left;
+  transition: transform .15s ease;
+}
+.fluxo-controls {
+  display: flex;
+  gap: 8px;
+  margin: 0 0 12px;
+  align-items: center;
+}
+.fluxo-controls button {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 9px;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  color: var(--text3);
+  background: var(--bg2);
+  border: 1px solid var(--border2);
+  padding: 5px 10px;
+  cursor: pointer;
+  transition: color .15s, border-color .15s, background .15s;
+}
+.fluxo-controls button:hover {
+  color: var(--accent);
+  border-color: var(--accent);
+  background: var(--bg3);
 }
 .fluxo-legenda {
   display: flex; gap: 18px; margin-top: 10px; flex-wrap: wrap;
@@ -756,7 +781,7 @@ footer a:hover { color: var(--text2) !important; }
   <div class="trilha-pills">
     <a href="#t-basica"   class="pill b"><span class="dot db"></span>Trilha Básica · Fases 1–7</a>
     <a href="#t-grad"     class="pill g"><span class="dot dg"></span>Trilha Graduação · Fases 8–18</a>
-    <a href="#t-completa" class="pill c"><span class="dot dc"></span>Trilha Completa · Fases 19–33</a>
+    <a href="#t-completa" class="pill c"><span class="dot dc"></span>Trilha Completa · Fases 19–34</a>
   </div>
 </div>
 
@@ -769,7 +794,7 @@ footer a:hover { color: var(--text2) !important; }
 
   <p style="font-style:italic;color:var(--text3);font-size:.95rem;margin-bottom:20px">Construí este roadmap com base na minha experiência durante a graduação e o mestrado em Matemática. Atualmente estou em transição para Engenharia de IA, e continuo mantendo um forte foco no pensamento matemático.</p>
 
-  <p>O plano pode parecer overkill, e de certa forma é. Trinta e três fases não é algo que se faz em dois anos, nem que a maioria das pessoas precisa fazer por completo. Por isso as trilhas existem: para que cada um encontre um ponto de chegada realista antes de começar.</p>
+  <p>O plano pode parecer overkill, e de certa forma é. Trinta e quatro fases não é algo que se faz em dois anos, nem que a maioria das pessoas precisa fazer por completo. Por isso as trilhas existem: para que cada um encontre um ponto de chegada realista antes de começar.</p>
 
   <p>Uma observação importante sobre o escopo: este roadmap privilegia matemática pura e estrutural. Áreas aplicadas, computacionais ou competitivas, como ciência de dados, machine learning, inteligência artificial, estatística aplicada e matemática olímpica, ficam fora por enquanto e poderão ser exploradas em outro roadmap. A exceção são disciplinas matemáticas fundamentais, como probabilidade, equações diferenciais e análise de Fourier, que aparecem aqui quando fazem parte natural da formação matemática avançada.</p>
 </section>
@@ -791,7 +816,7 @@ footer a:hover { color: var(--text2) !important; }
     </div>
     <div class="tcard c">
       <h3>Trilha Completa</h3>
-      <div class="frange">Fases 1–33</div>
+      <div class="frange">Fases 1–34</div>
       <p>Para quem deseja se tornar um matemático no sentido real: mestrado, doutorado, pesquisa. Intenso e profundo. Entre com uma direção em mente</p>
       <div class="tempo">⏱ longo prazo, sem pressa</div>
       <div class="tempo-acum">Acumulado desde a Fase 1</div>
@@ -851,7 +876,7 @@ footer a:hover { color: var(--text2) !important; }
   </div>
 
   <div class="mapa-grupo">
-    <div class="mapa-grupo-label c">Trilha Completa · Fases 19–33</div>
+    <div class="mapa-grupo-label c">Trilha Completa · Fases 19–34</div>
     <div class="mapa-grid">
       <a href="#f19" class="mapa-item c">19 · Teoria da Medida</a>
       <a href="#f20" class="mapa-item c">20 · Teoria das Probabilidades</a>
@@ -859,15 +884,16 @@ footer a:hover { color: var(--text2) !important; }
       <a href="#f22" class="mapa-item c">22 · Teoria de Operadores</a>
       <a href="#f23" class="mapa-item c">23 · Análise Complexa Avançada</a>
       <a href="#f24" class="mapa-item c">24 · Mecânica Quântica Mat.</a>
-      <a href="#f25" class="mapa-item c">25 · Álgebra Avançada</a>
-      <a href="#f26" class="mapa-item c">26 · Geometria Diferencial</a>
-      <a href="#f27" class="mapa-item c">27 · Variedades Diferenciáveis</a>
-      <a href="#f28" class="mapa-item c">28 · Geometria Riemanniana</a>
-      <a href="#f29" class="mapa-item c">29 · Variedades e Feixes</a>
-      <a href="#f30" class="mapa-item c">30 · Topologia Algébrica</a>
-      <a href="#f31" class="mapa-item c">31 · Álgebra Comutativa</a>
-      <a href="#f32" class="mapa-item c">32 · Geometria Algébrica I</a>
-      <a href="#f33" class="mapa-item c">33 · Geometria Algébrica II</a>
+      <a href="#f25" class="mapa-item c">25 · EDO Avançada e Sistemas Dinâmicos</a>
+      <a href="#f26" class="mapa-item c">26 · Álgebra Avançada</a>
+      <a href="#f27" class="mapa-item c">27 · Geometria Diferencial</a>
+      <a href="#f28" class="mapa-item c">28 · Variedades Diferenciáveis</a>
+      <a href="#f29" class="mapa-item c">29 · Geometria Riemanniana</a>
+      <a href="#f30" class="mapa-item c">30 · Variedades e Feixes</a>
+      <a href="#f31" class="mapa-item c">31 · Topologia Algébrica</a>
+      <a href="#f32" class="mapa-item c">32 · Álgebra Comutativa</a>
+      <a href="#f33" class="mapa-item c">33 · Geometria Algébrica I</a>
+      <a href="#f34" class="mapa-item c">34 · Geometria Algébrica II</a>
     </div>
   </div>
 </section>
@@ -943,17 +969,17 @@ footer a:hover { color: var(--text2) !important; }
       <div class="sem-fases">
         <a href="#f24" class="sem-fase">F24</a>
         <a href="#f25" class="sem-fase">F25</a>
-        <a href="#f28" class="sem-fase">F28</a>
-        <a href="#f30" class="sem-fase">F30</a>
+        <a href="#f29" class="sem-fase">F29</a>
+        <a href="#f31" class="sem-fase">F31</a>
       </div>
     </div>
     <div class="sem-card">
       <div class="sem-label">Pós / Especialização</div>
       <div class="sem-fases">
-        <a href="#f29" class="sem-fase">F29</a>
-        <a href="#f31" class="sem-fase">F31</a>
+        <a href="#f30" class="sem-fase">F30</a>
         <a href="#f32" class="sem-fase">F32</a>
         <a href="#f33" class="sem-fase">F33</a>
+        <a href="#f34" class="sem-fase">F34</a>
       </div>
     </div>
   </div>
@@ -963,6 +989,11 @@ footer a:hover { color: var(--text2) !important; }
   <p class="sec-label">Grafo de dependências</p>
   <h2>Fluxograma das fases</h2>
   <p class="fluxo-nota">Cada seta indica um pré-requisito direto. Clique em qualquer fase para navegar até ela. Role horizontalmente se necessário.</p>
+  <div class="fluxo-controls">
+    <button type="button" onclick="zoomFluxo(-0.1)">−</button>
+    <button type="button" onclick="resetFluxoZoom()">Reset</button>
+    <button type="button" onclick="zoomFluxo(0.1)">+</button>
+  </div>
   <div class="fluxo-box">
     <div class="mermaid">
 %%{init:{'theme':'base','themeVariables':{'primaryColor':'#e8e0d4','primaryBorderColor':'#c8b99a','primaryTextColor':'#18140e','lineColor':'#86745a','edgeLabelBackground':'#f1ece3','background':'#f1ece3','fontFamily':'JetBrains Mono, monospace','fontSize':'14px'}}}%%
@@ -991,15 +1022,16 @@ flowchart LR
   F22["22 · T. de Operadores"]:::c
   F23["23 · An. Complexa Av."]:::c
   F24["24 · Mec. Quântica Mat."]:::c
-  F25["25 · Álg. Avançada"]:::c
-  F26["26 · Geom. Diferencial"]:::c
-  F27["27 · Variedades Dif."]:::c
-  F28["28 · Riemanniana"]:::c
-  F29["29 · Var. e Feixes"]:::c
-  F30["30 · Top. Algébrica"]:::c
-  F31["31 · Álg. Comutativa"]:::c
-  F32["32 · Geom. Algébrica I"]:::c
-  F33["33 · Geom. Algébrica II"]:::c
+  F25["25 · EDO Av. / Din."]:::c
+  F26["26 · Álg. Avançada"]:::c
+  F27["27 · Geom. Diferencial"]:::c
+  F28["28 · Variedades Dif."]:::c
+  F29["29 · Riemanniana"]:::c
+  F30["30 · Var. e Feixes"]:::c
+  F31["31 · Top. Algébrica"]:::c
+  F32["32 · Álg. Comutativa"]:::c
+  F33["33 · Geom. Algébrica I"]:::c
+  F34["34 · Geom. Algébrica II"]:::c
 
   F1 --> F4 & F5
   F2 --> F3 & F4 & F5
@@ -1008,24 +1040,24 @@ flowchart LR
   F5 --> F8 & F9 & F14 & F15
   F6 --> F11 & F13 & F14 & F19
   F7 --> F11 & F12 & F13 & F19
-  F8 --> F11 & F25
-  F9 --> F18 & F25 & F29 & F30
-  F11 --> F17 & F21 & F26 & F27
-  F12 --> F21 & F23 & F27 & F29 & F30
+  F8 --> F11 & F26
+  F9 --> F18 & F26 & F30 & F31
+  F11 --> F17 & F21 & F27 & F28
+  F12 --> F21 & F23 & F28 & F30 & F31
   F13 --> F23
-  F14 --> F26
-  F15 --> F16
+  F14 --> F27
+  F15 --> F16 & F25
   F16 --> F21 & F22 & F24
-  F17 --> F21
-  F18 --> F31
+  F17 --> F21 & F25
+  F18 --> F32
   F19 --> F20
   F20 --> F21
   F21 --> F22 & F24
-  F26 --> F28
-  F27 --> F28 & F29
-  F28 --> F29
-  F31 --> F32
+  F27 --> F29
+  F28 --> F29 & F30
+  F29 --> F30
   F32 --> F33
+  F33 --> F34
 
   click F1 "#f1"
   click F2 "#f2"
@@ -1060,6 +1092,7 @@ flowchart LR
   click F31 "#f31"
   click F32 "#f32"
   click F33 "#f33"
+  click F34 "#f34"
 
   classDef b fill:#deeee6,stroke:#2e6044,color:#1c3d2a
   classDef g fill:#dce8f2,stroke:#2d5472,color:#1a3349
@@ -1069,7 +1102,7 @@ flowchart LR
   <div class="fluxo-legenda">
     <div class="fluxo-leg"><div class="fluxo-leg-dot b"></div><span>Trilha Básica (F1–F7)</span></div>
     <div class="fluxo-leg"><div class="fluxo-leg-dot g"></div><span>Trilha Graduação (F8–F18)</span></div>
-    <div class="fluxo-leg"><div class="fluxo-leg-dot c"></div><span>Trilha Completa (F19–F33)</span></div>
+    <div class="fluxo-leg"><div class="fluxo-leg-dot c"></div><span>Trilha Completa (F19–F34)</span></div>
   </div>
 </section>
 
@@ -2309,7 +2342,7 @@ flowchart LR
 <div id="t-completa" class="tdiv c">
   <div style="flex:1">
     <h3>Trilha Completa</h3>
-    <p>Fases 19–33 · Para quem deseja seguir na pesquisa matemática · Intenso e profundo · Entre com uma direção em mente.</p>
+    <p>Fases 19–34 · Para quem deseja seguir na pesquisa matemática · Intenso e profundo · Entre com uma direção em mente.</p>
   </div>
   <button class="trilha-toggle" onclick="toggleSection('section-comp', this)">▴ Recolher</button>
 </div>
@@ -2728,6 +2761,84 @@ flowchart LR
     <div class="fase-num">25</div>
     <div class="fase-hd">
       <div class="fase-marker"><span class="dot dc"></span><span style="color:var(--t3)">Completa</span></div>
+      <div class="fase-titulo">EDO Avançada e Sistemas Dinâmicos</div>
+      <div class="fase-sub">Fluxos, estabilidade, linearização e dinâmica qualitativa</div>
+    </div>
+  </div>
+  <div class="fase-meta"><span class="meta">📚 4 livros: 1 principal + 3 complementares</span></div>
+  <div class="prereq">Fases 15 e 17 (Equações Diferenciais Ordinárias; Análise em Espaços Métricos)</div>
+  <p class="fase-desc">Esta fase aprofunda a passagem de equações diferenciais ordinárias para sistemas dinâmicos. O foco deixa de ser apenas resolver equações e passa a ser entender o comportamento qualitativo das soluções: fluxos, campos vetoriais, estabilidade, linearização, retratos de fase, sistemas autônomos e bifurcações iniciais. A fase pressupõe familiaridade com EDOs básicas e com a linguagem de espaços métricos, especialmente convergência, continuidade, completude, compacidade e pontos fixos. Ela não exige Fourier/EDP, probabilidade ou análise funcional como pré-requisitos formais.</p>
+  <div class="nota"><b>Como estudar</b>Use Teschl como livro-base da fase. A primeira passagem deve priorizar existência e unicidade em nível mais maduro, fluxos, sistemas autônomos, estabilidade, linearização, retratos de fase e bifurcações iniciais. O uso ocasional de Mathematica no Teschl deve ser entendido como apoio visual ou computacional, não como parte obrigatória do estudo. Sotomayor, Palis &amp; de Melo e Perko são complementos fortes e exigentes: use-os seletivamente para aprofundar pontos específicos, não como obrigação de leitura integral.</div>
+  <p class="livros-label">Livros</p>
+  <div class="livros">
+    <div class="livro">
+      <img class="livro-capa" src="assets/covers/teschl.jpg" alt="capa">
+      <div class="livro-content">
+        <div class="livro-top"><span class="livro-titulo">Ordinary Differential Equations and Dynamical Systems</span><span class="tag tp">Principal</span></div>
+        <div class="livro-autor">Gerald Teschl</div>
+        <div class="livro-desc">Livro principal da fase. É moderno, organizado e adequado para self-study, conectando EDOs, fluxos, estabilidade, sistemas autônomos e dinâmica qualitativa. O autor às vezes utiliza Mathematica em exemplos ou ilustrações, mas isso deve ser entendido como apoio computacional, não como requisito: o núcleo matemático pode ser estudado com lápis, papel e, se desejado, com Python ou outro software.</div>
+      </div>
+    </div>
+    <div class="livro">
+      <img class="livro-capa" src="assets/covers/sotomayor.jpg" alt="capa">
+      <div class="livro-content">
+        <div class="livro-top"><span class="livro-titulo">Lições de Equações Diferenciais Ordinárias</span><span class="tag tc">Complementar</span></div>
+        <div class="livro-autor">Jorge Sotomayor</div>
+        <div class="livro-desc">Referência brasileira clássica para EDOs com abordagem matemática séria. É um livro exigente, mais adequado para aprofundar a teoria depois de uma primeira passagem pelo Teschl. Excelente para reforçar existência, unicidade, dependência contínua, estabilidade e aspectos qualitativos das soluções.</div>
+      </div>
+    </div>
+    <div class="livro">
+      <img class="livro-capa" src="assets/covers/palis.jpg" alt="capa">
+      <div class="livro-content">
+        <div class="livro-top"><span class="livro-titulo">Introdução aos Sistemas Dinâmicos</span><span class="tag tc">Complementar</span></div>
+        <div class="livro-autor">Jacob Palis Jr. e Welington de Melo</div>
+        <div class="livro-desc">Texto brasileiro fundamental para entrar em sistemas dinâmicos com mais estrutura matemática. É mais exigente e menos introdutório do que o Teschl em vários pontos, por isso funciona melhor como aprofundamento seletivo. Complementa a fase ao desenvolver a linguagem de dinâmica, estabilidade, recorrência inicial e comportamento qualitativo com uma perspectiva mais geométrica e global.</div>
+      </div>
+    </div>
+    <div class="livro">
+      <img class="livro-capa" src="assets/covers/perko.jpg" alt="capa">
+      <div class="livro-content">
+        <div class="livro-top"><span class="livro-titulo">Differential Equations and Dynamical Systems</span><span class="tag tc">Complementar</span></div>
+        <div class="livro-autor">Lawrence Perko</div>
+        <div class="livro-desc">Complemento forte para dinâmica não linear, sistemas planares, estabilidade, bifurcações e teoria qualitativa. Também é um livro denso, mais apropriado para consulta e aprofundamento seletivo do que para leitura linear completa nesta fase.</div>
+      </div>
+    </div>
+  </div>
+  <div class="absorver"><b>O que absorver</b>
+  <ul>
+    <li>Teoremas de existência e unicidade em formulação mais madura</li>
+    <li>Dependência contínua das soluções</li>
+    <li>Fluxos associados a campos vetoriais</li>
+    <li>Sistemas autônomos</li>
+    <li>Pontos de equilíbrio</li>
+    <li>Estabilidade e estabilidade assintótica</li>
+    <li>Linearização</li>
+    <li>Retratos de fase</li>
+    <li>Órbitas e conjuntos invariantes</li>
+    <li>Bifurcações iniciais</li>
+  </ul>
+  <p class="minimo"><span>Mínimo para avançar:</span>entender fluxos de EDOs, estabilidade de equilíbrios, linearização, retratos de fase e a ideia de estudar qualitativamente o comportamento das soluções sem depender de fórmulas explícitas</p>
+</div>
+  <div class="gatilho c"><b>Pronto para avançar quando:</b>
+  <ul>
+    <li>Consegue interpretar uma EDO autônoma como um sistema dinâmico</li>
+    <li>Entende o conceito de fluxo associado a um campo vetorial</li>
+    <li>Consegue analisar estabilidade de pontos de equilíbrio em exemplos básicos</li>
+    <li>Usa linearização para estudar o comportamento local das soluções</li>
+    <li>Consegue desenhar e interpretar retratos de fase simples</li>
+    <li>Reconhece bifurcações iniciais e mudanças qualitativas no comportamento dinâmico</li>
+  </ul>
+</div>
+</div>
+
+<hr class="sep">
+
+<!-- F26 -->
+<div class="fase" id="f26">
+  <div class="fase-top">
+    <div class="fase-num">26</div>
+    <div class="fase-hd">
+      <div class="fase-marker"><span class="dot dc"></span><span style="color:var(--t3)">Completa</span></div>
       <div class="fase-titulo">Álgebra Avançada</div>
       <div class="fase-sub">Álgebra abstrata por uma abordagem categórica</div>
     </div>
@@ -2773,10 +2884,10 @@ flowchart LR
 
 <hr class="sep">
 
-<!-- F26 -->
-<div class="fase" id="f26">
+<!-- F27 -->
+<div class="fase" id="f27">
   <div class="fase-top">
-    <div class="fase-num">26</div>
+    <div class="fase-num">27</div>
     <div class="fase-hd">
       <div class="fase-marker"><span class="dot dc"></span><span style="color:var(--t3)">Completa</span></div>
       <div class="fase-titulo">Geometria Diferencial</div>
@@ -2845,10 +2956,10 @@ flowchart LR
 
 <hr class="sep">
 
-<!-- F27 -->
-<div class="fase" id="f27">
+<!-- F28 -->
+<div class="fase" id="f28">
   <div class="fase-top">
-    <div class="fase-num">27</div>
+    <div class="fase-num">28</div>
     <div class="fase-hd">
       <div class="fase-marker"><span class="dot dc"></span><span style="color:var(--t3)">Completa</span></div>
       <div class="fase-titulo">Variedades Diferenciáveis</div>
@@ -2856,7 +2967,7 @@ flowchart LR
     </div>
   </div>
   <div class="fase-meta"><span class="meta">📚 4 livros: 1 principal + 1 referência + 2 complementares</span></div>
-  <div class="prereq">Fases 12 ou 26 (Topologia; Geometria Diferencial)</div>
+  <div class="prereq">Fases 12 ou 27 (Topologia; Geometria Diferencial)</div>
   <p class="fase-desc">Contato com as variedades abstratas, espaços que localmente se parecem com ℝⁿ, mas podem ter topologia global complexa. O ambiente natural da física teórica, da geometria moderna e da topologia diferencial. O Tu é mais amigável para self study; o John M. Lee é a referência completa.</p>
   <div class="nota"><b>Como estudar</b>O Tu é a primeira escolha para quem estuda sozinho. Use o John M. Lee como referência quando quiser cobertura mais abrangente de algum tópico: é enciclopédico e não foi pensado para leitura linear.</div>
   <p class="livros-label">Livros</p>
@@ -2912,10 +3023,10 @@ flowchart LR
 
 <hr class="sep">
 
-<!-- F28 -->
-<div class="fase" id="f28">
+<!-- F29 -->
+<div class="fase" id="f29">
   <div class="fase-top">
-    <div class="fase-num">28</div>
+    <div class="fase-num">29</div>
     <div class="fase-hd">
       <div class="fase-marker"><span class="dot dc"></span><span style="color:var(--t3)">Completa</span></div>
       <div class="fase-titulo">Geometria Riemanniana</div>
@@ -2923,7 +3034,7 @@ flowchart LR
     </div>
   </div>
   <div class="fase-meta"><span class="meta">📚 3 livros: 1 principal + 1 complementar + 1 referência</span></div>
-  <div class="prereq">Fase 27 (Variedades Diferenciáveis)</div>
+  <div class="prereq">Fase 28 (Variedades Diferenciáveis)</div>
   <p class="fase-desc">Esta fase estuda variedades suaves equipadas com uma métrica Riemanniana. A partir daí, passam a fazer sentido noções geométricas como comprimento, ângulo, volume, geodésicas, conexão de Levi-Civita e curvaturas métricas. A fase anterior de Geometria Diferencial e esta fase não são redundantes: a primeira organiza a linguagem geral de campos, formas, fibrados, conexões e curvatura; esta fase estuda o caso especial, mas central, em que a variedade possui uma métrica, permitindo medir, comparar, curvar e estudar globalmente os espaços diferenciáveis.</p>
   <div class="nota"><b>Como estudar</b>Use Lee como referência central: métricas, conexão de Levi-Civita, geodésicas e curvatura devem ficar claros em exemplos fundamentais. A fase de Geometria Diferencial anterior é altamente recomendada, pois ajuda na intuição sobre conexões e curvatura, mas o pré-requisito essencial é a linguagem de Variedades Diferenciáveis. Godinho e Natário podem ser usados como apoio mais acessível e motivador, especialmente para ver aplicações geométricas e físicas. Jost entra apenas como referência avançada para consulta seletiva, sobretudo para quem quiser se aproximar de análise geométrica.</div>
   <p class="livros-label">Livros</p>
@@ -2976,17 +3087,17 @@ flowchart LR
 
 <hr class="sep">
 
-<!-- F29 -->
-<div class="fase" id="f29">
+<!-- F30 -->
+<div class="fase" id="f30">
   <div class="fase-top">
-    <div class="fase-num">29</div>
+    <div class="fase-num">30</div>
     <div class="fase-hd">
       <div class="fase-marker"><span class="dot dc"></span><span style="color:var(--t3)">Completa</span></div>
       <div class="fase-titulo">Variedades, Feixes e Cohomologia</div>
     </div>
   </div>
   <div class="fase-meta"><span class="meta">📚 1 livro</span></div>
-  <div class="prereq">Fases 9, 12 e 27 (Álgebra I; Topologia; Variedades Diferenciáveis)</div>
+  <div class="prereq">Fases 9, 12 e 28 (Álgebra I; Topologia; Variedades Diferenciáveis)</div>
 
   <div class="nota aviso"><b>Nota</b>Esta fase requer boa familiaridade com variedades diferenciáveis e álgebra, cobertas pelas fases anteriores. É uma leitura avançada que conecta geometria diferencial com a linguagem moderna de feixes, a mesma que aparece em geometria algébrica. Não é necessária para a maioria das direções de pesquisa em geometria diferencial clássica ou análise.</div>
   <div class="nota"><b>Como estudar</b>Esta fase é avançada, mas o objetivo inicial não é dominar toda a teoria de feixes ou cohomologia em máxima generalidade. Use Wedhorn como uma ponte entre variedades, geometria global e linguagem local-global. Leia com atenção a motivação: por que dados locais nem sempre colam globalmente, como feixes organizam seções locais e por que cohomologia detecta obstruções. Apêndices e partes mais homológicas podem ser usados seletivamente para consulta.</div>
@@ -3029,10 +3140,10 @@ flowchart LR
 
 <hr class="sep">
 
-<!-- F30 -->
-<div class="fase" id="f30">
+<!-- F31 -->
+<div class="fase" id="f31">
   <div class="fase-top">
-    <div class="fase-num">30</div>
+    <div class="fase-num">31</div>
     <div class="fase-hd">
       <div class="fase-marker"><span class="dot dc"></span><span style="color:var(--t3)">Completa</span></div>
       <div class="fase-titulo">Topologia Algébrica e Categorias</div>
@@ -3107,10 +3218,10 @@ flowchart LR
 
 <hr class="sep">
 
-<!-- F31 -->
-<div class="fase" id="f31">
+<!-- F32 -->
+<div class="fase" id="f32">
   <div class="fase-top">
-    <div class="fase-num">31</div>
+    <div class="fase-num">32</div>
     <div class="fase-hd">
       <div class="fase-marker"><span class="dot dc"></span><span style="color:var(--t3)">Completa</span></div>
       <div class="fase-titulo">Álgebra Comutativa</div>
@@ -3157,10 +3268,10 @@ flowchart LR
 
 <hr class="sep">
 
-<!-- F32 -->
-<div class="fase" id="f32">
+<!-- F33 -->
+<div class="fase" id="f33">
   <div class="fase-top">
-    <div class="fase-num">32</div>
+    <div class="fase-num">33</div>
     <div class="fase-hd">
       <div class="fase-marker"><span class="dot dc"></span><span style="color:var(--t3)">Completa</span></div>
       <div class="fase-titulo">Geometria Algébrica Introdutória</div>
@@ -3168,7 +3279,7 @@ flowchart LR
     </div>
   </div>
   <div class="fase-meta"><span class="meta">📚 2 livros: 1 principal + 1 complementar</span></div>
-  <div class="prereq">Fase 31 (Álgebra Comutativa)</div>
+  <div class="prereq">Fase 32 (Álgebra Comutativa)</div>
   <p class="fase-desc">Geometria Algébrica estuda os conjuntos de zeros de sistemas de equações polinomiais, conectando álgebra comutativa, topologia e geometria de forma profunda. Esta fase cobre uma introdução acessível antes da referência avançada da fase seguinte.</p>
   <div class="nota"><b>Como estudar</b>Use esta fase como entrada geométrica na álgebra comutativa. O objetivo é aprender a traduzir entre equações polinomiais e objetos algébricos: ideais, anéis de coordenadas, morfismos e topologia de Zariski. Não tente antecipar toda a linguagem de esquemas aqui. Trabalhe muitos exemplos afins e projetivos simples antes de avançar para a fase seguinte.</div>
   <p class="livros-label">Livros</p>
@@ -3213,10 +3324,10 @@ flowchart LR
 
 <hr class="sep">
 
-<!-- F33 -->
-<div class="fase" id="f33">
+<!-- F34 -->
+<div class="fase" id="f34">
   <div class="fase-top">
-    <div class="fase-num">33</div>
+    <div class="fase-num">34</div>
     <div class="fase-hd">
       <div class="fase-marker"><span class="dot dc"></span><span style="color:var(--t3)">Completa</span></div>
       <div class="fase-titulo">Geometria Algébrica Avançada</div>
@@ -3224,7 +3335,7 @@ flowchart LR
     </div>
   </div>
   <div class="fase-meta"><span class="meta">📚 1 livro</span></div>
-  <div class="prereq">Fases 29 e 32 (Variedades, Feixes e Cohomologia; Geometria Algébrica Introdutória)</div>
+  <div class="prereq">Fases 30 e 33 (Variedades, Feixes e Cohomologia; Geometria Algébrica Introdutória)</div>
 
   <div class="nota aviso"><b>Aviso</b>Esta é a área mais avançada e especializada de todo o roadmap. O livro de Vakil é famoso por sua profundidade e exigência. Não é uma leitura linear que se conclui, mas um texto com o qual se convive por anos. Só deve ser abordado depois da fase anterior bem consolidada e, idealmente, com orientação de um pesquisador da área. Está aqui como horizonte, não como meta obrigatória.</div>
 
@@ -3325,7 +3436,7 @@ flowchart LR
       <p style="margin-top:18px;font-size:.95rem;color:var(--text2);font-weight:300;line-height:1.85;max-width:600px;margin-left:auto;margin-right:auto">Espero que este roadmap seja útil para quem deseja se aventurar na matemática além do que o ensino convencional oferece. Não existe caminho único, e este é apenas o que eu percorreria se começasse do zero hoje. Cada fase tem seu tempo, cada livro tem seu ritmo. O importante é começar, ser honesto sobre o que não entendeu e não ter pressa para avançar antes da hora. Se este guia ajudar alguém a descobrir que matemática é mais do que cálculo e fórmulas, já terá cumprido seu propósito.</p>
       <div class="footer-meta">
         <span>Organizado por Ricardo Bertolucci</span>
-        <span>33 fases · 3 trilhas</span>
+        <span>34 fases · 3 trilhas</span>
         <span>v1.0</span>
       </div>
     </div>
@@ -3365,22 +3476,23 @@ flowchart LR
   <a href="#f17">17 · Análise em Espaços Métricos</a>
   <a href="#f18">18 · Teoria de Corpos e Galois</a>
   <div class="toc-sep c">Trilha Completa</div>
-  <a href="#t-completa" style="font-size:.73rem;color:var(--t3)">Fases 19–33</a>
+  <a href="#t-completa" style="font-size:.73rem;color:var(--t3)">Fases 19–34</a>
   <a href="#f19">19 · Teoria da Medida</a>
   <a href="#f20">20 · Teoria das Probabilidades</a>
   <a href="#f21">21 · Análise Funcional</a>
   <a href="#f22">22 · Teoria de Operadores</a>
   <a href="#f23">23 · Análise Complexa Avançada</a>
   <a href="#f24">24 · Mecânica Quântica Mat.</a>
-  <a href="#f25">25 · Álgebra Avançada</a>
-  <a href="#f26">26 · Geometria Diferencial</a>
-  <a href="#f27">27 · Variedades Diferenciáveis</a>
-  <a href="#f28">28 · Geometria Riemanniana</a>
-  <a href="#f29">29 · Variedades e Feixes</a>
-  <a href="#f30">30 · Topologia Algébrica</a>
-  <a href="#f31">31 · Álgebra Comutativa</a>
-  <a href="#f32">32 · Geometria Algébrica I</a>
-  <a href="#f33">33 · Geometria Algébrica II</a>
+  <a href="#f25">25 · EDO Avançada e Sist. Dinâmicos</a>
+  <a href="#f26">26 · Álgebra Avançada</a>
+  <a href="#f27">27 · Geometria Diferencial</a>
+  <a href="#f28">28 · Variedades Diferenciáveis</a>
+  <a href="#f29">29 · Geometria Riemanniana</a>
+  <a href="#f30">30 · Variedades e Feixes</a>
+  <a href="#f31">31 · Topologia Algébrica</a>
+  <a href="#f32">32 · Álgebra Comutativa</a>
+  <a href="#f33">33 · Geometria Algébrica I</a>
+  <a href="#f34">34 · Geometria Algébrica II</a>
   <div class="toc-sep" style="color:var(--text3);border-top-color:var(--border2)">Recursos</div>
   <a href="#alem">Quer ir além?</a>
 </nav>
@@ -3412,5 +3524,24 @@ function toggleSection(id, btn) {
 </script>
 <script src="https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.min.js"></script>
 <script>mermaid.initialize({ startOnLoad: true, securityLevel: 'loose' });</script>
+<script>
+  let fluxoZoom = 1;
+
+  function applyFluxoZoom() {
+    const graph = document.querySelector('.fluxo-box .mermaid');
+    if (!graph) return;
+    graph.style.transform = `scale(${fluxoZoom})`;
+  }
+
+  function zoomFluxo(delta) {
+    fluxoZoom = Math.min(1.8, Math.max(0.5, fluxoZoom + delta));
+    applyFluxoZoom();
+  }
+
+  function resetFluxoZoom() {
+    fluxoZoom = 1;
+    applyFluxoZoom();
+  }
+</script>
 </body>
 </html>
