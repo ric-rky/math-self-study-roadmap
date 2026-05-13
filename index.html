@@ -702,6 +702,7 @@ footer a:hover { color: var(--text2) !important; }
   font-family: 'JetBrains Mono', monospace; font-size: 9px; letter-spacing: .18em;
   text-transform: uppercase; color: var(--text4); margin-bottom: 7px;
 }
+.sem-desc { font-size: .78rem; color: var(--text3); font-weight: 300; margin-bottom: 7px; line-height: 1.5; }
 .sem-fases { display: flex; flex-wrap: wrap; gap: 5px; }
 .sem-fase {
   font-family: 'JetBrains Mono', monospace; font-size: 9px; letter-spacing: .04em;
@@ -1022,13 +1023,14 @@ footer a:hover { color: var(--text2) !important; }
 </section>
 
 <section class="semestres" id="semestres">
-  <p class="sec-label">Organização sugerida</p>
-  <h2>Uma possível leitura em semestres</h2>
-  <p class="sem-nota">Não é um currículo oficial, é apenas uma forma de visualizar o roadmap em blocos de estudo semelhantes a semestres. Os tempos reais variam muito. Use como referência, não como obrigação.</p>
+  <p class="sec-label">Como navegar pelo roadmap</p>
+  <h2>Blocos de estudo e rotas avançadas</h2>
+  <p class="sem-nota">Esta seção não é um cronograma nem uma promessa de duração. Ela organiza o roadmap em blocos de estudo pensados para self-study: menores do que semestres tradicionais, mas menos fragmentados do que uma lista fase por fase. Até a graduação, os blocos sugerem agrupamentos de disciplinas que conversam entre si. Na Trilha Completa, aparecem rotas avançadas seletivas: escolha uma direção principal, sem tentar transformar tudo em uma lista para "zerar". Clique em qualquer fase para ir diretamente ao trecho correspondente.</p>
 
   <div class="sem-grid">
     <div class="sem-card">
-      <div class="sem-label">Semestre 1</div>
+      <div class="sem-label">Bloco 1 · Pré-Cálculo, Lógica e Números</div>
+      <p class="sem-desc">Primeiro contato com linguagem matemática, demonstrações e aritmética estrutural.</p>
       <div class="sem-fases">
         <a href="#f1" class="sem-fase">F1</a>
         <a href="#f2" class="sem-fase">F2</a>
@@ -1036,77 +1038,162 @@ footer a:hover { color: var(--text2) !important; }
       </div>
     </div>
     <div class="sem-card">
-      <div class="sem-label">Semestre 2</div>
+      <div class="sem-label">Bloco 2 · Cálculo I e Álgebra Linear Elementar</div>
+      <p class="sem-desc">Base computacional e geométrica para limites, derivadas, integrais, vetores, matrizes e sistemas lineares.</p>
       <div class="sem-fases">
         <a href="#f4" class="sem-fase">F4</a>
         <a href="#f5" class="sem-fase">F5</a>
+      </div>
+    </div>
+    <div class="sem-card">
+      <div class="sem-label">Bloco 3 · Cálculo a Várias Variáveis e Análise na Reta</div>
+      <p class="sem-desc">Passagem do cálculo para uma visão mais rigorosa de funções, limites, continuidade e derivação.</p>
+      <div class="sem-fases">
         <a href="#f6" class="sem-fase">F6</a>
         <a href="#f7" class="sem-fase">F7</a>
       </div>
     </div>
     <div class="sem-card">
-      <div class="sem-label">Semestre 3</div>
+      <div class="sem-label">Bloco 4 · Álgebra Linear e Álgebra I</div>
+      <p class="sem-desc">Primeira consolidação estrutural: espaços vetoriais, transformações lineares, grupos, anéis e homomorfismos.</p>
       <div class="sem-fases">
         <a href="#f8" class="sem-fase">F8</a>
         <a href="#f9" class="sem-fase">F9</a>
+      </div>
+    </div>
+    <div class="sem-card">
+      <div class="sem-label">Bloco 5 · Análise em Várias Variáveis e Topologia</div>
+      <p class="sem-desc">Bloco central para maturidade analítica: continuidade, compacidade, conexidade, argumentos locais e estrutura topológica.</p>
+      <div class="sem-fases">
+        <a href="#f11" class="sem-fase">F11</a>
         <a href="#f12" class="sem-fase">F12</a>
       </div>
     </div>
     <div class="sem-card">
-      <div class="sem-label">Semestre 4</div>
+      <div class="sem-label">Bloco 6 · Variável Complexa e Geometria de Curvas e Superfícies</div>
+      <p class="sem-desc">Duas portas geométricas importantes: funções holomorfas e geometria diferencial clássica.</p>
       <div class="sem-fases">
-        <a href="#f10" class="sem-fase">F10</a>
-        <a href="#f11" class="sem-fase">F11</a>
         <a href="#f13" class="sem-fase">F13</a>
         <a href="#f14" class="sem-fase">F14</a>
       </div>
     </div>
     <div class="sem-card">
-      <div class="sem-label">Semestre 5</div>
+      <div class="sem-label">Bloco 7 · Equações Diferenciais e Fourier/EDP Elementar</div>
+      <p class="sem-desc">Entrada nas técnicas ligadas a evolução, vibração, calor, ondas, séries de Fourier e modelos diferenciais.</p>
       <div class="sem-fases">
         <a href="#f15" class="sem-fase">F15</a>
         <a href="#f16" class="sem-fase">F16</a>
+      </div>
+    </div>
+    <div class="sem-card">
+      <div class="sem-label">Bloco 8 · Análise em Espaços Métricos</div>
+      <p class="sem-desc">Refinamento da linguagem de convergência, completude, compacidade e continuidade em espaços abstratos.</p>
+      <div class="sem-fases">
         <a href="#f17" class="sem-fase">F17</a>
+      </div>
+    </div>
+    <div class="sem-card">
+      <div class="sem-label">Bloco 9 · Teoria dos Números e Álgebra II</div>
+      <p class="sem-desc">Eixo algébrico de graduação: aritmética mais estrutural e segunda passagem por grupos, anéis e módulos.</p>
+      <div class="sem-fases">
+        <a href="#f10" class="sem-fase">F10</a>
         <a href="#f18" class="sem-fase">F18</a>
+      </div>
+    </div>
+    <div class="sem-card">
+      <div class="sem-label">Bloco 10 · Teoria de Corpos e Galois</div>
+      <p class="sem-desc">Fechamento algébrico mais especializado, com extensões de corpos, polinômios e simetrias de raízes.</p>
+      <div class="sem-fases">
         <a href="#f19" class="sem-fase">F19</a>
       </div>
     </div>
     <div class="sem-card">
-      <div class="sem-label">Semestre 6</div>
+      <div class="sem-label">Entrada avançada · Teoria da Medida e Análise Funcional</div>
+      <p class="sem-desc">Infraestrutura analítica para matemática avançada: medida, integração, espaços de funções e operadores.</p>
       <div class="sem-fases">
         <a href="#f20" class="sem-fase">F20</a>
-        <a href="#f21" class="sem-fase">F21</a>
         <a href="#f22" class="sem-fase">F22</a>
-        <a href="#f28" class="sem-fase">F28</a>
       </div>
     </div>
     <div class="sem-card">
-      <div class="sem-label">Semestre 7</div>
+      <div class="sem-label">Rota · Teoria das Probabilidades</div>
+      <p class="sem-desc">Rota seletiva para probabilidade, processos estocásticos, estatística matemática e análise probabilística.</p>
+      <div class="sem-fases">
+        <a href="#f21" class="sem-fase">F21</a>
+      </div>
+    </div>
+    <div class="sem-card">
+      <div class="sem-label">Rota · Teoria de Operadores e Mecânica Quântica Matemática</div>
+      <p class="sem-desc">Direção operatorial ligada a espaços de Hilbert, espectros, operadores autoadjuntos e formalismo matemático da mecânica quântica.</p>
       <div class="sem-fases">
         <a href="#f23" class="sem-fase">F23</a>
-        <a href="#f24" class="sem-fase">F24</a>
-        <a href="#f29" class="sem-fase">F29</a>
-      </div>
-    </div>
-    <div class="sem-card">
-      <div class="sem-label">Semestre 8</div>
-      <div class="sem-fases">
         <a href="#f25" class="sem-fase">F25</a>
-        <a href="#f26" class="sem-fase">F26</a>
-        <a href="#f27" class="sem-fase">F27</a>
-        <a href="#f31" class="sem-fase">F31</a>
-        <a href="#f33" class="sem-fase">F33</a>
       </div>
     </div>
     <div class="sem-card">
-      <div class="sem-label">Pós / Especialização</div>
+      <div class="sem-label">Rota · EDP Avançada</div>
+      <p class="sem-desc">Direção analítica para equações diferenciais parciais em nível mais maduro, apoiada em medida, Fourier e análise funcional.</p>
       <div class="sem-fases">
-        <a href="#f32" class="sem-fase">F32</a>
+        <a href="#f27" class="sem-fase">F27</a>
+      </div>
+    </div>
+    <div class="sem-card">
+      <div class="sem-label">Rota · EDO Avançada e Sistemas Dinâmicos</div>
+      <p class="sem-desc">Direção para dinâmica, fluxos, estabilidade, comportamento qualitativo e teoria moderna de sistemas diferenciais.</p>
+      <div class="sem-fases">
+        <a href="#f26" class="sem-fase">F26</a>
+      </div>
+    </div>
+    <div class="sem-card">
+      <div class="sem-label">Rota · Análise Complexa Avançada</div>
+      <p class="sem-desc">Aprofundamento em análise complexa para quem quer seguir funções holomorfas, superfícies de Riemann ou direções complexas futuras.</p>
+      <div class="sem-fases">
+        <a href="#f24" class="sem-fase">F24</a>
+      </div>
+    </div>
+    <div class="sem-card">
+      <div class="sem-label">Rota · Álgebra Avançada e Álgebra Comutativa</div>
+      <p class="sem-desc">Direção algébrica estrutural: categorias, módulos, propriedades universais, anéis comutativos e linguagem para geometria algébrica.</p>
+      <div class="sem-fases">
+        <a href="#f28" class="sem-fase">F28</a>
         <a href="#f34" class="sem-fase">F34</a>
+      </div>
+    </div>
+    <div class="sem-card">
+      <div class="sem-label">Rota · Geometria Algébrica I e II</div>
+      <p class="sem-desc">Continuação natural da rota algébrica, já em linguagem geométrica: variedades algébricas, esquemas e cohomologia.</p>
+      <div class="sem-fases">
         <a href="#f35" class="sem-fase">F35</a>
         <a href="#f36" class="sem-fase">F36</a>
       </div>
     </div>
+    <div class="sem-card">
+      <div class="sem-label">Rota · Geometria Diferencial e Variedades Diferenciáveis</div>
+      <p class="sem-desc">Direção geométrica para variedades, formas diferenciais, fibrados, integração e linguagem global da geometria.</p>
+      <div class="sem-fases">
+        <a href="#f29" class="sem-fase">F29</a>
+        <a href="#f30" class="sem-fase">F30</a>
+      </div>
+    </div>
+    <div class="sem-card">
+      <div class="sem-label">Rota · Geometria Riemanniana</div>
+      <p class="sem-desc">Especialização geométrica em métricas, conexões, geodésicas, curvatura e comparação.</p>
+      <div class="sem-fases">
+        <a href="#f31" class="sem-fase">F31</a>
+      </div>
+    </div>
+    <div class="sem-card">
+      <div class="sem-label">Rota · Variedades e Feixes / Topologia Algébrica</div>
+      <p class="sem-desc">Direção mais estrutural e global, conectando variedades, feixes, categorias, invariantes topológicos e linguagem homológica.</p>
+      <div class="sem-fases">
+        <a href="#f32" class="sem-fase">F32</a>
+        <a href="#f33" class="sem-fase">F33</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="tcards-note">
+    <p>Uma forma prática de usar esta seção: avance pelos blocos iniciais como uma simulação flexível de formação matemática; depois escolha uma rota avançada principal. Os blocos não significam que tudo ali precisa ser estudado simultaneamente. Eles indicam fases próximas, com afinidade temática e dependências razoáveis.</p>
   </div>
 </section>
 
@@ -3824,7 +3911,7 @@ flowchart LR
   <a href="#dicas">Antes de começar</a>
   <a href="#quando-avancar">Quando avançar de fase</a>
   <a href="#mapa-fases">Mapa geral das fases</a>
-  <a href="#semestres">Leitura em semestres</a>
+  <a href="#semestres">Blocos e rotas</a>
   <a href="#fluxograma">Fluxograma das fases</a>
   <div class="toc-sep b">Trilha Básica</div>
   <a href="#t-basica" style="font-size:.73rem;color:var(--t1)">Fases 1–7</a>
