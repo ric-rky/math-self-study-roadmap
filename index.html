@@ -799,6 +799,95 @@ footer a:hover { color: var(--text2) !important; }
   line-height: 1.2; margin-bottom: 18px; color: var(--text);
 }
 .metodo-section p { color: var(--text2); font-weight: 300; margin-bottom: 14px; font-size: .97rem; }
+
+/* ── LIGHTBOX DE CAPAS ── */
+.livro-capa { cursor: zoom-in; }
+
+.cover-lightbox {
+  border: none;
+  padding: 0;
+  background: transparent;
+  width: 100vw;
+  max-width: 100vw;
+  height: 100vh;
+  max-height: 100vh;
+  margin: 0;
+  overflow: visible;
+}
+
+.cover-lightbox[open] {
+  display: grid;
+  place-items: center;
+}
+
+.cover-lightbox::backdrop {
+  background: rgba(24, 20, 14, .72);
+  backdrop-filter: blur(2px);
+}
+
+.cover-lightbox-inner {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: min(92vw, 620px);
+  max-height: 90vh;
+}
+
+.cover-lightbox img {
+  display: block;
+  max-width: min(88vw, 560px);
+  max-height: 82vh;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  border: 1px solid var(--border2);
+  background: var(--bg2);
+  box-shadow: 0 18px 60px rgba(0,0,0,.35);
+}
+
+.cover-lightbox-close {
+  position: absolute;
+  top: -14px;
+  right: -14px;
+  width: 34px;
+  height: 34px;
+  border-radius: 999px;
+  border: 1px solid var(--border2);
+  background: var(--bg);
+  color: var(--text);
+  font-size: 22px;
+  line-height: 1;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 6px 24px rgba(0,0,0,.18);
+  z-index: 2;
+}
+
+.cover-lightbox-close:hover {
+  color: var(--accent);
+  border-color: var(--accent);
+}
+
+.cover-lightbox-caption {
+  margin: 10px auto 0;
+  max-width: min(88vw, 560px);
+  text-align: center;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 10px;
+  letter-spacing: .06em;
+  color: var(--bg2);
+  line-height: 1.5;
+}
+
+@media(max-width:560px) {
+  .cover-lightbox-inner { max-width: 94vw; max-height: 88vh; }
+  .cover-lightbox img { max-width: 90vw; max-height: 78vh; }
+  .cover-lightbox-close { top: -10px; right: -8px; }
+}
 </style>
 </head>
 <body>
@@ -3780,6 +3869,14 @@ flowchart LR
 </nav>
 
 
+<dialog id="cover-lightbox" class="cover-lightbox" aria-label="Capa ampliada">
+  <div class="cover-lightbox-inner">
+    <button type="button" class="cover-lightbox-close" aria-label="Fechar capa ampliada">×</button>
+    <img id="cover-lightbox-img" src="" alt="">
+    <p id="cover-lightbox-caption" class="cover-lightbox-caption"></p>
+  </div>
+</dialog>
+
 <script>
 function toggleSection(id, btn) {
   const sec = document.getElementById(id);
@@ -3824,6 +3921,48 @@ function toggleSection(id, btn) {
     fluxoZoom = 1;
     applyFluxoZoom();
   }
+</script>
+<script>
+(function(){
+  const lightbox = document.getElementById('cover-lightbox');
+  const lightboxImg = document.getElementById('cover-lightbox-img');
+  const caption = document.getElementById('cover-lightbox-caption');
+  const closeBtn = document.querySelector('.cover-lightbox-close');
+
+  if (!lightbox || !lightboxImg || !caption || !closeBtn) return;
+
+  function openCover(img) {
+    const alt = img.getAttribute('alt') || 'Capa do livro';
+    lightboxImg.src = img.src;
+    lightboxImg.alt = alt;
+    caption.textContent = alt;
+    if (typeof lightbox.showModal === 'function') {
+      lightbox.showModal();
+      closeBtn.focus();
+    }
+  }
+
+  function closeCover() {
+    if (lightbox.open) lightbox.close();
+  }
+
+  document.querySelectorAll('.livro-capa').forEach(function(img) {
+    img.setAttribute('tabindex', '0');
+    img.setAttribute('role', 'button');
+    const alt = img.getAttribute('alt') || 'capa do livro';
+    img.setAttribute('aria-label', 'Ampliar capa: ' + alt);
+
+    img.addEventListener('click', function() { openCover(img); });
+    img.addEventListener('keydown', function(e) {
+      if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); openCover(img); }
+    });
+  });
+
+  closeBtn.addEventListener('click', closeCover);
+  lightbox.addEventListener('click', function(e) {
+    if (e.target === lightbox) closeCover();
+  });
+})();
 </script>
 </body>
 </html>
