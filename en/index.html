@@ -452,7 +452,7 @@ hr.sep::after {
   background: var(--bg3); border: 1px solid var(--border2);
   padding: 4px 10px; margin-bottom: 16px;
 }
-.prereq::before { content: 'Requer:'; color: var(--text4); margin-right: 4px; }
+.prereq::before { content: 'Requires:'; color: var(--text4); margin-right: 4px; }
 
 /* fase opcional */
 .fase.opcional .fase-num { color: var(--border); }
@@ -2631,26 +2631,26 @@ flowchart LR
 </ul></div>
 <a href="#mapa-fases" class="back-to-map">↑ Back to phase map</a>
 
-<!-- ══════ TRILHA COMPLETA ══════ -->
+<!-- ══════ COMPLETE TRACK ══════ -->
 </div><!-- /section-grad -->
 
 <div id="t-completa" class="tdiv c">
   <div style="flex:1">
-    <h3>Trilha Completa</h3>
-    <p>Fases 20–36 · Para quem deseja seguir na pesquisa matemática · Intenso e profundo · Entre com uma direção em mente.</p>
+    <h3>Complete Track</h3>
+    <p>Phases 20–36 · For those aiming at research, long-term advanced study, or deep mathematical maturity · Demanding and thorough · Enter with a direction in mind.</p>
   </div>
-  <button class="trilha-toggle" onclick="toggleSection('section-comp', this)">▴ Recolher</button>
+  <button class="trilha-toggle" onclick="toggleSection('section-comp', this)">▴ Collapse</button>
 </div>
 <div id="section-comp" class="trilha-section">
 
 <div class="nota aviso">
-  <b>Nota sobre a Trilha Completa</b>
-  A Trilha Completa ainda pode ser usada para estudo independente, mas pressupõe um leitor matematicamente maduro: fim de graduação, mestrado, doutorado, ou maturidade equivalente. A intenção não é oferecer uma rota simples "do zero" para temas de pós-graduação, e sim indicar livros avançados que considero competentes para quem já está iniciado na matemática. Em muitas fases, o valor da curadoria está menos em prometer um percurso linear e mais em apontar referências que podem ser estudadas com autonomia, paciência e repertório. Minha área é análise funcional e teoria de operadores, portanto as fases mais próximas dessa direção refletem experiência direta; os livros das fases mais distantes foram escolhidos com base em conversas com quem os utilizou. Não busque fazer tudo: é impraticável e desnecessário. Entre com uma direção em mente.
+  <b>About the Complete Track</b>
+  The Complete Track can still be used for independent study, but it presupposes a mathematically mature reader: late undergraduate, master's, doctoral, or equivalent preparation. The intention is not to offer a simple "from-zero" route to graduate-level topics, but to point to advanced books that I consider well suited to those who are already grounded in mathematics. In many phases, the value of the curation lies less in promising a linear path and more in identifying references that can be studied with autonomy, patience, and the right background. My area is functional analysis and operator theory, so the phases closest to that direction reflect direct experience; the books in more distant phases were chosen based on conversations with those who used them. Do not try to do everything: it is impractical and unnecessary. Enter with a direction in mind.
 </div>
 
 <div class="nota">
-  <b>Caminhos não lineares</b>
-  Depois da Trilha Graduação, nem todo mundo precisa seguir a ordem completa de forma rígida. Quem gosta de análise pode priorizar medida, funcional e operadores. Quem gosta de geometria pode avançar por variedades, geometria diferencial e Riemanniana. Quem gosta de álgebra pode seguir por Galois, álgebra comutativa e geometria algébrica. Use a Trilha Completa como mapa de possibilidades, não como uma prisão.
+  <b>Non-linear paths</b>
+  After the Undergraduate Track, not everyone needs to follow the complete order rigidly. Those drawn to analysis can prioritize measure theory, functional analysis, and operators. Those drawn to geometry can advance through manifolds, differential geometry, and Riemannian geometry. Those drawn to algebra can follow through Galois theory, commutative algebra, and algebraic geometry. Use the Complete Track as a map of possibilities, not as a rigid prescription.
 </div>
 
 <hr class="sep">
@@ -2660,75 +2660,75 @@ flowchart LR
   <div class="fase-top">
     <div class="fase-num">20</div>
     <div class="fase-hd">
-      <div class="fase-marker"><span class="dot dc"></span><span style="color:var(--t3)">Completa</span></div>
-      <div class="fase-titulo">Teoria da Medida e Integração</div>
-      <div class="fase-sub">Indispensável para quem segue na matemática</div>
+      <div class="fase-marker"><span class="dot dc"></span><span style="color:var(--t3)">Complete</span></div>
+      <div class="fase-titulo">Measure Theory and Integration</div>
+      <div class="fase-sub">Indispensable for those who continue in mathematics</div>
     </div>
   </div>
-  <div class="fase-meta"><span class="meta">📚 5 livros: 2 principais + 2 referência + 1 consulta</span></div>
-  <div class="prereq">Fases 6 e 7 (Cálculo a Várias Variáveis; Análise na Reta)</div>
-  <p class="fase-desc">A teoria da medida generaliza e rigoriza o conceito de integral muito além do que Riemann permite. A integral de Lebesgue é necessidade para Análise Funcional, Probabilidade e EDPs. Escolha um dos dois livros principais conforme o nível de detalhe que deseja: o Bartle é mais acessível, o Cohn é mais completo.</p>
-  <div class="nota"><b>Como estudar</b>O conceito central é a σ-álgebra. Entenda por que cada axioma é necessário através de contra-exemplos. Os três grandes teoremas de convergência (Monótona, Dominada, Fatou) devem ser entendidos profundamente: são usados em toda a análise avançada. O Bartle é uma boa entrada se o Cohn parecer denso no começo.</div>
-  <p class="livros-label">Livros</p>
+  <div class="fase-meta"><span class="meta">📚 5 books: 2 main + 2 reference + 1 reference</span></div>
+  <div class="prereq">Phases 6 and 7 (Multivariable Calculus; Real Analysis on the Line)</div>
+  <p class="fase-desc">Measure theory generalizes and rigorizes the concept of integration far beyond what Riemann allows. The Lebesgue integral is a prerequisite for Functional Analysis, Probability Theory, and PDEs. Choose one of the two main books according to the depth you want: Bartle is more accessible, Cohn is more complete.</p>
+  <div class="nota"><b>How to Study</b>The central concept is the σ-algebra. Understand why each axiom is necessary through counterexamples. The three major convergence theorems — Monotone, Dominated, Fatou — must be understood deeply: they appear throughout advanced analysis. Bartle is a good entry point if Cohn feels dense at first.</div>
+  <p class="livros-label">Books</p>
   <div class="livros">
         <div class="livro">
       <img class="livro-capa" src="../assets/covers/bartle_measure.jpg" alt="capa">
       <div class="livro-content">
-      <div class="livro-top"><span class="livro-titulo">The Elements of Integration and Lebesgue Measure</span><span class="tag tp">Principal · mais acessível</span></div>
+      <div class="livro-top"><span class="livro-titulo">The Elements of Integration and Lebesgue Measure</span><span class="tag tp">Main · more accessible</span></div>
       <div class="livro-autor">Robert G. Bartle</div>
-      <div class="livro-desc">Para self study, provavelmente o mais amigável de todos os livros de medida desta lista. Claro, bem motivado e com progressão cuidadosa. Cobre menos terreno que o Cohn, mas o que cobre, cobre muito bem. Boa entrada para quem quer chegar na integral de Lebesgue sem se perder no caminho.
+      <div class="livro-desc">For self-study, probably the most friendly of all the measure theory books on this list. Clear, well motivated, and carefully paced. Covers less ground than Cohn, but what it covers, it covers very well. A good entry for those who want to reach the Lebesgue integral without getting lost along the way.
       </div>
       </div>
     </div>
 <div class="livro">
       <img class="livro-capa" src="../assets/covers/cohn.webp" alt="capa">
       <div class="livro-content">
-      <div class="livro-top"><span class="livro-titulo">Measure Theory</span><span class="tag tp">Principal · mais completo</span></div>
+      <div class="livro-top"><span class="livro-titulo">Measure Theory</span><span class="tag tp">Main · more complete</span></div>
       <div class="livro-autor">Donald L. Cohn</div>
-      <div class="livro-desc">Sólido, bem organizado e o livro que eu escolheria para uma primeira leitura séria em teoria da medida. Cobre medida abstrata, integral de Lebesgue, espaços Lᵖ e os teoremas de convergência com rigor e clareza.
+      <div class="livro-desc">Solid, well organized, and the book I would choose for a first serious reading in measure theory. Covers abstract measure, Lebesgue integration, Lᵖ spaces, and the convergence theorems with rigor and clarity.
       </div>
       </div>
     </div>
     <div class="livro">
       <img class="livro-capa" src="../assets/covers/stein.jpg" alt="capa">
       <div class="livro-content">
-      <div class="livro-top"><span class="livro-titulo">Real Analysis</span><span class="tag tc">Referência</span></div>
+      <div class="livro-top"><span class="livro-titulo">Real Analysis</span><span class="tag tc">Reference</span></div>
       <div class="livro-autor">Elias Stein e Rami Shakarchi</div>
-      <div class="livro-desc">Parte da série Princeton Lectures in Analysis. Elegante, com conexões ricas com Análise de Fourier e Equações Diferenciais Parciais. Excelente complemento.
+      <div class="livro-desc">Part of the Princeton Lectures in Analysis series. Elegant, with rich connections to Fourier Analysis and Partial Differential Equations. An excellent complement.
       </div>
       </div>
     </div>
     <div class="livro">
       <img class="livro-capa" src="../assets/covers/folland.jpg" alt="capa">
       <div class="livro-content">
-      <div class="livro-top"><span class="livro-titulo">Real Analysis</span><span class="tag tc">Referência</span></div>
+      <div class="livro-top"><span class="livro-titulo">Real Analysis</span><span class="tag tc">Reference</span></div>
       <div class="livro-autor">Gerald B. Folland</div>
-      <div class="livro-desc">O mais completo e moderno dos quatro. Cobre teoria da medida, integração a Lebesgue, espaços Lᵖ, análise de Fourier, topologia, análise funcional e até probabilidade introdutória com notação contemporânea. Um livro de cabeceira para todo analista.
+      <div class="livro-desc">The most complete and modern of the four. Covers measure theory, Lebesgue integration, Lᵖ spaces, Fourier analysis, topology, functional analysis, and even introductory probability, all with contemporary notation. A bedside reference for every analyst.
       </div>
       </div>
     </div>
     <div class="livro">
       <img class="livro-capa" src="../assets/covers/rudin_rca.jpg" alt="capa">
       <div class="livro-content">
-      <div class="livro-top"><span class="livro-titulo">Real and Complex Analysis</span><span class="tag tr">Consulta</span></div>
+      <div class="livro-top"><span class="livro-titulo">Real and Complex Analysis</span><span class="tag tr">Reference</span></div>
       <div class="livro-autor">Walter Rudin</div>
-      <div class="livro-desc">O "Papa Rudin", como é conhecido. Trata medida e integração junto com análise complexa num mesmo volume, com a elegância e concisão características de Rudin. Mais exigente que o Cohn e o Folland e com exercícios verdadeiramente desafiadores: use como consulta e leitura adicional após ter a teoria consolidada.
+      <div class="livro-desc">The "Big Rudin," as it is known. Treats measure and integration together with complex analysis in a single volume, with Rudin's characteristic elegance and concision. More demanding than Cohn and Folland, with genuinely challenging exercises: use as a reference and additional reading once the theory is consolidated.
       </div>
       </div>
     </div>
   </div>
-  <div class="absorver"><b>O que absorver</b><ul>
-    <li>σ-álgebras e espaços de medida</li>
-    <li>Medida de Lebesgue em ℝⁿ</li>
-    <li>Integral de Lebesgue e suas propriedades</li>
-    <li>Teoremas de convergência: Monótona, Dominada, Fatou</li>
-    <li>Espaços Lᵖ e desigualdades de Hölder e Minkowski</li>
-    <li>Medidas produto e teorema de Fubini-Tonelli</li>
-  </ul><p class="minimo"><span>Mínimo para avançar:</span>os tópicos acima, usando o Bartle ou o Cohn como base de estudo</p></div>
-  <div class="gatilho c"><b>Pronto para avançar quando:</b><ul>
-    <li>Entende a diferença entre Riemann e Lebesgue e quando ela importa</li>
-    <li>Aplica os três teoremas de convergência corretamente</li>
-    <li>Trabalha com espaços Lᵖ e a desigualdade de Hölder</li>
+  <div class="absorver"><b>What to Absorb</b><ul>
+    <li>σ-algebras and measure spaces</li>
+    <li>Lebesgue measure on ℝⁿ</li>
+    <li>Lebesgue integral and its properties</li>
+    <li>Convergence theorems: Monotone, Dominated, Fatou</li>
+    <li>Lᵖ spaces and Hölder's and Minkowski's inequalities</li>
+    <li>Product measures and the Fubini-Tonelli theorem</li>
+  </ul><p class="minimo"><span>Minimum to Move On:</span>the topics above, using Bartle or Cohn as the main text</p></div>
+  <div class="gatilho c"><b>Ready to Move On When:</b><ul>
+    <li>You understand the difference between Riemann and Lebesgue integration and when it matters</li>
+    <li>You apply the three convergence theorems correctly</li>
+    <li>You work with Lᵖ spaces and Hölder's inequality</li>
   </ul></div>
 </div>
 
@@ -2739,72 +2739,72 @@ flowchart LR
   <div class="fase-top">
     <div class="fase-num">21</div>
     <div class="fase-hd">
-      <div class="fase-marker"><span class="dot dc"></span><span style="color:var(--t3)">Completa</span></div>
-      <div class="fase-titulo">Teoria das Probabilidades</div>
-      <div class="fase-sub">Probabilidade moderna como teoria da medida aplicada a eventos, variáveis aleatórias e convergência</div>
+      <div class="fase-marker"><span class="dot dc"></span><span style="color:var(--t3)">Complete</span></div>
+      <div class="fase-titulo">Probability Theory</div>
+      <div class="fase-sub">Modern probability as measure theory applied to events, random variables, and convergence</div>
     </div>
   </div>
-  <div class="fase-meta"><span class="meta">📚 4 livros: 1 principal + 2 complementares + 1 avançado</span></div>
-  <div class="prereq">Fase 20 (Teoria da Medida)</div>
-  <p class="fase-desc">A probabilidade moderna pode ser vista como uma continuação natural da teoria da medida. Espaços de probabilidade, variáveis aleatórias, esperança, independência, modos de convergência e leis limite aparecem aqui em linguagem rigorosa. Esta fase não substitui a fase de Teoria da Medida: ela depende dela e a utiliza em um contexto probabilístico. Esta fase também não é sobre estatística aplicada, ciência de dados ou machine learning, mas sobre a base matemática da probabilidade.</p>
-  <div class="nota"><b>Como estudar</b>Comece por Rosenthal: ele é a entrada mais adequada para uma primeira passagem rigorosa por probabilidade moderna após Teoria da Medida. O objetivo não é substituir o estudo de medida, nem transformar esta fase em estatística aplicada, mas consolidar a linguagem matemática da probabilidade. Billingsley pode ser usado para aprofundar a conexão entre probabilidade e medida e, para quem tiver muito interesse em probabilidade, pode inclusive servir como ponte para estudar os dois assuntos de forma integrada. Durrett amplia o repertório com exemplos e resultados centrais; Kallenberg deve ser tratado como referência avançada, não como obrigação de leitura.</div>
-  <p class="livros-label">Livros</p>
+  <div class="fase-meta"><span class="meta">📚 4 books: 1 main + 2 complementary + 1 advanced</span></div>
+  <div class="prereq">Phase 20 (Measure Theory and Integration)</div>
+  <p class="fase-desc">Modern probability can be understood as a natural continuation of measure theory. Probability spaces, random variables, expectation, independence, modes of convergence, and limit theorems appear here in rigorous language. This phase does not replace Measure Theory: it depends on it and deploys it in a probabilistic context. It is also not about applied statistics, data science, or machine learning, but about the mathematical foundations of probability.</p>
+  <div class="nota"><b>How to Study</b>Start with Rosenthal: it is the most suitable entry for a first rigorous pass through modern probability after Measure Theory. The goal is not to replace measure theory, nor to turn this phase into applied statistics, but to consolidate the mathematical language of probability. Billingsley can be used to deepen the connection between probability and measure theory and, for those with a strong interest in probability, can even serve as a bridge for studying both subjects in an integrated way. Durrett broadens the repertoire with examples and central results; Kallenberg should be treated as an advanced reference, not as required reading.</div>
+  <p class="livros-label">Books</p>
   <div class="livros">
     <div class="livro">
       <img class="livro-capa" src="../assets/covers/rosenthal.jpg" alt="capa">
       <div class="livro-content">
-        <div class="livro-top"><span class="livro-titulo">A First Look at Rigorous Probability Theory</span><span class="tag tp">Principal</span></div>
+        <div class="livro-top"><span class="livro-titulo">A First Look at Rigorous Probability Theory</span><span class="tag tp">Main</span></div>
         <div class="livro-autor">Jeffrey S. Rosenthal</div>
-        <div class="livro-desc">Melhor porta de entrada para probabilidade rigorosa após Teoria da Medida. É relativamente curto, claro e adequado para self-study. Use como livro-base da fase, priorizando espaços de probabilidade, variáveis aleatórias, esperança, independência, convergência e leis limite.</div>
+        <div class="livro-desc">The best entry point for rigorous probability after Measure Theory. Relatively short, clear, and suitable for self-study. Use as the main text for the phase, prioritizing probability spaces, random variables, expectation, independence, convergence, and limit theorems.</div>
       </div>
     </div>
     <div class="livro">
       <img class="livro-capa" src="../assets/covers/billingsley.jpg" alt="capa">
       <div class="livro-content">
-        <div class="livro-top"><span class="livro-titulo">Probability and Measure</span><span class="tag tc">Complementar</span></div>
+        <div class="livro-top"><span class="livro-titulo">Probability and Measure</span><span class="tag tc">Complementary</span></div>
         <div class="livro-autor">Patrick Billingsley</div>
-        <div class="livro-desc">Clássico que aprofunda a relação entre probabilidade e teoria da medida. Mais exigente que Rosenthal, mas excelente para consolidar a formulação moderna da área. Pode ser usado seletivamente para ganhar maturidade em medida, distribuição, convergência e leis limite; para quem tiver muito interesse em probabilidade, também pode servir como ponte para estudar medida e probabilidade de forma integrada.</div>
+        <div class="livro-desc">A classic that deepens the relationship between probability and measure theory. More demanding than Rosenthal, but excellent for consolidating the modern formulation of the field. Can be used selectively to build maturity in measure, distribution, convergence, and limit laws; for those with a strong interest in probability, it can also serve as a bridge for studying both subjects in an integrated way.</div>
       </div>
     </div>
     <div class="livro">
       <img class="livro-capa" src="../assets/covers/durrett.jpg" alt="capa">
       <div class="livro-content">
-        <div class="livro-top"><span class="livro-titulo">Probability: Theory and Examples</span><span class="tag tc">Complementar</span></div>
+        <div class="livro-top"><span class="livro-titulo">Probability: Theory and Examples</span><span class="tag tc">Complementary</span></div>
         <div class="livro-autor">Rick Durrett</div>
-        <div class="livro-desc">Texto amplo e robusto, com muitos exemplos e resultados centrais. Não precisa ser lido integralmente nesta fase. Funciona melhor como complemento para aprofundar tópicos específicos, especialmente convergência, independência, leis limite e processos estocásticos iniciais.</div>
+        <div class="livro-desc">A broad and robust text, with many examples and central results. Does not need to be read in full at this phase. Works best as a complement for deepening specific topics, especially convergence, independence, limit laws, and early stochastic processes.</div>
       </div>
     </div>
     <div class="livro">
       <img class="livro-capa" src="../assets/covers/kallenberg.webp" alt="capa">
       <div class="livro-content">
-        <div class="livro-top"><span class="livro-titulo">Foundations of Modern Probability</span><span class="tag ta">Avançado</span></div>
+        <div class="livro-top"><span class="livro-titulo">Foundations of Modern Probability</span><span class="tag ta">Advanced</span></div>
         <div class="livro-autor">Olav Kallenberg</div>
-        <div class="livro-desc">Referência avançada e enciclopédica em probabilidade moderna. Não é leitura obrigatória neste ponto. Serve como indicação de aprofundamento para quem quiser seguir seriamente em probabilidade, processos estocásticos ou áreas próximas.</div>
+        <div class="livro-desc">An advanced and encyclopedic reference in modern probability. Not required reading at this point. Serves as a pointer for those who want to go seriously deeper into probability, stochastic processes, or related areas.</div>
       </div>
     </div>
   </div>
-  <div class="absorver"><b>O que absorver</b>
+  <div class="absorver"><b>What to Absorb</b>
   <ul>
-    <li>Espaços de probabilidade e eventos</li>
-    <li>Variáveis aleatórias como funções mensuráveis</li>
-    <li>Distribuições e leis de variáveis aleatórias</li>
-    <li>Esperança como integral</li>
-    <li>Independência</li>
-    <li>Modos de convergência de variáveis aleatórias</li>
-    <li>Lema de Borel-Cantelli</li>
-    <li>Lei dos Grandes Números</li>
-    <li>Teorema Central do Limite em formulação básica</li>
+    <li>Probability spaces and events</li>
+    <li>Random variables as measurable functions</li>
+    <li>Distributions and laws of random variables</li>
+    <li>Expectation as an integral</li>
+    <li>Independence</li>
+    <li>Modes of convergence of random variables</li>
+    <li>Borel-Cantelli lemma</li>
+    <li>Law of Large Numbers</li>
+    <li>Central Limit Theorem in basic formulation</li>
   </ul>
-  <p class="minimo"><span>Mínimo para avançar:</span>entender variáveis aleatórias como funções mensuráveis, esperança como integral, independência, os principais modos de convergência e as ideias centrais da Lei dos Grandes Números e do Teorema Central do Limite</p>
+  <p class="minimo"><span>Minimum to Move On:</span>understanding random variables as measurable functions, expectation as an integral, independence, the main modes of convergence, and the central ideas behind the Law of Large Numbers and the Central Limit Theorem</p>
 </div>
-  <div class="gatilho c"><b>Pronto para avançar quando:</b>
+  <div class="gatilho c"><b>Ready to Move On When:</b>
   <ul>
-    <li>Consegue traduzir linguagem probabilística para linguagem de teoria da medida</li>
-    <li>Entende variáveis aleatórias como funções mensuráveis</li>
-    <li>Consegue calcular e manipular esperança como integral</li>
-    <li>Distingue convergência quase certa, em probabilidade, em Lp e em distribuição</li>
-    <li>Reconhece independência em exemplos e consegue usá-la em demonstrações básicas</li>
-    <li>Entende o papel das leis limite na estrutura da probabilidade moderna</li>
+    <li>You can translate probabilistic language into the language of measure theory</li>
+    <li>You understand random variables as measurable functions</li>
+    <li>You can compute and manipulate expectation as an integral</li>
+    <li>You distinguish almost sure convergence, convergence in probability, convergence in Lp, and convergence in distribution</li>
+    <li>You recognize independence in examples and can use it in basic proofs</li>
+    <li>You understand the role of limit theorems in the structure of modern probability</li>
   </ul>
 </div>
 </div>
@@ -2816,59 +2816,59 @@ flowchart LR
   <div class="fase-top">
     <div class="fase-num">22</div>
     <div class="fase-hd">
-      <div class="fase-marker"><span class="dot dc"></span><span style="color:var(--t3)">Completa</span></div>
-      <div class="fase-titulo">Análise Funcional</div>
-      <div class="fase-sub">Álgebra Linear em dimensão infinita</div>
+      <div class="fase-marker"><span class="dot dc"></span><span style="color:var(--t3)">Complete</span></div>
+      <div class="fase-titulo">Functional Analysis</div>
+      <div class="fase-sub">Linear algebra in infinite dimensions</div>
     </div>
   </div>
-  <div class="fase-meta"><span class="meta">📚 3 livros: 1 principal + 2 complementares</span></div>
-  <div class="prereq">Fases 12, 17 e 20 (Topologia; Análise em Espaços Métricos; Teoria da Medida)</div>
-  <p class="fase-desc">O estudo dos espaços vetoriais de dimensão infinita. Em dimensão finita a topologia é quase dispensável; em dimensão infinita ela é central. Disciplina exigente e elegante; faça sem pressa. O livro do Botelho é uma boa primeira passagem para quem quer construir a base de Análise Funcional antes de consultar textos mais especializados. Os exemplos vindos de espaços Lp e operadores em espaços de funções tornam a Teoria da Medida uma base importante para esta fase.</p>
-  <div class="nota"><b>Como estudar</b>Use o livro principal como base da primeira passagem pela fase. O objetivo inicial é consolidar espaços normados, espaços de Banach, espaços de Hilbert, operadores lineares contínuos, dualidade e teoremas fundamentais. A Teoria da Medida entra como pré-requisito porque muitos exemplos centrais vêm de espaços Lp e de operadores em espaços de funções. Helemskii é um complemento exigente e muito incomum: usa fortemente linguagem categórica, aborda teoria de operadores, análise harmônica e uma direção não comutativa que o autor chama de quantum functional analysis, sendo especialmente valioso para quem também se interessa por categorias. Van Neerven é mais tradicional, moderno e amplo, útil como referência para semigrupos, cálculo funcional, espaços de Sobolev e tópicos funcionais avançados. Use ambos seletivamente, sem transformar a fase em uma leitura enciclopédica.</div>
-  <p class="livros-label">Livros</p>
+  <div class="fase-meta"><span class="meta">📚 3 books: 1 main + 2 complementary</span></div>
+  <div class="prereq">Phases 12, 17, and 20 (Topology; Metric Spaces; Measure Theory and Integration)</div>
+  <p class="fase-desc">The study of infinite-dimensional vector spaces. In finite dimensions, topology is almost dispensable; in infinite dimensions, it is central. A demanding and elegant subject — take your time. Botelho is a good first pass for those who want to build the foundations of Functional Analysis before consulting more specialized texts. The examples coming from Lp spaces and operators on function spaces make Measure Theory an important prerequisite for this phase.</p>
+  <div class="nota"><b>How to Study</b>Use the main book as the basis for the first pass through the phase. The initial goal is to consolidate normed spaces, Banach spaces, Hilbert spaces, continuous linear operators, duality, and the fundamental theorems. Measure Theory enters as a prerequisite because many central examples come from Lp spaces and operators on function spaces. Helemskii is a rich, demanding, and highly unusual complement: it makes heavy use of categorical language — something very rare in analysis texts — making it especially valuable for those who also have an interest in categories and abstract structures. The book also covers operator theory, harmonic analysis, and what the author calls quantum functional analysis: a functional-analytic perspective on non-commutative structures and operator spaces. It is singular, but not the best first reading for the phase. Van Neerven is more traditional, modern, and broad, useful as a reference for semigroups, functional calculus, Sobolev spaces, and advanced functional topics. Use both selectively, without turning the phase into encyclopedic reading.</div>
+  <p class="livros-label">Books</p>
   <div class="livros">
     <div class="livro">
       <img class="livro-capa" src="../assets/covers/botelho.png" alt="capa">
       <div class="livro-content">
-      <div class="livro-top"><span class="livro-titulo">Fundamentos de Análise Funcional</span><span class="tag tp">Principal</span></div>
+      <div class="livro-top"><span class="livro-titulo">Fundamentos de Análise Funcional</span><span class="tag tp">Main</span></div>
       <div class="livro-autor">Geraldo Botelho, Daniel Pellegrino e Eduardo Teixeira (SBM)</div>
-      <div class="livro-desc">Texto nacional de alto nível, recentemente publicado em inglês pela Springer e com recepção muito positiva, reforçando seu nível de excelência. Cobre espaços de Banach e Hilbert, operadores lineares limitados e os grandes teoremas da área com clareza e rigor, além de vários tópicos adicionais interessantes. Uma boa escolha para quem estuda sozinho.
+      <div class="livro-desc">A high-level Brazilian text, recently published in English by Springer to very positive reception — a testament to its quality. Covers Banach and Hilbert spaces, bounded linear operators, and the major theorems of the field with clarity and rigor, alongside several interesting additional topics. A good choice for self-study readers.
       </div>
       </div>
     </div>
     <div class="livro">
       <img class="livro-capa" src="../assets/covers/helemskii.jpg" alt="capa">
       <div class="livro-content">
-        <div class="livro-top"><span class="livro-titulo">Lectures and Exercises on Functional Analysis</span><span class="tag tc">Complementar</span></div>
+        <div class="livro-top"><span class="livro-titulo">Lectures and Exercises on Functional Analysis</span><span class="tag tc">Complementary</span></div>
         <div class="livro-autor">Alexander Ya. Helemskii</div>
-        <div class="livro-desc">Complemento muito rico, exigente e nada usual em Análise Funcional. Helemskii utiliza pesadamente a linguagem das categorias, algo pouquíssimo comum em textos de análise, o que torna o livro especialmente valioso para quem também tem interesse em categorias e estruturas abstratas. O livro também aborda teoria de operadores, análise harmônica e aquilo que o autor chama de quantum functional analysis: uma perspectiva funcional-analítica voltada a estruturas não comutativas e espaços operatoriais que generalizam aspectos da análise funcional clássica. É singular, mas não é a melhor primeira leitura da fase, principalmente pelo uso categórico intenso.</div>
+        <div class="livro-desc">A very rich, demanding, and highly unusual complement in Functional Analysis. Helemskii makes heavy use of categorical language — something extremely rare in analysis texts — making the book especially valuable for those who also have an interest in categories and abstract structures. The book also covers operator theory, harmonic analysis, and what the author calls quantum functional analysis: a functional-analytic perspective on non-commutative structures and operator spaces that generalize aspects of classical functional analysis. Singular, but not the best first reading for the phase, primarily due to the intense categorical language.</div>
       </div>
     </div>
     <div class="livro">
       <img class="livro-capa" src="../assets/covers/neerven.jpg" alt="capa">
       <div class="livro-content">
-        <div class="livro-top"><span class="livro-titulo">Functional Analysis</span><span class="tag tc">Complementar</span></div>
+        <div class="livro-top"><span class="livro-titulo">Functional Analysis</span><span class="tag tc">Complementary</span></div>
         <div class="livro-autor">Jan van Neerven</div>
-        <div class="livro-desc">Referência moderna, tradicional e bastante ampla em Análise Funcional. Van Neerven oferece uma rota organizada por espaços de Banach e Hilbert, operadores lineares, dualidade, cálculo funcional, semigrupos, espaços de Sobolev e exemplos ligados a espaços de funções. É mais próximo da tradição analítica padrão do que Helemskii, mas também é enciclopédico e exigente; deve ser usado principalmente como complementar ou referência seletiva, não como leitura linear obrigatória.</div>
+        <div class="livro-desc">A modern, traditional, and quite comprehensive reference in Functional Analysis. Van Neerven offers an organized route through Banach and Hilbert spaces, linear operators, duality, functional calculus, semigroups, Sobolev spaces, and function space examples. Closer to the standard analytic tradition than Helemskii, but also encyclopedic and demanding; best used primarily as a selective complement or reference, not as mandatory linear reading.</div>
       </div>
     </div>
   </div>
-  <div class="absorver"><b>O que absorver</b><ul>
-    <li>Espaços normados e de Banach</li>
-    <li>Espaços de Hilbert: ortogonalidade, bases de Schauder</li>
-    <li>Operadores lineares limitados e o espaço dual</li>
-    <li>Teorema de Hahn-Banach e suas consequências</li>
-    <li>Teorema da aplicação aberta e do gráfico fechado</li>
-    <li>Princípio da limitação uniforme</li>
-    <li>Espectro de operadores lineares</li>
-  </ul><p class="minimo"><span>Mínimo para avançar:</span>entender espaços normados, Banach e Hilbert; operadores lineares contínuos; dualidade básica; Hahn-Banach, Banach-Steinhaus, aplicação aberta e gráfico fechado em nível operacional; e exemplos fundamentais como ℓᵖ, Lᵖ, C(K) e espaços de Hilbert separáveis</p></div>
-  <div class="gatilho c"><b>Pronto para avançar quando:</b>
+  <div class="absorver"><b>What to Absorb</b><ul>
+    <li>Normed and Banach spaces</li>
+    <li>Hilbert spaces: orthogonality, Schauder bases</li>
+    <li>Bounded linear operators and the dual space</li>
+    <li>Hahn-Banach theorem and its consequences</li>
+    <li>Open mapping theorem and closed graph theorem</li>
+    <li>Uniform boundedness principle</li>
+    <li>Spectrum of linear operators</li>
+  </ul><p class="minimo"><span>Minimum to Move On:</span>understanding normed, Banach, and Hilbert spaces; continuous linear operators; basic duality; Hahn-Banach, Banach-Steinhaus, open mapping, and closed graph at an operational level; and fundamental examples such as ℓᵖ, Lᵖ, C(K), and separable Hilbert spaces</p></div>
+  <div class="gatilho c"><b>Ready to Move On When:</b>
   <ul>
-    <li>Consegue reconhecer e trabalhar com exemplos básicos de espaços de Banach e Hilbert</li>
-    <li>Entende o papel da completude e por que ela é decisiva em análise funcional</li>
-    <li>Consegue usar dualidade básica e funcionais lineares contínuos em exemplos simples</li>
-    <li>Entende, ao menos operacionalmente, Hahn-Banach, Banach-Steinhaus, aplicação aberta e gráfico fechado</li>
-    <li>Consegue interpretar operadores lineares contínuos como objetos centrais da teoria</li>
+    <li>You can recognize and work with basic examples of Banach and Hilbert spaces</li>
+    <li>You understand the role of completeness and why it is decisive in functional analysis</li>
+    <li>You can use basic duality and continuous linear functionals in simple examples</li>
+    <li>You understand, at least operationally, Hahn-Banach, Banach-Steinhaus, the open mapping theorem, and the closed graph theorem</li>
+    <li>You can interpret continuous linear operators as the central objects of the theory</li>
   </ul>
 </div>
 </div>
@@ -2880,57 +2880,57 @@ flowchart LR
   <div class="fase-top">
     <div class="fase-num">23</div>
     <div class="fase-hd">
-      <div class="fase-marker"><span class="dot dc"></span><span style="color:var(--t3)">Completa</span></div>
-      <div class="fase-titulo">Teoria de Operadores</div>
-      <div class="fase-sub">Aprofundamento natural após Análise Funcional</div>
+      <div class="fase-marker"><span class="dot dc"></span><span style="color:var(--t3)">Complete</span></div>
+      <div class="fase-titulo">Operator Theory</div>
+      <div class="fase-sub">A natural deepening after Functional Analysis</div>
     </div>
   </div>
-  <div class="fase-meta"><span class="meta">📚 3 livros: 1 principal + 1 complementar + 1 referência</span></div>
-  <div class="prereq">Fase 22 (Análise Funcional)</div>
-  <p class="fase-desc">Teoria de Operadores é o estudo aprofundado de operadores lineares em espaços de Hilbert e Banach: C*-álgebras, espectro, operadores compactos, teoria espectral. É a área onde Análise Funcional atinge sua forma mais desenvolvida e onde se conecta com física matemática, teoria de representações e K-teoria.</p>
-  <div class="nota"><b>Como estudar</b>O Murphy é o texto principal, auto-contido, bem escrito e com rigor adequado para self study. Abramovich &amp; Aliprantis e Barry Simon entram como complementares e referência. O Simon em particular é uma obra monumental em vários volumes, não para leitura linear, mas para consulta profunda.</div>
-  <p class="livros-label">Livros</p>
+  <div class="fase-meta"><span class="meta">📚 3 books: 1 main + 1 complementary + 1 reference</span></div>
+  <div class="prereq">Phase 22 (Functional Analysis)</div>
+  <p class="fase-desc">Operator Theory is the in-depth study of linear operators on Hilbert and Banach spaces: C*-algebras, spectrum, compact operators, spectral theory. It is the area where Functional Analysis reaches its most developed form and connects with mathematical physics, representation theory, and K-theory.</p>
+  <div class="nota"><b>How to Study</b>Murphy is the main text: self-contained, well written, and with the right level of rigor for self-study. Abramovich &amp; Aliprantis and Barry Simon enter as complementary text and reference. Simon in particular is a monumental multi-volume work, not for linear reading, but for deep consultation.</div>
+  <p class="livros-label">Books</p>
   <div class="livros">
     <div class="livro">
       <img class="livro-capa" src="../assets/covers/murphy.jpg" alt="capa">
       <div class="livro-content">
-      <div class="livro-top"><span class="livro-titulo">C*-Algebras and Operator Theory</span><span class="tag tp">Principal</span></div>
+      <div class="livro-top"><span class="livro-titulo">C*-Algebras and Operator Theory</span><span class="tag tp">Main</span></div>
       <div class="livro-autor">Gerard J. Murphy</div>
-      <div class="livro-desc">O texto de entrada mais equilibrado que conheço para teoria de operadores e C*-álgebras. Auto-contido, bem escrito e com o nível certo para uma primeira leitura séria. Cobre C*-álgebras, o teorema espectral e operadores compactos sem economizar no rigor.
+      <div class="livro-desc">The most balanced entry text I know for operator theory and C*-algebras. Self-contained, well written, and pitched at the right level for a first serious reading. Covers C*-algebras, the spectral theorem, and compact operators without sparing rigor.
       </div>
       </div>
     </div>
     <div class="livro">
       <img class="livro-capa" src="../assets/covers/abramovich.jpg" alt="capa">
       <div class="livro-content">
-      <div class="livro-top"><span class="livro-titulo">Introduction to Operator Theory</span><span class="tag tc">Complementar</span></div>
+      <div class="livro-top"><span class="livro-titulo">Introduction to Operator Theory</span><span class="tag tc">Complementary</span></div>
       <div class="livro-autor">Yuri Abramovich e Charalambos Aliprantis</div>
-      <div class="livro-desc">Complementar ao Murphy, com foco em operadores em espaços de Banach e Banach lattices. Amplia bem a perspectiva para quem quer ir além do Murphy sem trocar completamente de direção.
+      <div class="livro-desc">A complement to Murphy, focusing on operators on Banach spaces and Banach lattices. Expands the perspective well for those who want to go beyond Murphy without completely changing direction.
       </div>
       </div>
     </div>
     <div class="livro">
       <img class="livro-capa" src="../assets/covers/barry_simon.jpg" alt="capa">
       <div class="livro-content">
-      <div class="livro-top"><span class="livro-titulo">Operator Theory (4 vols.)</span><span class="tag tr">Consulta</span></div>
+      <div class="livro-top"><span class="livro-titulo">Operator Theory (4 vols.)</span><span class="tag tr">Reference</span></div>
       <div class="livro-autor">Barry Simon</div>
-      <div class="livro-desc">Obra monumental e enciclopédica. Não é para leitura linear. É a referência permanente da área, com cobertura vastíssima de teoria espectral, operadores de Schrödinger e conexões com física matemática. Consulte conforme os interesses de pesquisa.
+      <div class="livro-desc">A monumental and encyclopedic work. Not for linear reading. The permanent reference in the field, with vast coverage of spectral theory, Schrödinger operators, and connections with mathematical physics. Consult according to your research interests.
       </div>
       </div>
     </div>
   </div>
-  <div class="absorver"><b>O que absorver</b><ul>
-    <li>C*-álgebras: definição, exemplos e morfismos</li>
-    <li>Teorema de Gelfand-Naimark</li>
-    <li>Teorema espectral para operadores normais</li>
-    <li>Operadores compactos e decomposição espectral</li>
-    <li>Índice de Fredholm e operadores de Fredholm</li>
-  </ul><p class="minimo"><span>Mínimo para avançar:</span>os tópicos acima pelo Murphy. Simon e Abramovich &amp; Aliprantis são aprofundamento e consulta</p></div>
-  <div class="gatilho c"><b>Pronto para avançar quando:</b><ul>
-    <li>Entende a estrutura de uma C*-álgebra e sabe dar exemplos concretos</li>
-    <li>Consegue enunciar e aplicar o teorema de Gelfand-Naimark</li>
-    <li>Domina o teorema espectral para operadores normais em espaços de Hilbert</li>
-    <li>Entende operadores compactos e sua relação com dimensão finita</li>
+  <div class="absorver"><b>What to Absorb</b><ul>
+    <li>C*-algebras: definition, examples, and morphisms</li>
+    <li>Gelfand-Naimark theorem</li>
+    <li>Spectral theorem for normal operators</li>
+    <li>Compact operators and spectral decomposition</li>
+    <li>Fredholm index and Fredholm operators</li>
+  </ul><p class="minimo"><span>Minimum to Move On:</span>the topics above via Murphy. Simon and Abramovich &amp; Aliprantis are enrichment and reference</p></div>
+  <div class="gatilho c"><b>Ready to Move On When:</b><ul>
+    <li>You understand the structure of a C*-algebra and can give concrete examples</li>
+    <li>You can state and apply the Gelfand-Naimark theorem</li>
+    <li>You command the spectral theorem for normal operators on Hilbert spaces</li>
+    <li>You understand compact operators and their relationship to finite-dimensional phenomena</li>
   </ul></div>
 </div>
 
@@ -2941,72 +2941,72 @@ flowchart LR
   <div class="fase-top">
     <div class="fase-num">24</div>
     <div class="fase-hd">
-      <div class="fase-marker"><span class="dot dc"></span><span style="color:var(--t3)">Completa</span></div>
-      <div class="fase-titulo">Análise Complexa Avançada</div>
-      <div class="fase-sub">Aprofundamento natural após Medida e Funcional</div>
+      <div class="fase-marker"><span class="dot dc"></span><span style="color:var(--t3)">Complete</span></div>
+      <div class="fase-titulo">Advanced Complex Analysis</div>
+      <div class="fase-sub">A natural deepening after Measure Theory and Functional Analysis</div>
     </div>
   </div>
-  <div class="fase-meta"><span class="meta">📚 5 livros: 1 principal + 2 complementares + 2 consulta</span></div>
-  <div class="prereq">Fases 12 e 13 (Topologia; Variável Complexa)</div>
-  <p class="fase-desc">Retorno à Análise Complexa com maturidade acumulada. Resultados mais profundos: convergência normal, famílias normais, o Teorema de Riemann sobre mapeamento, produtos infinitos e as primeiras ideias sobre superfícies de Riemann.</p>
-  <div class="nota"><b>Como estudar</b>Conway continua sendo o melhor ponto de entrada: é claro, robusto e bom para self study. Remmert entra como alternativa mais elegante e conceitual. Ahlfors é o clássico absoluto da área, denso e exigente, melhor como leitura lenta ou consulta madura. Freitag &amp; Busam amplia o horizonte com tópicos adicionais, incluindo conexões com teoria analítica dos números. Berenstein &amp; Gay fica como consulta avançada: belíssimo, mas bastante exigente.</div>
-  <p class="livros-label">Livros</p>
+  <div class="fase-meta"><span class="meta">📚 5 books: 1 main + 2 complementary + 2 reference</span></div>
+  <div class="prereq">Phases 12 and 13 (Topology; Complex Variables)</div>
+  <p class="fase-desc">A return to Complex Analysis with accumulated maturity. Deeper results: normal convergence, normal families, the Riemann mapping theorem, infinite products, and the first ideas on Riemann surfaces.</p>
+  <div class="nota"><b>How to Study</b>Conway remains the best entry point: clear, robust, and good for self-study. Remmert enters as a more elegant and conceptual alternative. Ahlfors is the definitive classic of the field, dense and demanding — best as slow reading or mature consultation. Freitag &amp; Busam broadens the horizon with additional topics, including connections with analytic number theory. Berenstein &amp; Gay is for advanced consultation: beautiful, but demanding.</div>
+  <p class="livros-label">Books</p>
     <div class="livros">
     <div class="livro">
       <img class="livro-capa" src="../assets/covers/conway.jpg" alt="capa">
       <div class="livro-content">
-      <div class="livro-top"><span class="livro-titulo">Functions of One Complex Variable I</span><span class="tag tp">Principal</span></div>
+      <div class="livro-top"><span class="livro-titulo">Functions of One Complex Variable I</span><span class="tag tp">Main</span></div>
       <div class="livro-autor">John B. Conway</div>
-      <div class="livro-desc">Mais amigável que o Ahlfors sem abrir mão do rigor. Cobre a teoria clássica de análise complexa com clareza e progressão bem calibrada para self study. Uma boa escolha para quem quer construir a base antes de mergulhar no Ahlfors.</div>
+      <div class="livro-desc">More accessible than Ahlfors without sacrificing rigor. Covers the classical theory of complex analysis with clarity and a well-calibrated pace for self-study. A good choice for building the foundation before diving into Ahlfors.</div>
       </div>
     </div>
-    
+
     <div class="livro">
       <img class="livro-capa" src="../assets/covers/remmert.jpg" alt="capa">
       <div class="livro-content">
-      <div class="livro-top"><span class="livro-titulo">Theory of Complex Functions</span><span class="tag tc">Complementar</span></div>
+      <div class="livro-top"><span class="livro-titulo">Theory of Complex Functions</span><span class="tag tc">Complementary</span></div>
       <div class="livro-autor">Reinhold Remmert</div>
-      <div class="livro-desc">Uma alternativa elegante ao Conway, com o refinamento e o formalismo característicos da tradição alemã. É um texto belíssimo de variável complexa: rigoroso, estrutural, geometricamente intuitivo e matematicamente maduro.</div>
+      <div class="livro-desc">An elegant alternative to Conway, with the refinement and formalism characteristic of the German tradition. A beautiful text on complex variables: rigorous, structural, geometrically intuitive, and mathematically mature.</div>
       </div>
     </div><div class="livro">
       <img class="livro-capa" src="../assets/covers/freitag.webp" alt="capa">
       <div class="livro-content">
-      <div class="livro-top"><span class="livro-titulo">Complex Analysis</span><span class="tag tc">Complementar</span></div>
+      <div class="livro-top"><span class="livro-titulo">Complex Analysis</span><span class="tag tc">Complementary</span></div>
       <div class="livro-autor">Freitag e Busam</div>
-      <div class="livro-desc">Alternativa europeia com cobertura ampla e bom equilíbrio entre teoria e exemplos. Além da teoria clássica de funções holomorfas, aborda tópicos de teoria analítica dos números, o que pode ser especialmente interessante para quem gosta de álgebra e teoria dos números.</div>
+      <div class="livro-desc">A European alternative with broad coverage and a good balance between theory and examples. Beyond the classical theory of holomorphic functions, it addresses topics in analytic number theory, which may be of particular interest to those drawn to algebra and number theory.</div>
       </div>
     </div>
 
     <div class="livro">
       <img class="livro-capa" src="../assets/covers/ahlfors.jpg" alt="capa">
       <div class="livro-content">
-      <div class="livro-top"><span class="livro-titulo">Complex Analysis</span><span class="tag tr">Consulta</span></div>
+      <div class="livro-top"><span class="livro-titulo">Complex Analysis</span><span class="tag tr">Reference</span></div>
       <div class="livro-autor">Lars Ahlfors</div>
-      <div class="livro-desc">O clássico da Análise Complexa. Denso, elegante, exigente. Uma segunda leitura com o Ahlfors depois do Conway é muito produtiva: ele revela camadas que o primeiro contato não alcança.</div>
+      <div class="livro-desc">The classic of Complex Analysis. Dense, elegant, demanding. A second reading through Ahlfors after Conway is very productive: it reveals layers that the first encounter does not reach.</div>
       </div>
     </div>
     <div class="livro">
       <img class="livro-capa" src="../assets/covers/berenstein.jpg" alt="capa">
       <div class="livro-content">
-      <div class="livro-top"><span class="livro-titulo">Complex Variables: An Introduction</span><span class="tag tr">Consulta</span></div>
+      <div class="livro-top"><span class="livro-titulo">Complex Variables: An Introduction</span><span class="tag tr">Reference</span></div>
       <div class="livro-autor">Carlos A. Berenstein e Roger Gay</div>
-      <div class="livro-desc">Como um Ahlfors em esteroides: extremamente rigoroso, moderno e denso, provavelmente o texto mais avançado desta lista em análise complexa, e um dos mais avançados de todo o roadmap. Conecta resultados da análise complexa com teoria da medida e análise funcional, topologia algébrica, teoria do índice e afins. Não é para primeira leitura; pressupõe domínio do Conway e do Ahlfors. Extremamente belo, porém brutal.</div>
+      <div class="livro-desc">Like Ahlfors on steroids: extremely rigorous, modern, and dense — probably the most advanced complex analysis text on this list, and one of the most advanced in the entire roadmap. Connects results of complex analysis with measure theory, functional analysis, algebraic topology, index theory, and related areas. Not for a first reading; presupposes mastery of Conway and Ahlfors. Extraordinarily beautiful, but demanding.</div>
       </div>
     </div>
-    
+
   </div>
-  <div class="absorver"><b>O que absorver</b><ul>
-    <li>Convergência normal e compacidade em espaços de funções analíticas</li>
-    <li>Teorema de Montel e famílias normais</li>
-    <li>Teorema de Riemann sobre mapeamento conforme</li>
-    <li>Produto de Weierstrass para funções inteiras</li>
-    <li>Funções meromorfas e teorema de Mittag-Leffler</li>
-    <li>Introdução às superfícies de Riemann</li>
-  </ul><p class="minimo"><span>Mínimo para avançar:</span>os tópicos acima pelo Conway.</p></div>
-  <div class="gatilho c"><b>Pronto para avançar quando:</b><ul>
-    <li>Trabalha com convergência normal e famílias normais (Teorema de Montel)</li>
-    <li>Entende o Teorema de Riemann sobre mapeamento</li>
-    <li>Conhece o produto de Weierstrass para funções inteiras</li>
+  <div class="absorver"><b>What to Absorb</b><ul>
+    <li>Normal convergence and compactness in spaces of analytic functions</li>
+    <li>Montel's theorem and normal families</li>
+    <li>Riemann mapping theorem</li>
+    <li>Weierstrass product for entire functions</li>
+    <li>Meromorphic functions and Mittag-Leffler theorem</li>
+    <li>Introduction to Riemann surfaces</li>
+  </ul><p class="minimo"><span>Minimum to Move On:</span>the topics above via Conway.</p></div>
+  <div class="gatilho c"><b>Ready to Move On When:</b><ul>
+    <li>You work with normal convergence and normal families (Montel's theorem)</li>
+    <li>You understand the Riemann mapping theorem</li>
+    <li>You know the Weierstrass product for entire functions</li>
   </ul></div>
 </div>
 
@@ -3017,49 +3017,49 @@ flowchart LR
   <div class="fase-top">
     <div class="fase-num">25</div>
     <div class="fase-hd">
-      <div class="fase-marker"><span class="dot dc"></span><span style="color:var(--t3)">Completa</span></div>
-      <div class="fase-titulo">Mecânica Quântica Matemática</div>
-      <div class="fase-sub">Aplicação natural da Análise Funcional</div>
+      <div class="fase-marker"><span class="dot dc"></span><span style="color:var(--t3)">Complete</span></div>
+      <div class="fase-titulo">Mathematical Quantum Mechanics</div>
+      <div class="fase-sub">A natural application of Functional Analysis</div>
     </div>
   </div>
-  <div class="fase-meta"><span class="meta">📚 1 livro</span></div>
-  <div class="prereq">Fase 22 (Análise Funcional)</div>
-  <p class="fase-desc">A mecânica quântica, formulada matematicamente, é essencialmente teoria de operadores em espaços de Hilbert. O que foi estudado em Análise Funcional ganha aqui uma aplicação profunda e inesperadamente motivadora.</p>
-  <p class="livros-label">Livros</p>
+  <div class="fase-meta"><span class="meta">📚 1 book</span></div>
+  <div class="prereq">Phase 22 (Functional Analysis)</div>
+  <p class="fase-desc">Quantum mechanics, formulated mathematically, is essentially operator theory on Hilbert spaces. What was studied in Functional Analysis finds here a deep and unexpectedly motivating application.</p>
+  <p class="livros-label">Books</p>
   <div class="livros">
     <div class="livro">
       <img class="livro-capa" src="../assets/covers/hall.jpg" alt="capa">
       <div class="livro-content">
-      <div class="livro-top"><span class="livro-titulo">Quantum Theory for Mathematicians</span><span class="tag tp">Principal</span></div>
+      <div class="livro-top"><span class="livro-titulo">Quantum Theory for Mathematicians</span><span class="tag tp">Main</span></div>
       <div class="livro-autor">Brian C. Hall</div>
-      <div class="livro-desc">O melhor livro de mecânica quântica escrito para matemáticos. Rigoroso, auto-contido e muito bem motivado. Apresenta a teoria sem sacrificar a precisão matemática. Pressupõe Análise Funcional e um pouco de Geometria Diferencial.
+      <div class="livro-desc">The best quantum mechanics book written for mathematicians. Rigorous, self-contained, and very well motivated. Presents the theory without sacrificing mathematical precision. Presupposes Functional Analysis and some Differential Geometry.
       </div>
       </div>
     </div>
   </div>
-  <div class="nota"><b>Como estudar</b>Use Hall como referência central: ele é provavelmente uma das melhores entradas para matemáticos, pois introduz a mecânica quântica com cuidado conceitual e desenvolve a análise funcional necessária junto do conteúdo físico. Não tente ler todos os capítulos com o mesmo peso. O núcleo da fase é: formalismo em espaços de Hilbert, equação de Schrödinger, operadores autoadjuntos, teorema espectral, exemplos unidimensionais e simetrias básicas. Capítulos sobre WKB, integral de caminho, quantização geométrica ou tópicos mais físicos podem ser lidos seletivamente.</div>
-  <div class="absorver"><b>O que absorver</b>
+  <div class="nota"><b>How to Study</b>Use Hall as the central reference: it is probably one of the best entry points for mathematicians, introducing quantum mechanics with conceptual care and developing the necessary functional analysis alongside the physical content. Do not try to read all chapters with equal weight. The core of the phase is: the Hilbert space formalism, the Schrödinger equation, self-adjoint operators, the spectral theorem, one-dimensional examples, and basic symmetries. Chapters on WKB, path integrals, geometric quantization, or more physical topics can be read selectively.</div>
+  <div class="absorver"><b>What to Absorb</b>
   <ul>
-    <li>Formalismo de estados, observáveis e evolução temporal em espaços de Hilbert</li>
-    <li>Equação de Schrödinger livre e primeiros exemplos unidimensionais</li>
-    <li>Operadores simétricos, autoadjuntos e essencialmente autoadjuntos em exemplos fundamentais</li>
-    <li>Diferença entre operadores limitados e não limitados</li>
-    <li>Teorema espectral para operadores autoadjuntos em nível conceitual e operacional</li>
-    <li>Hamiltonianos simples: partícula livre, poço de potencial e oscilador harmônico</li>
-    <li>Princípio da incerteza e relações de comutação canônicas</li>
-    <li>Ideia do teorema de Stone e da evolução unitária</li>
-    <li>Papel de simetrias, grupos de Lie e representações em exemplos básicos</li>
+    <li>Formalism of states, observables, and time evolution in Hilbert spaces</li>
+    <li>Free Schrödinger equation and first one-dimensional examples</li>
+    <li>Symmetric, self-adjoint, and essentially self-adjoint operators in fundamental examples</li>
+    <li>Distinction between bounded and unbounded operators</li>
+    <li>Spectral theorem for self-adjoint operators at a conceptual and operational level</li>
+    <li>Simple Hamiltonians: free particle, potential well, and harmonic oscillator</li>
+    <li>Uncertainty principle and canonical commutation relations</li>
+    <li>Idea of Stone's theorem and unitary evolution</li>
+    <li>Role of symmetries, Lie groups, and representations in basic examples</li>
   </ul>
-  <p class="minimo"><span>Mínimo para avançar:</span>entender o formalismo de Hilbert, a equação de Schrödinger em exemplos simples, operadores autoadjuntos não limitados, espectro, evolução unitária e o papel das relações de comutação canônicas, sem precisar dominar WKB, integrais de caminho ou quantização geométrica</p>
+  <p class="minimo"><span>Minimum to Move On:</span>understanding the Hilbert space formalism, the Schrödinger equation in simple examples, unbounded self-adjoint operators, spectrum, unitary evolution, and the role of canonical commutation relations — without needing to master WKB, path integrals, or geometric quantization</p>
 </div>
-  <div class="gatilho c"><b>Pronto para avançar quando:</b>
+  <div class="gatilho c"><b>Ready to Move On When:</b>
   <ul>
-    <li>Consegue explicar a diferença entre estado, observável, Hamiltoniano e evolução temporal</li>
-    <li>Entende por que observáveis são modelados por operadores autoadjuntos</li>
-    <li>Consegue trabalhar conceitualmente com operadores não limitados e seus domínios em exemplos simples</li>
-    <li>Reconhece como o teorema espectral justifica a medição de observáveis</li>
-    <li>Consegue relacionar o operador de Schrödinger, espectro e evolução unitária em exemplos básicos</li>
-    <li>Entende a motivação matemática das relações de comutação canônicas e do teorema de Stone–von Neumann em nível introdutório</li>
+    <li>You can explain the distinction between state, observable, Hamiltonian, and time evolution</li>
+    <li>You understand why observables are modeled by self-adjoint operators</li>
+    <li>You can work conceptually with unbounded operators and their domains in simple examples</li>
+    <li>You recognize how the spectral theorem justifies the measurement of observables</li>
+    <li>You can relate the Schrödinger operator, spectrum, and unitary evolution in basic examples</li>
+    <li>You understand the mathematical motivation behind canonical commutation relations and the Stone-von Neumann theorem at an introductory level</li>
   </ul>
 </div>
 </div>
@@ -3071,73 +3071,73 @@ flowchart LR
   <div class="fase-top">
     <div class="fase-num">26</div>
     <div class="fase-hd">
-      <div class="fase-marker"><span class="dot dc"></span><span style="color:var(--t3)">Completa</span></div>
-      <div class="fase-titulo">EDO Avançada e Sistemas Dinâmicos</div>
-      <div class="fase-sub">Fluxos, estabilidade, linearização e dinâmica qualitativa</div>
+      <div class="fase-marker"><span class="dot dc"></span><span style="color:var(--t3)">Complete</span></div>
+      <div class="fase-titulo">Advanced ODE and Dynamical Systems</div>
+      <div class="fase-sub">Flows, stability, linearization, and qualitative dynamics</div>
     </div>
   </div>
-  <div class="fase-meta"><span class="meta">📚 4 livros: 1 principal + 3 complementares</span></div>
-  <div class="prereq">Fases 15 e 17 (Equações Diferenciais Ordinárias; Análise em Espaços Métricos)</div>
-  <p class="fase-desc">Esta fase aprofunda a passagem de equações diferenciais ordinárias para sistemas dinâmicos. O foco deixa de ser apenas resolver equações e passa a ser entender o comportamento qualitativo das soluções: fluxos, campos vetoriais, estabilidade, linearização, retratos de fase, sistemas autônomos e bifurcações iniciais. A fase pressupõe familiaridade com EDOs básicas e com a linguagem de espaços métricos, especialmente convergência, continuidade, completude, compacidade e pontos fixos. Ela não exige Fourier/EDP, probabilidade ou análise funcional como pré-requisitos formais.</p>
-  <div class="nota"><b>Como estudar</b>Use Teschl como livro-base da fase. A primeira passagem deve priorizar existência e unicidade em nível mais maduro, fluxos, sistemas autônomos, estabilidade, linearização, retratos de fase e bifurcações iniciais. O uso ocasional de Mathematica no Teschl deve ser entendido como apoio visual ou computacional, não como parte obrigatória do estudo. Sotomayor, Palis &amp; de Melo e Perko são complementos fortes e exigentes: use-os seletivamente para aprofundar pontos específicos, não como obrigação de leitura integral.</div>
-  <p class="livros-label">Livros</p>
+  <div class="fase-meta"><span class="meta">📚 4 books: 1 main + 3 complementary</span></div>
+  <div class="prereq">Phases 15 and 17 (Differential Equations; Metric Spaces)</div>
+  <p class="fase-desc">This phase deepens the passage from ordinary differential equations to dynamical systems. The focus shifts from solving equations to understanding the qualitative behavior of solutions: flows, vector fields, stability, linearization, phase portraits, autonomous systems, and early bifurcations. The phase presupposes familiarity with basic ODEs and the language of metric spaces — convergence, continuity, completeness, compactness, and fixed points. It does not require Fourier/PDE, probability, or functional analysis as formal prerequisites.</p>
+  <div class="nota"><b>How to Study</b>Use Teschl as the main text for the phase. The first pass should prioritize existence and uniqueness at a more mature level, flows, autonomous systems, stability, linearization, phase portraits, and early bifurcations. The occasional use of Mathematica in Teschl should be understood as visual or computational support, not as a required part of the study: the mathematical core can be studied with pencil and paper and, if desired, with Python or other software. Sotomayor, Palis &amp; de Melo, and Perko are strong and demanding complements: use them selectively to deepen specific points, not as required cover-to-cover reading.</div>
+  <p class="livros-label">Books</p>
   <div class="livros">
     <div class="livro">
       <img class="livro-capa" src="../assets/covers/teschl.jpg" alt="capa">
       <div class="livro-content">
-        <div class="livro-top"><span class="livro-titulo">Ordinary Differential Equations and Dynamical Systems</span><span class="tag tp">Principal</span></div>
+        <div class="livro-top"><span class="livro-titulo">Ordinary Differential Equations and Dynamical Systems</span><span class="tag tp">Main</span></div>
         <div class="livro-autor">Gerald Teschl</div>
-        <div class="livro-desc">Livro principal da fase. É moderno, organizado e adequado para self-study, conectando EDOs, fluxos, estabilidade, sistemas autônomos e dinâmica qualitativa. O autor às vezes utiliza Mathematica em exemplos ou ilustrações, mas isso deve ser entendido como apoio computacional, não como requisito: o núcleo matemático pode ser estudado com lápis, papel e, se desejado, com Python ou outro software.</div>
+        <div class="livro-desc">Main text for the phase. Modern, well organized, and suitable for self-study, connecting ODEs, flows, stability, autonomous systems, and qualitative dynamics. The author occasionally uses Mathematica in examples or illustrations, but this should be understood as computational support, not a requirement: the mathematical core can be studied with pencil and paper and, if desired, with Python or other software.</div>
       </div>
     </div>
     <div class="livro">
       <img class="livro-capa" src="../assets/covers/sotomayor.jpg" alt="capa">
       <div class="livro-content">
-        <div class="livro-top"><span class="livro-titulo">Lições de Equações Diferenciais Ordinárias</span><span class="tag tc">Complementar</span></div>
+        <div class="livro-top"><span class="livro-titulo">Lições de Equações Diferenciais Ordinárias</span><span class="tag tc">Complementary</span></div>
         <div class="livro-autor">Jorge Sotomayor</div>
-        <div class="livro-desc">Referência brasileira clássica para EDOs com abordagem matemática séria. É um livro exigente, mais adequado para aprofundar a teoria depois de uma primeira passagem pelo Teschl. Excelente para reforçar existência, unicidade, dependência contínua, estabilidade e aspectos qualitativos das soluções.</div>
+        <div class="livro-desc">A classic Brazilian reference for ODEs with a serious mathematical treatment. A demanding book, better suited for deepening the theory after a first pass through Teschl. Excellent for reinforcing existence, uniqueness, continuous dependence, stability, and qualitative aspects of solutions.</div>
       </div>
     </div>
     <div class="livro">
       <img class="livro-capa" src="../assets/covers/palis.jpg" alt="capa">
       <div class="livro-content">
-        <div class="livro-top"><span class="livro-titulo">Introdução aos Sistemas Dinâmicos</span><span class="tag tc">Complementar</span></div>
+        <div class="livro-top"><span class="livro-titulo">Introdução aos Sistemas Dinâmicos</span><span class="tag tc">Complementary</span></div>
         <div class="livro-autor">Jacob Palis Jr. e Welington de Melo</div>
-        <div class="livro-desc">Texto brasileiro fundamental para entrar em sistemas dinâmicos com mais estrutura matemática. É mais exigente e menos introdutório do que o Teschl em vários pontos, por isso funciona melhor como aprofundamento seletivo. Complementa a fase ao desenvolver a linguagem de dinâmica, estabilidade, recorrência inicial e comportamento qualitativo com uma perspectiva mais geométrica e global.</div>
+        <div class="livro-desc">A fundamental Brazilian text for entering dynamical systems with greater mathematical structure. More demanding and less introductory than Teschl in several respects, so it works better as selective enrichment. Complements the phase by developing the language of dynamics, stability, early recurrence, and qualitative behavior from a more geometric and global perspective.</div>
       </div>
     </div>
     <div class="livro">
       <img class="livro-capa" src="../assets/covers/perko.jpg" alt="capa">
       <div class="livro-content">
-        <div class="livro-top"><span class="livro-titulo">Differential Equations and Dynamical Systems</span><span class="tag tc">Complementar</span></div>
+        <div class="livro-top"><span class="livro-titulo">Differential Equations and Dynamical Systems</span><span class="tag tc">Complementary</span></div>
         <div class="livro-autor">Lawrence Perko</div>
-        <div class="livro-desc">Complemento forte para dinâmica não linear, sistemas planares, estabilidade, bifurcações e teoria qualitativa. Também é um livro denso, mais apropriado para consulta e aprofundamento seletivo do que para leitura linear completa nesta fase.</div>
+        <div class="livro-desc">A strong complement for nonlinear dynamics, planar systems, stability, bifurcations, and qualitative theory. Also a dense book, more appropriate for consultation and selective deepening than for complete linear reading at this phase.</div>
       </div>
     </div>
   </div>
-  <div class="absorver"><b>O que absorver</b>
+  <div class="absorver"><b>What to Absorb</b>
   <ul>
-    <li>Teoremas de existência e unicidade em formulação mais madura</li>
-    <li>Dependência contínua das soluções</li>
-    <li>Fluxos associados a campos vetoriais</li>
-    <li>Sistemas autônomos</li>
-    <li>Pontos de equilíbrio</li>
-    <li>Estabilidade e estabilidade assintótica</li>
-    <li>Linearização</li>
-    <li>Retratos de fase</li>
-    <li>Órbitas e conjuntos invariantes</li>
-    <li>Bifurcações iniciais</li>
+    <li>Existence and uniqueness theorems in a more mature formulation</li>
+    <li>Continuous dependence on initial conditions</li>
+    <li>Flows associated with vector fields</li>
+    <li>Autonomous systems</li>
+    <li>Equilibrium points</li>
+    <li>Stability and asymptotic stability</li>
+    <li>Linearization</li>
+    <li>Phase portraits</li>
+    <li>Orbits and invariant sets</li>
+    <li>Early bifurcations</li>
   </ul>
-  <p class="minimo"><span>Mínimo para avançar:</span>entender fluxos de EDOs, estabilidade de equilíbrios, linearização, retratos de fase e a ideia de estudar qualitativamente o comportamento das soluções sem depender de fórmulas explícitas</p>
+  <p class="minimo"><span>Minimum to Move On:</span>understanding flows of ODEs, stability of equilibria, linearization, phase portraits, and the idea of studying the qualitative behavior of solutions without relying on explicit formulas</p>
 </div>
-  <div class="gatilho c"><b>Pronto para avançar quando:</b>
+  <div class="gatilho c"><b>Ready to Move On When:</b>
   <ul>
-    <li>Consegue interpretar uma EDO autônoma como um sistema dinâmico</li>
-    <li>Entende o conceito de fluxo associado a um campo vetorial</li>
-    <li>Consegue analisar estabilidade de pontos de equilíbrio em exemplos básicos</li>
-    <li>Usa linearização para estudar o comportamento local das soluções</li>
-    <li>Consegue desenhar e interpretar retratos de fase simples</li>
-    <li>Reconhece bifurcações iniciais e mudanças qualitativas no comportamento dinâmico</li>
+    <li>You can interpret an autonomous ODE as a dynamical system</li>
+    <li>You understand the concept of a flow associated with a vector field</li>
+    <li>You can analyze the stability of equilibrium points in basic examples</li>
+    <li>You use linearization to study the local behavior of solutions</li>
+    <li>You can draw and interpret simple phase portraits</li>
+    <li>You recognize early bifurcations and qualitative changes in dynamical behavior</li>
   </ul>
 </div>
 </div>
@@ -3149,78 +3149,78 @@ flowchart LR
   <div class="fase-top">
     <div class="fase-num">27</div>
     <div class="fase-hd">
-      <div class="fase-marker"><span class="dot dc"></span><span style="color:var(--t3)">Completa</span></div>
-      <div class="fase-titulo">EDP Avançada</div>
-      <div class="fase-sub">Distribuições, soluções fracas, Sobolev, energia e métodos variacionais</div>
+      <div class="fase-marker"><span class="dot dc"></span><span style="color:var(--t3)">Complete</span></div>
+      <div class="fase-titulo">Advanced PDE</div>
+      <div class="fase-sub">Distributions, weak solutions, Sobolev spaces, energy methods, and variational formulations</div>
     </div>
   </div>
-  <div class="fase-meta"><span class="meta">📚 4 livros: 2 principais + 2 complementares</span></div>
-  <div class="prereq">Fases 16 e 22 (Análise de Fourier e EDP Elementar; Análise Funcional)</div>
-  <p class="fase-desc">Esta fase retoma as equações diferenciais parciais clássicas em uma linguagem mais moderna. O foco passa de métodos elementares, como separação de variáveis e séries de Fourier, para distribuições, derivadas fracas, soluções fracas, transformada de Fourier em EDP, estimativas de energia, problemas de fronteira, dualidade, formulações variacionais e uma primeira entrada em espaços de Sobolev. Vasy organiza a primeira passagem de forma mais acessível e guiada, enquanto Evans funciona como principal avançado e referência clássica para aprofundar a teoria padrão de soluções fracas, Sobolev, regularidade e problemas elípticos, parabólicos e hiperbólicos. A Teoria da Medida entra indiretamente pelo caminho até Análise Funcional, especialmente por causa dos espaços Lp e dos espaços de funções. Teoria de Operadores, Probabilidade e EDO Avançada ajudam em direções específicas, mas não são pré-requisitos formais.</p>
-  <div class="nota"><b>Como estudar</b>Use Vasy como livro-base para organizar a primeira passagem pela fase. O objetivo inicial é entender distribuições, derivadas fracas, transformada de Fourier em EDP, estimativas de energia, problemas de fronteira, dualidade, formulações variacionais e o primeiro contato com espaços de Sobolev. Evans deve entrar como principal avançado: use-o para aprofundar os tópicos centrais, especialmente Sobolev, soluções fracas, métodos variacionais, regularidade e equações elípticas, parabólicas e hiperbólicas. Folland é útil para uma abordagem mais concisa e analítica; Jost oferece uma rota complementar com conexão com análise geométrica e métodos variacionais. Não tente dominar toda a teoria de EDP de uma vez: o objetivo é sair da fase entendendo a linguagem moderna básica da área e ficando preparado para consultar Evans com maturidade.</div>
-  <p class="livros-label">Livros</p>
+  <div class="fase-meta"><span class="meta">📚 4 books: 2 main + 2 complementary</span></div>
+  <div class="prereq">Phases 16 and 22 (Fourier and Elementary PDE; Functional Analysis)</div>
+  <p class="fase-desc">This phase returns to classical partial differential equations in a more modern language. The focus shifts from elementary methods — separation of variables and Fourier series — to distributions, weak derivatives, weak solutions, the Fourier transform in PDE, energy estimates, boundary-value problems, duality, variational formulations, and a first encounter with Sobolev spaces. Vasy organizes the first pass in a more accessible and guided way, while Evans serves as the advanced main text and classic reference for deepening the standard theory of weak solutions, Sobolev spaces, regularity, and elliptic, parabolic, and hyperbolic equations. Measure Theory enters indirectly through the path to Functional Analysis, especially via Lp spaces and function spaces. Operator Theory, Probability, and Advanced ODE are helpful in specific directions but are not formal prerequisites.</p>
+  <div class="nota"><b>How to Study</b>Use Vasy as the main text to organize the first pass through the phase. The initial goal is to understand distributions, weak derivatives, the Fourier transform in PDE, energy estimates, boundary-value problems, duality, variational formulations, and a first contact with Sobolev spaces. Evans should enter as the advanced main text: use it to deepen the central topics, especially Sobolev spaces, weak solutions, variational methods, regularity, and elliptic, parabolic, and hyperbolic equations. Folland is useful for a more concise and analytic approach; Jost offers a complementary route with connections to geometric analysis and variational methods. Do not try to master the full theory of PDE at once: the goal is to leave the phase understanding the basic modern language of the field and being prepared to consult Evans with maturity.</div>
+  <p class="livros-label">Books</p>
   <div class="livros">
     <div class="livro">
       <img class="livro-capa" src="../assets/covers/vasy.jpg" alt="capa">
       <div class="livro-content">
-        <div class="livro-top"><span class="livro-titulo">Partial Differential Equations: An Accessible Route Through Theory and Applications</span><span class="tag tp">Principal</span></div>
+        <div class="livro-top"><span class="livro-titulo">Partial Differential Equations: An Accessible Route Through Theory and Applications</span><span class="tag tp">Main</span></div>
         <div class="livro-autor">András Vasy</div>
-        <div class="livro-desc">Principal mais leve e acessível da fase. Vasy oferece uma rota moderna para EDP com menos pré-requisitos do que Evans ou Folland, introduzindo distribuições cedo e conduzindo o leitor por equações de primeira ordem, equações lineares clássicas, Fourier, fronteiras, Duhamel, separação de variáveis, espaços com produto interno, dualidade e problemas variacionais. Use como livro-base para construir a ponte entre a EDP elementar e a teoria avançada.</div>
+        <div class="livro-desc">The lighter and more accessible main text for the phase. Vasy offers a modern route to PDE with fewer prerequisites than Evans or Folland, introducing distributions early and guiding the reader through first-order equations, classical linear equations, Fourier methods, boundary conditions, Duhamel's principle, separation of variables, inner product spaces, duality, and variational problems. Use as the main text to build the bridge between elementary PDE and advanced theory.</div>
       </div>
     </div>
     <div class="livro">
       <img class="livro-capa" src="../assets/covers/evans.jpg" alt="capa">
       <div class="livro-content">
-        <div class="livro-top"><span class="livro-titulo">Partial Differential Equations</span><span class="tag tp">Principal</span></div>
+        <div class="livro-top"><span class="livro-titulo">Partial Differential Equations</span><span class="tag tp">Main</span></div>
         <div class="livro-autor">Lawrence C. Evans</div>
-        <div class="livro-desc">Principal avançado e referência clássica central da fase. Evans é mais denso e exigente que Vasy, mas aprofunda a linguagem padrão da área: espaços de Sobolev, soluções fracas, métodos variacionais, regularidade e equações elípticas, parabólicas e hiperbólicas. Use para consolidar e aprofundar os temas que Vasy introduz, sem tratá-lo como leitura obrigatória de capa a capa na primeira passagem.</div>
+        <div class="livro-desc">The advanced main text and central classic reference for the phase. Evans is denser and more demanding than Vasy, but deepens the standard language of the field: Sobolev spaces, weak solutions, variational methods, regularity, and elliptic, parabolic, and hyperbolic equations. Use to consolidate and deepen the topics Vasy introduces, without treating it as required cover-to-cover reading on the first pass.</div>
       </div>
     </div>
     <div class="livro">
       <img class="livro-capa" src="../assets/covers/folland_pde.jpg" alt="capa">
       <div class="livro-content">
-        <div class="livro-top"><span class="livro-titulo">Introduction to Partial Differential Equations</span><span class="tag tc">Complementar</span></div>
+        <div class="livro-top"><span class="livro-titulo">Introduction to Partial Differential Equations</span><span class="tag tc">Complementary</span></div>
         <div class="livro-autor">Gerald B. Folland</div>
-        <div class="livro-desc">Complemento conciso e analítico para EDP. É útil para rever e consolidar os fundamentos com uma abordagem mais direta, especialmente em equações lineares, distribuições, transformada de Fourier e métodos clássicos. Funciona bem como segunda perspectiva para leitores que querem uma rota mais enxuta.</div>
+        <div class="livro-desc">A concise and analytic complement for PDE. Useful for reviewing and consolidating the foundations with a more direct approach, especially for linear equations, distributions, the Fourier transform, and classical methods. Works well as a second perspective for readers who want a leaner route.</div>
       </div>
     </div>
     <div class="livro">
       <img class="livro-capa" src="../assets/covers/jost_pde.webp" alt="capa">
       <div class="livro-content">
-        <div class="livro-top"><span class="livro-titulo">Partial Differential Equations</span><span class="tag tc">Complementar</span></div>
+        <div class="livro-top"><span class="livro-titulo">Partial Differential Equations</span><span class="tag tc">Complementary</span></div>
         <div class="livro-autor">Jürgen Jost</div>
-        <div class="livro-desc">Complemento com boa conexão com análise geométrica e métodos variacionais. É útil para quem deseja enxergar EDP dentro de um panorama mais amplo envolvendo análise, geometria e problemas não lineares. Pode ser usado seletivamente, especialmente depois de ganhar alguma familiaridade com a linguagem básica de Sobolev, soluções fracas e estimativas de energia.</div>
+        <div class="livro-desc">A complement with strong connections to geometric analysis and variational methods. Useful for those who want to see PDE within a broader panorama involving analysis, geometry, and nonlinear problems. Can be used selectively, especially after gaining some familiarity with the basic language of Sobolev spaces, weak solutions, and energy estimates.</div>
       </div>
     </div>
   </div>
-  <div class="absorver"><b>O que absorver</b>
+  <div class="absorver"><b>What to Absorb</b>
   <ul>
-    <li>Formulações clássicas e fracas de EDP</li>
-    <li>Distribuições e derivadas fracas</li>
-    <li>Transformada de Fourier em EDP</li>
-    <li>Espaços Lp como base para espaços de funções</li>
-    <li>Primeiro contato com espaços de Sobolev e normas de energia</li>
-    <li>Métodos de energia</li>
-    <li>Problemas de fronteira</li>
-    <li>Dualidade e solvabilidade em nível inicial</li>
-    <li>Formulações variacionais</li>
-    <li>Problemas elípticos básicos</li>
-    <li>Problemas parabólicos básicos</li>
-    <li>Problemas hiperbólicos básicos</li>
-    <li>Noções iniciais de regularidade</li>
+    <li>Classical and weak formulations of PDEs</li>
+    <li>Distributions and weak derivatives</li>
+    <li>Fourier transform in PDE</li>
+    <li>Lp spaces as the foundation for function spaces</li>
+    <li>First contact with Sobolev spaces and energy norms</li>
+    <li>Energy methods</li>
+    <li>Boundary-value problems</li>
+    <li>Duality and solvability at an introductory level</li>
+    <li>Variational formulations</li>
+    <li>Basic elliptic problems</li>
+    <li>Basic parabolic problems</li>
+    <li>Basic hyperbolic problems</li>
+    <li>Initial notions of regularity</li>
   </ul>
-  <p class="minimo"><span>Mínimo para avançar:</span>entender a diferença entre solução clássica e solução fraca, saber o papel de distribuições e derivadas fracas, reconhecer espaços de Sobolev em nível inicial, compreender métodos de energia e formulações variacionais, e distinguir equações elípticas, parabólicas e hiperbólicas</p>
+  <p class="minimo"><span>Minimum to Move On:</span>understanding the difference between classical and weak solutions, knowing the role of distributions and weak derivatives, recognizing Sobolev spaces at an introductory level, understanding energy methods and variational formulations, and distinguishing elliptic, parabolic, and hyperbolic equations</p>
 </div>
-  <div class="gatilho c"><b>Pronto para avançar quando:</b>
+  <div class="gatilho c"><b>Ready to Move On When:</b>
   <ul>
-    <li>Consegue explicar por que soluções fracas são necessárias em EDP</li>
-    <li>Entende distribuições e derivadas fracas em exemplos básicos</li>
-    <li>Reconhece como a transformada de Fourier aparece em problemas de EDP</li>
-    <li>Entende o papel inicial dos espaços de Sobolev e normas de energia</li>
-    <li>Reconhece como métodos de energia controlam soluções</li>
-    <li>Consegue distinguir problemas elípticos, parabólicos e hiperbólicos</li>
-    <li>Entende a função das formulações variacionais em problemas de EDP</li>
-    <li>Está preparado para consultar Evans com mais maturidade e para encontrar EDP em análise geométrica, física matemática, teoria espectral e problemas variacionais</li>
+    <li>You can explain why weak solutions are necessary in PDE</li>
+    <li>You understand distributions and weak derivatives in basic examples</li>
+    <li>You recognize how the Fourier transform appears in PDE problems</li>
+    <li>You understand the initial role of Sobolev spaces and energy norms</li>
+    <li>You recognize how energy methods control solutions</li>
+    <li>You can distinguish elliptic, parabolic, and hyperbolic problems</li>
+    <li>You understand the function of variational formulations in PDE problems</li>
+    <li>You are prepared to consult Evans with greater maturity and to encounter PDE in geometric analysis, mathematical physics, spectral theory, and variational problems</li>
   </ul>
 </div>
 </div>
@@ -3232,50 +3232,50 @@ flowchart LR
   <div class="fase-top">
     <div class="fase-num">28</div>
     <div class="fase-hd">
-      <div class="fase-marker"><span class="dot dc"></span><span style="color:var(--t3)">Completa</span></div>
-      <div class="fase-titulo">Álgebra Avançada</div>
-      <div class="fase-sub">Álgebra abstrata por uma abordagem categórica</div>
+      <div class="fase-marker"><span class="dot dc"></span><span style="color:var(--t3)">Complete</span></div>
+      <div class="fase-titulo">Advanced Algebra</div>
+      <div class="fase-sub">Abstract algebra through a categorical approach</div>
     </div>
   </div>
-  <div class="fase-meta"><span class="meta">📚 1 livro</span></div>
-  <div class="prereq">Fase 18 (Álgebra II)</div>
-  <div class="nota"><b>Como estudar</b>Use o Aluffi como uma segunda passagem pela álgebra abstrata, agora em nível mais estrutural. A prioridade não é ler o livro inteiro, mas entender como a linguagem categórica reorganiza objetos já conhecidos: grupos, anéis, módulos, homomorfismos, quocientes, produtos, propriedades universais e sequências exatas. Dê atenção especial a módulos, produtos tensoriais, álgebra multilinear e aos primeiros contatos com álgebra homológica, mas sem reduzir a fase a uma preparação para Álgebra Comutativa. O valor do livro está justamente em mostrar a álgebra como uma rede de construções universais e ideias recorrentes.</div>
-  <p class="fase-desc">Esta fase é um retorno à álgebra abstrata de um ponto de vista mais avançado, unificador e categórico. Depois da Álgebra II, o objetivo não é apenas acumular novos tópicos, mas reorganizar grupos, anéis, módulos, produtos universais, tensores, álgebras e construções homológicas dentro de uma linguagem estrutural mais madura. O Aluffi deve ser usado como mapa amplo da álgebra moderna: categorias aparecem como linguagem organizadora, não como um apêndice isolado. A fase prepara Álgebra Comutativa e Geometria Algébrica, mas também abre portas para representações, álgebra homológica, teoria de categorias e outras direções algébricas.</p>
-  <p class="livros-label">Livros</p>
+  <div class="fase-meta"><span class="meta">📚 1 book</span></div>
+  <div class="prereq">Phase 18 (Algebra II)</div>
+  <div class="nota"><b>How to Study</b>Use Aluffi as a second pass through abstract algebra, now at a more structural level. The priority is not to read the entire book, but to understand how categorical language reorganizes familiar objects: groups, rings, modules, homomorphisms, quotients, products, universal properties, and exact sequences. Pay particular attention to modules, tensor products, multilinear algebra, and the first encounters with homological algebra — but without reducing the phase to preparation for Commutative Algebra. The value of the book lies precisely in showing algebra as a network of universal constructions and recurring ideas.</div>
+  <p class="fase-desc">This phase is a return to abstract algebra from a more advanced, unifying, and categorical point of view. After Algebra II, the goal is not simply to accumulate new topics, but to reorganize groups, rings, modules, universal products, tensors, algebras, and homological constructions within a more mature structural language. Aluffi should be used as a broad map of modern algebra: categories appear as an organizing language, not as an isolated appendix. The phase prepares Commutative Algebra and Algebraic Geometry, and also opens doors to representations, homological algebra, category theory, and other algebraic directions.</p>
+  <p class="livros-label">Books</p>
   <div class="livros">
     <div class="livro">
       <img class="livro-capa" src="../assets/covers/aluffi.jpg" alt="capa">
       <div class="livro-content">
-      <div class="livro-top"><span class="livro-titulo">Algebra: Chapter 0</span><span class="tag tp">Principal</span></div>
+      <div class="livro-top"><span class="livro-titulo">Algebra: Chapter 0</span><span class="tag tp">Main</span></div>
       <div class="livro-autor">Paolo Aluffi</div>
-      <div class="livro-desc">Livro principal da fase. É uma abordagem moderna, ampla e categórica da álgebra abstrata, introduzindo categorias desde cedo como linguagem unificadora. Não deve ser tratado como uma lista de tópicos a completar, mas como uma segunda leitura estrutural da álgebra: grupos, anéis, módulos, propriedades universais, tensores, álgebras e noções homológicas aparecem dentro de uma mesma arquitetura conceitual. É muito bem escrito e rico em prosa matemática, mas enciclopédico; use seletivamente e com objetivos claros.</div>
+      <div class="livro-desc">Main text for the phase. A modern, broad, and categorical treatment of abstract algebra, introducing categories early as a unifying language. Should not be treated as a checklist to complete, but as a second structural reading of algebra: groups, rings, modules, universal properties, tensors, algebras, and homological notions appear within the same conceptual architecture. Very well written and rich in mathematical prose, but encyclopedic; use selectively and with clear objectives.</div>
       </div>
     </div>
   </div>
-  <div class="absorver"><b>O que absorver</b>
+  <div class="absorver"><b>What to Absorb</b>
   <ul>
-    <li>A linguagem categórica como forma de organizar a álgebra, sem perder contato com exemplos concretos</li>
-    <li>Propriedades universais em construções básicas: produtos, coprodutos, quocientes, objetos livres e objetos iniciais/finais</li>
-    <li>Grupos revisitados estruturalmente: homomorfismos, quocientes, ações, produtos, grupos livres, Sylow e decomposições</li>
-    <li>Anéis e módulos como ampliação natural da álgebra linear, incluindo ideais, quocientes, módulos livres e apresentações</li>
-    <li>Fatoração em domínios: UFDs, PIDs, domínios euclidianos, polinômios e exemplos aritméticos</li>
-    <li>Álgebra linear em linguagem algébrica: módulos livres, determinantes, formas canônicas e ações de anéis de polinômios</li>
-    <li>Corpos e extensões: extensões algébricas, corpos finitos, construções clássicas e uma retomada de Galois</li>
-    <li>Funtores, equivalências, limites, colimites e adjunções em nível operacional</li>
-    <li>Produtos tensoriais, mudança de base, Hom, dualidade e álgebra multilinear</li>
-    <li>Primeiro contato com complexos, homologia, Tor, Ext, categorias abelianas e categorias derivadas em nível panorâmico</li>
+    <li>Categorical language as a way of organizing algebra, without losing contact with concrete examples</li>
+    <li>Universal properties in basic constructions: products, coproducts, quotients, free objects, and initial/terminal objects</li>
+    <li>Groups revisited structurally: homomorphisms, quotients, actions, products, free groups, Sylow, and decompositions</li>
+    <li>Rings and modules as natural extensions of linear algebra, including ideals, quotients, free modules, and presentations</li>
+    <li>Factorization in domains: UFDs, PIDs, Euclidean domains, polynomials, and arithmetic examples</li>
+    <li>Linear algebra in algebraic language: free modules, determinants, canonical forms, and polynomial ring actions</li>
+    <li>Fields and extensions: algebraic extensions, finite fields, classical constructions, and a return to Galois theory</li>
+    <li>Functors, equivalences, limits, colimits, and adjunctions at an operational level</li>
+    <li>Tensor products, change of base, Hom, duality, and multilinear algebra</li>
+    <li>First contact with complexes, homology, Tor, Ext, abelian categories, and derived categories at a panoramic level</li>
   </ul>
-  <p class="minimo"><span>Mínimo para avançar:</span>entender como categorias e propriedades universais organizam construções algébricas recorrentes; conseguir transitar entre grupos, anéis, módulos, corpos e álgebra linear em linguagem estrutural; e reconhecer tensores, Hom, sequências exatas e noções homológicas como ferramentas que reaparecem em álgebra, topologia e geometria</p>
+  <p class="minimo"><span>Minimum to Move On:</span>understanding how categories and universal properties organize recurring algebraic constructions; being able to move between groups, rings, modules, fields, and linear algebra in structural language; and recognizing tensors, Hom, exact sequences, and homological notions as tools that reappear in algebra, topology, and geometry</p>
 </div>
-  <div class="gatilho c"><b>Pronto para avançar quando:</b>
+  <div class="gatilho c"><b>Ready to Move On When:</b>
   <ul>
-    <li>Consegue explicar propriedades universais em exemplos concretos, como produtos, quocientes, objetos livres e produtos tensoriais</li>
-    <li>Entende categorias e funtores como linguagem organizadora, não como formalismo decorativo</li>
-    <li>Consegue reconhecer a mesma estrutura algébrica aparecendo em grupos, anéis, módulos, espaços vetoriais e corpos</li>
-    <li>Trabalha com grupos, ações, quocientes, anéis, ideais, módulos e extensões de corpos sem depender apenas de receitas isoladas</li>
-    <li>Entende produtos tensoriais, Hom e dualidade como construções universais, pelo menos em exemplos básicos</li>
-    <li>Reconhece sequências exatas, complexos, homologia, Tor e Ext como a entrada para álgebra homológica, sem precisar dominar categorias derivadas</li>
-    <li>Percebe por que o Aluffi funciona como ponte para álgebra comutativa, geometria algébrica, topologia algébrica, representações e teoria de categorias</li>
+    <li>You can explain universal properties in concrete examples: products, quotients, free objects, and tensor products</li>
+    <li>You understand categories and functors as an organizing language, not as decorative formalism</li>
+    <li>You can recognize the same algebraic structure appearing in groups, rings, modules, vector spaces, and fields</li>
+    <li>You work with groups, actions, quotients, rings, ideals, modules, and field extensions without relying purely on isolated recipes</li>
+    <li>You understand tensor products, Hom, and duality as universal constructions, at least in basic examples</li>
+    <li>You recognize exact sequences, complexes, homology, Tor, and Ext as the entry to homological algebra, without needing to master derived categories</li>
+    <li>You see why Aluffi functions as a bridge to commutative algebra, algebraic geometry, algebraic topology, representations, and category theory</li>
   </ul>
 </div>
 </div>
@@ -3287,67 +3287,67 @@ flowchart LR
   <div class="fase-top">
     <div class="fase-num">29</div>
     <div class="fase-hd">
-      <div class="fase-marker"><span class="dot dc"></span><span style="color:var(--t3)">Completa</span></div>
-      <div class="fase-titulo">Geometria Diferencial</div>
-      <div class="fase-sub">Da geometria clássica às conexões e curvatura</div>
+      <div class="fase-marker"><span class="dot dc"></span><span style="color:var(--t3)">Complete</span></div>
+      <div class="fase-titulo">Differential Geometry</div>
+      <div class="fase-sub">From classical geometry to connections and curvature</div>
     </div>
   </div>
-  <div class="fase-meta"><span class="meta">📚 4 livros: 2 principais + 1 complementar + 1 referência</span></div>
-  <div class="prereq">Fases 11 e 14 (Análise em Várias Variáveis; Geometria Diferencial de Curvas e Superfícies)</div>
-  <p class="fase-desc">Esta fase aprofunda a geometria diferencial a partir de uma base concreta: análise em várias variáveis, parametrizações, subvariedades euclidianas, curvas e superfícies. O objetivo é avançar da intuição geométrica clássica para uma linguagem mais moderna de campos, formas, conexões e curvatura. Kühnel e Prasolov servem como entrada geométrica e motivadora; Tu entra como segundo momento, organizando a geometria diferencial em variedades por meio de conexões, curvatura e classes características.</p>
-  <div class="nota"><b>Como estudar</b>Comece por Kühnel como guia geométrico, usando Prasolov em paralelo para exemplos, motivação e exercícios resolvidos. A fase pode ser iniciada após Análise em Várias Variáveis e Curvas e Superfícies, pois essa base já dá familiaridade com parametrizações, subvariedades euclidianas e curvatura. Para a parte moderna em variedades, avance para Tu depois de estudar Variedades Diferenciáveis ou em paralelo com ela. Jeffrey Lee fica como referência ampla para consulta, não como leitura linear obrigatória.</div>
-  <p class="livros-label">Livros</p>
+  <div class="fase-meta"><span class="meta">📚 4 books: 2 main + 1 complementary + 1 reference</span></div>
+  <div class="prereq">Phases 11 and 14 (Multivariable Analysis; Geometry of Curves and Surfaces)</div>
+  <p class="fase-desc">This phase deepens differential geometry from a concrete foundation: multivariable analysis, parametrizations, Euclidean submanifolds, curves, and surfaces. The goal is to advance from classical geometric intuition toward the more modern language of fields, forms, connections, and curvature. Kühnel and Prasolov serve as geometric and motivating entry points; Tu enters as a second moment, organizing differential geometry on manifolds through connections, curvature, and characteristic classes.</p>
+  <div class="nota"><b>How to Study</b>Start with Kühnel as the geometric guide, using Prasolov in parallel for examples, motivation, and worked exercises. The phase can be started after Multivariable Analysis and Geometry of Curves and Surfaces, as that background already provides familiarity with parametrizations, Euclidean submanifolds, and curvature. For the modern part on manifolds, advance to Tu after studying Differentiable Manifolds or in parallel with it. Jeffrey Lee serves as a broad reference for consultation, not as mandatory linear reading.</div>
+  <p class="livros-label">Books</p>
   <div class="livros">
     <div class="livro">
       <img class="livro-capa" src="../assets/covers/kuhnel.jpg" alt="capa">
       <div class="livro-content">
-      <div class="livro-top"><span class="livro-titulo">Differential Geometry: Curves - Surfaces - Manifolds</span><span class="tag tp">Principal</span></div>
+      <div class="livro-top"><span class="livro-titulo">Differential Geometry: Curves - Surfaces - Manifolds</span><span class="tag tp">Main</span></div>
       <div class="livro-autor">Wolfgang Kühnel</div>
-      <div class="livro-desc">Entrada geométrica mais natural para esta fase. Faz a transição de curvas e superfícies para variedades mantendo forte intuição visual, muitos exemplos e uma progressão menos abrupta do que textos mais abstratos. É uma boa porta de entrada antes de avançar para conexões, curvatura e classes características em linguagem moderna.</div>
+      <div class="livro-desc">The most natural geometric entry for this phase. Makes the transition from curves and surfaces to manifolds while maintaining strong visual intuition, many examples, and a less abrupt progression than more abstract texts. A good entry point before advancing to connections, curvature, and characteristic classes in modern language.</div>
       </div>
     </div>
     <div class="livro">
       <img class="livro-capa" src="../assets/covers/tu_dg.jpg" alt="capa">
       <div class="livro-content">
-      <div class="livro-top"><span class="livro-titulo">Differential Geometry: Connections, Curvature, and Characteristic Classes</span><span class="tag tp">Principal</span></div>
+      <div class="livro-top"><span class="livro-titulo">Differential Geometry: Connections, Curvature, and Characteristic Classes</span><span class="tag tp">Main</span></div>
       <div class="livro-autor">Loring W. Tu</div>
-      <div class="livro-desc">Texto principal para a linguagem moderna da geometria diferencial em variedades. Desenvolve conexões, curvatura e classes características com excelente organização. Não precisa ser o primeiro livro da fase: funciona melhor depois de alguma familiaridade geométrica com Kühnel ou Prasolov e, idealmente, após ou em paralelo com Variedades Diferenciáveis. Também serve como ponte para Chern-Weil, topologia diferencial e geometria global.</div>
+      <div class="livro-desc">Main text for the modern language of differential geometry on manifolds. Develops connections, curvature, and characteristic classes with excellent organization. Need not be the first book in the phase: it works better after some geometric familiarity with Kühnel or Prasolov and, ideally, after or in parallel with Differentiable Manifolds. Also serves as a bridge to Chern-Weil theory, differential topology, and global geometry.</div>
       </div>
     </div>
     <div class="livro">
       <img class="livro-capa" src="../assets/covers/prasolov.jpg" alt="capa">
       <div class="livro-content">
-      <div class="livro-top"><span class="livro-titulo">Differential Geometry</span><span class="tag tc">Complementar</span></div>
+      <div class="livro-top"><span class="livro-titulo">Differential Geometry</span><span class="tag tc">Complementary</span></div>
       <div class="livro-autor">Viktor V. Prasolov</div>
-      <div class="livro-desc">Texto curto, motivador e bastante amigável para consolidar a intuição geométrica. Traz exemplos e soluções de exercícios, o que o torna especialmente útil para estudo autodidata. Funciona muito bem como apoio paralelo, sem substituir os livros principais da fase.</div>
+      <div class="livro-desc">A short, motivating, and quite friendly text for consolidating geometric intuition. Includes examples and worked exercises, making it especially useful for self-study. Works very well as parallel support without replacing the main books of the phase.</div>
       </div>
     </div>
     <div class="livro">
       <img class="livro-capa" src="../assets/covers/jeffrey_lee.jpg" alt="capa">
       <div class="livro-content">
-      <div class="livro-top"><span class="livro-titulo">Manifolds and Differential Geometry</span><span class="tag tr">Referência</span></div>
+      <div class="livro-top"><span class="livro-titulo">Manifolds and Differential Geometry</span><span class="tag tr">Reference</span></div>
       <div class="livro-autor">Jeffrey M. Lee</div>
-      <div class="livro-desc">Referência ampla e robusta para variedades e geometria diferencial. É mais extenso do que o necessário para uma primeira passagem, mas excelente para consulta, aprofundamento e conexão entre os vários tópicos da fase.</div>
+      <div class="livro-desc">A broad and robust reference for manifolds and differential geometry. More extensive than needed for a first pass, but excellent for consultation, deepening, and connecting the various topics of the phase.</div>
       </div>
     </div>
   </div>
-  <div class="absorver"><b>O que absorver</b><ul>
-    <li>Passagem de curvas e superfícies para variedades</li>
-    <li>Subvariedades euclidianas e exemplos geométricos</li>
-    <li>Campos vetoriais e formas diferenciais em contexto geométrico</li>
-    <li>Fibrados tangente e cotangente em exemplos concretos</li>
-    <li>Conexões e derivada covariante</li>
-    <li>Curvatura de uma conexão</li>
-    <li>Primeiras ideias de classes características</li>
-    <li>Intuição geométrica para exemplos fundamentais</li>
-  </ul><p class="minimo"><span>Mínimo para avançar:</span>entender a passagem da geometria clássica de curvas e superfícies para variedades, saber interpretar campos, formas, conexões e curvatura em exemplos fundamentais, e reconhecer o papel geométrico de conexões sem precisar dominar classes características em profundidade</p></div>
-  <div class="gatilho c"><b>Pronto para avançar quando:</b>
+  <div class="absorver"><b>What to Absorb</b><ul>
+    <li>Transition from curves and surfaces to manifolds</li>
+    <li>Euclidean submanifolds and geometric examples</li>
+    <li>Vector fields and differential forms in a geometric context</li>
+    <li>Tangent and cotangent bundles in concrete examples</li>
+    <li>Connections and covariant derivative</li>
+    <li>Curvature of a connection</li>
+    <li>First ideas on characteristic classes</li>
+    <li>Geometric intuition for fundamental examples</li>
+  </ul><p class="minimo"><span>Minimum to Move On:</span>understanding the transition from classical curve-and-surface geometry to manifolds, interpreting fields, forms, connections, and curvature in fundamental examples, and recognizing the geometric role of connections without needing to master characteristic classes in depth</p></div>
+  <div class="gatilho c"><b>Ready to Move On When:</b>
   <ul>
-    <li>Consegue relacionar exemplos de curvas e superfícies com a linguagem mais geral de variedades</li>
-    <li>Entende campos vetoriais, formas diferenciais e fibrados tangente/cotangente em exemplos concretos</li>
-    <li>Consegue explicar a ideia de conexão como forma de derivar campos ao longo de direções</li>
-    <li>Reconhece curvatura como obstrução geométrica à trivialidade local de uma conexão</li>
-    <li>Entende por que Tu entra como segundo momento moderno, não como ponto de partida obrigatório</li>
+    <li>You can relate examples of curves and surfaces to the more general language of manifolds</li>
+    <li>You understand vector fields, differential forms, and tangent/cotangent bundles in concrete examples</li>
+    <li>You can explain the idea of a connection as a way of differentiating fields along directions</li>
+    <li>You recognize curvature as a geometric obstruction to the local triviality of a connection</li>
+    <li>You understand why Tu enters as a second modern moment, not as the required starting point</li>
   </ul>
 </div>
 </div>
@@ -3359,63 +3359,63 @@ flowchart LR
   <div class="fase-top">
     <div class="fase-num">30</div>
     <div class="fase-hd">
-      <div class="fase-marker"><span class="dot dc"></span><span style="color:var(--t3)">Completa</span></div>
-      <div class="fase-titulo">Variedades Diferenciáveis</div>
-      <div class="fase-sub">O framework moderno da geometria e da física matemática</div>
+      <div class="fase-marker"><span class="dot dc"></span><span style="color:var(--t3)">Complete</span></div>
+      <div class="fase-titulo">Differentiable Manifolds</div>
+      <div class="fase-sub">The modern framework of geometry and mathematical physics</div>
     </div>
   </div>
-  <div class="fase-meta"><span class="meta">📚 4 livros: 1 principal + 1 referência + 2 complementares</span></div>
-  <div class="prereq">Fase 12 (Topologia); Fase 29 recomendada como apoio geométrico</div>
-  <p class="fase-desc">Contato com as variedades abstratas, espaços que localmente se parecem com ℝⁿ, mas podem ter topologia global complexa. O ambiente natural da física teórica, da geometria moderna e da topologia diferencial. O Tu é mais amigável para self study; o John M. Lee é a referência completa.</p>
-  <div class="nota"><b>Como estudar</b>Use Tu como primeira leitura para construir a linguagem básica de variedades diferenciáveis, formas diferenciais e cohomologia de de Rham com boa progressão. Lee funciona como referência ampla e moderna para consulta, especialmente quando precisar de mais detalhes técnicos. Conlon deve entrar como complementar avançado: é mais exigente e mais focado, aprofunda álgebra tensorial, formas, integração, Stokes e de Rham com mais densidade. Jänich pode ser usado como ponte geométrica entre cálculo vetorial, formas diferenciais e a linguagem abstrata de variedades.</div>
-  <p class="livros-label">Livros</p>
+  <div class="fase-meta"><span class="meta">📚 4 books: 1 main + 1 reference + 2 complementary</span></div>
+  <div class="prereq">Phase 12 (Topology); Phase 29 recommended as geometric support</div>
+  <p class="fase-desc">An encounter with abstract manifolds — spaces that locally resemble ℝⁿ but can have complex global topology. The natural setting for theoretical physics, modern geometry, and differential topology. Tu is more accessible for self-study; John M. Lee is the complete reference.</p>
+  <div class="nota"><b>How to Study</b>Use Tu as the first reading to build the basic language of differentiable manifolds, differential forms, and de Rham cohomology with good progression. Lee works as a broad and modern reference for consultation, especially when more technical detail is needed. Conlon should enter as an advanced complement: more demanding and more focused, it deepens tensor algebra, exterior algebra, and form theory more substantially than Tu, Lee, or Jänich, and advances to integration of forms, Stokes' theorem, singular homology, exact sequences, Mayer-Vietoris, and de Rham cohomology. It also covers flows, foliations, Lie groups, an introduction to Riemannian geometry, and principal bundles. Use after Tu or in parallel with Lee, especially for a more focused and deeper route through differential forms, chain integration, and de Rham theory, without entering the encyclopedic character of Lee. Jänich can be used as a geometric bridge between vector calculus, differential forms, and the abstract language of manifolds.</div>
+  <p class="livros-label">Books</p>
   <div class="livros">
     <div class="livro">
       <img class="livro-capa" src="../assets/covers/tu.jpg" alt="capa">
       <div class="livro-content">
-      <div class="livro-top"><span class="livro-titulo">An Introduction to Manifolds</span><span class="tag tp">Principal</span></div>
+      <div class="livro-top"><span class="livro-titulo">An Introduction to Manifolds</span><span class="tag tp">Main</span></div>
       <div class="livro-autor">Loring W. Tu</div>
-      <div class="livro-desc">Mais acessível e auto-contido que o Lee, com progressão cuidadosa e exemplos ricos. É a primeira escolha para quem aprende o assunto sozinho. Raramente um livro técnico combina tão bem rigor e clareza.
+      <div class="livro-desc">More accessible and self-contained than Lee, with careful progression and rich examples. The first choice for those learning the subject on their own. Rarely does a technical book combine rigor and clarity so well.
       </div>
       </div>
     </div>
     <div class="livro">
       <img class="livro-capa" src="../assets/covers/conlon.jpg" alt="capa">
       <div class="livro-body">
-        <div class="livro-top"><span class="livro-titulo">Differentiable Manifolds</span><span class="tag tc">Complementar</span></div>
+        <div class="livro-top"><span class="livro-titulo">Differentiable Manifolds</span><span class="tag tc">Complementary</span></div>
         <div class="livro-autor">Lawrence Conlon</div>
-        <div class="livro-desc">Complementar avançado da fase. É provavelmente o texto mais profundo entre os livros deste bloco: trata variedades diferenciáveis com rigor, desenvolve álgebra tensorial, álgebra exterior e teoria de formas em nível mais substancial que Tu, Lee e Jänich, e avança até integração de formas, teorema de Stokes, homologia singular, sequências exatas, Mayer–Vietoris e cohomologia de de Rham. Também inclui fluxos, folheações, grupos de Lie, uma introdução à geometria riemanniana e fibrados principais. Use depois de Tu ou em paralelo com Lee, especialmente se quiser uma rota mais focada e profunda para formas diferenciais, integração em cadeias e de Rham, sem entrar no caráter mais enciclopédico do Lee.</div>
+        <div class="livro-desc">An advanced complement for the phase. Probably the deepest text among the books in this block: treats differentiable manifolds rigorously, develops tensor algebra, exterior algebra, and form theory more substantially than Tu, Lee, or Jänich, and advances to integration of forms, Stokes' theorem, singular homology, exact sequences, Mayer-Vietoris, and de Rham cohomology. Also covers flows, foliations, Lie groups, an introduction to Riemannian geometry, and principal bundles. Use after Tu or in parallel with Lee, especially if you want a more focused and deeper route through differential forms, chain integration, and de Rham theory, without the encyclopedic character of Lee.</div>
       </div>
     </div>
     <div class="livro">
       <img class="livro-capa" src="../assets/covers/janich_vector.webp" alt="capa">
       <div class="livro-content">
-      <div class="livro-top"><span class="livro-titulo">Vector Analysis</span><span class="tag tc">Complementar</span></div>
+      <div class="livro-top"><span class="livro-titulo">Vector Analysis</span><span class="tag tc">Complementary</span></div>
       <div class="livro-autor">Klaus Jänich</div>
-      <div class="livro-desc">Jänich é uma excelente ponte entre a análise em várias variáveis da Fase 10, formas diferenciais e variedades abstratas. Geométrico, visual e conceitualmente claro, ajuda a conectar a linguagem clássica do cálculo vetorial com a linguagem moderna das formas. Carrega bem a marca da escola alemã: rigoroso e cuidadosamente estruturado, sem abrir mão da intuição geométrica. É um livro menos conhecido do que deveria, especialmente pela forma como conecta intuição geométrica, cálculo vetorial e formas diferenciais.</div>
+      <div class="livro-desc">Jänich is an excellent bridge between multivariable analysis, differential forms, and abstract manifolds. Geometric, visual, and conceptually clear, it helps connect the classical language of vector calculus with the modern language of forms. A hallmark of the German school: rigorous and carefully structured, without sacrificing geometric intuition. Less widely known than it deserves, especially for the way it connects geometric intuition, vector calculus, and differential forms.</div>
       </div>
     </div>
     <div class="livro">
       <img class="livro-capa" src="../assets/covers/lee_manifolds.jpg" alt="capa">
       <div class="livro-content">
-      <div class="livro-top"><span class="livro-titulo">Introduction to Smooth Manifolds</span><span class="tag tr">Referência</span></div>
+      <div class="livro-top"><span class="livro-titulo">Introduction to Smooth Manifolds</span><span class="tag tr">Reference</span></div>
       <div class="livro-autor">John M. Lee</div>
-      <div class="livro-desc">A referência moderna e completa de variedades suaves. Cobre todo o maquinário: fibrados, conexões, métricas riemannianas, formas diferenciais, cohomologia de De Rham, com rigor e profundidade enciclopédicos. Use como consulta enquanto estuda o Tu.
+      <div class="livro-desc">The modern and complete reference for smooth manifolds. Covers all the machinery: bundles, connections, Riemannian metrics, differential forms, de Rham cohomology, with encyclopedic rigor and depth. Use as a reference while studying Tu.
       </div>
       </div>
     </div>  </div>
-  <div class="absorver"><b>O que absorver</b><ul>
-    <li>Variedades diferenciáveis: atlas, cartas, estrutura suave</li>
-    <li>Fibrado tangente e cotangente, campos vetoriais e fluxos</li>
-    <li>Subvariedades e teorema da função implícita em variedades</li>
-    <li>Formas diferenciais e operador exterior</li>
-    <li>Orientação e integração em variedades</li>
-    <li>Teorema de Stokes em variedades</li>
-  </ul><p class="minimo"><span>Mínimo para avançar:</span>os tópicos acima pelo Tu</p></div>
-  <div class="gatilho c"><b>Pronto para avançar quando:</b><ul>
-    <li>Constrói exemplos de variedades com atlas explícito</li>
-    <li>Trabalha com fibrado tangente e formas diferenciais com conforto</li>
-    <li>Entende o Teorema de Stokes como resultado unificador em variedades</li>
+  <div class="absorver"><b>What to Absorb</b><ul>
+    <li>Differentiable manifolds: atlas, charts, smooth structure</li>
+    <li>Tangent and cotangent bundles, vector fields, and flows</li>
+    <li>Submanifolds and the implicit function theorem on manifolds</li>
+    <li>Differential forms and the exterior derivative</li>
+    <li>Orientation and integration on manifolds</li>
+    <li>Stokes' theorem on manifolds</li>
+  </ul><p class="minimo"><span>Minimum to Move On:</span>the topics above via Tu</p></div>
+  <div class="gatilho c"><b>Ready to Move On When:</b><ul>
+    <li>You can construct examples of manifolds with an explicit atlas</li>
+    <li>You work with the tangent bundle and differential forms with confidence</li>
+    <li>You understand Stokes' theorem as a unifying result on manifolds</li>
   </ul></div>
 </div>
 
@@ -3426,59 +3426,59 @@ flowchart LR
   <div class="fase-top">
     <div class="fase-num">31</div>
     <div class="fase-hd">
-      <div class="fase-marker"><span class="dot dc"></span><span style="color:var(--t3)">Completa</span></div>
-      <div class="fase-titulo">Geometria Riemanniana</div>
-      <div class="fase-sub">Métricas, geodésicas e curvatura</div>
+      <div class="fase-marker"><span class="dot dc"></span><span style="color:var(--t3)">Complete</span></div>
+      <div class="fase-titulo">Riemannian Geometry</div>
+      <div class="fase-sub">Metrics, geodesics, and curvature</div>
     </div>
   </div>
-  <div class="fase-meta"><span class="meta">📚 3 livros: 1 principal + 1 complementar + 1 referência</span></div>
-  <div class="prereq">Fase 30 (Variedades Diferenciáveis)</div>
-  <p class="fase-desc">Esta fase estuda variedades suaves equipadas com uma métrica Riemanniana. A partir daí, passam a fazer sentido noções geométricas como comprimento, ângulo, volume, geodésicas, conexão de Levi-Civita e curvaturas métricas. A fase anterior de Geometria Diferencial e esta fase não são redundantes: a primeira organiza a linguagem geral de campos, formas, fibrados, conexões e curvatura; esta fase estuda o caso especial, mas central, em que a variedade possui uma métrica, permitindo medir, comparar, curvar e estudar globalmente os espaços diferenciáveis.</p>
-  <div class="nota"><b>Como estudar</b>Use Lee como referência central: métricas, conexão de Levi-Civita, geodésicas e curvatura devem ficar claros em exemplos fundamentais. A fase de Geometria Diferencial anterior é altamente recomendada, pois ajuda na intuição sobre conexões e curvatura, mas o pré-requisito essencial é a linguagem de Variedades Diferenciáveis. Godinho e Natário podem ser usados como apoio mais acessível e motivador, especialmente para ver aplicações geométricas e físicas. Jost entra apenas como referência avançada para consulta seletiva, sobretudo para quem quiser se aproximar de análise geométrica.</div>
-  <p class="livros-label">Livros</p>
+  <div class="fase-meta"><span class="meta">📚 3 books: 1 main + 1 complementary + 1 reference</span></div>
+  <div class="prereq">Phase 30 (Differentiable Manifolds)</div>
+  <p class="fase-desc">This phase studies smooth manifolds equipped with a Riemannian metric. With that structure in place, geometric notions such as length, angle, volume, geodesics, the Levi-Civita connection, and metric curvatures all become meaningful. The preceding Differential Geometry phase and this one are not redundant: the former organizes the general language of fields, forms, bundles, connections, and curvature; this phase studies the special — but central — case in which the manifold carries a metric, enabling measurement, comparison, curvature, and global study of differentiable spaces.</p>
+  <div class="nota"><b>How to Study</b>Use Lee as the central reference: metrics, the Levi-Civita connection, geodesics, and curvature should become clear through fundamental examples. The preceding Differential Geometry phase is highly recommended, as it builds intuition for connections and curvature, but the essential prerequisite is the language of Differentiable Manifolds. Godinho and Natário can be used as a more accessible and motivating support, especially for seeing geometric and physical applications. Jost enters only as an advanced reference for selective consultation, particularly for those who want to approach geometric analysis.</div>
+  <p class="livros-label">Books</p>
   <div class="livros">
     <div class="livro">
       <img class="livro-capa" src="../assets/covers/lee_rm.jpg" alt="capa">
       <div class="livro-content">
-      <div class="livro-top"><span class="livro-titulo">Riemannian Manifolds: An Introduction to Curvature</span><span class="tag tp">Principal</span></div>
+      <div class="livro-top"><span class="livro-titulo">Riemannian Manifolds: An Introduction to Curvature</span><span class="tag tp">Main</span></div>
       <div class="livro-autor">John M. Lee</div>
-      <div class="livro-desc">Texto principal da fase. Apresenta métricas Riemannianas, conexão de Levi-Civita, geodésicas e curvatura com clareza, rigor e boa progressão. Deve ser o eixo para entender a geometria métrica em variedades.</div>
+      <div class="livro-desc">Main text for the phase. Presents Riemannian metrics, the Levi-Civita connection, geodesics, and curvature with clarity, rigor, and good progression. Should be the axis for understanding metric geometry on manifolds.</div>
       </div>
     </div>
     <div class="livro">
       <img class="livro-capa" src="../assets/covers/godinho.webp" alt="capa">
       <div class="livro-content">
-      <div class="livro-top"><span class="livro-titulo">An Introduction to Riemannian Geometry: With Applications to Mechanics and Relativity</span><span class="tag tc">Complementar</span></div>
+      <div class="livro-top"><span class="livro-titulo">An Introduction to Riemannian Geometry: With Applications to Mechanics and Relativity</span><span class="tag tc">Complementary</span></div>
       <div class="livro-autor">Leonor Godinho and José Natário</div>
-      <div class="livro-desc">Complemento acessível e muito útil, com abordagem amigável e motivada por exemplos. Ajuda a reforçar métricas, geodésicas, curvatura e aplicações geométricas, servindo como apoio para quem quer uma entrada menos pesada antes ou durante o estudo pelo Lee. Também apresenta conexões interessantes com a Física, especialmente Mecânica e Relatividade.</div>
+      <div class="livro-desc">An accessible and very useful complement, with a friendly and example-driven approach. Helps reinforce metrics, geodesics, curvature, and geometric applications, serving as support for those who want a less demanding entry before or alongside Lee. Also presents interesting connections with physics, especially Mechanics and Relativity.</div>
       </div>
     </div>
     <div class="livro">
       <img class="livro-capa" src="../assets/covers/jost.webp" alt="capa">
       <div class="livro-content">
-      <div class="livro-top"><span class="livro-titulo">Riemannian Geometry and Geometric Analysis</span><span class="tag tr">Referência</span></div>
+      <div class="livro-top"><span class="livro-titulo">Riemannian Geometry and Geometric Analysis</span><span class="tag tr">Reference</span></div>
       <div class="livro-autor">Jürgen Jost</div>
-      <div class="livro-desc">Referência avançada para consulta seletiva. É mais exigente e analítico, cobrindo geometria Riemanniana com temas de análise geométrica. Não deve ser tratado como leitura obrigatória linear nesta fase, mas como aprofundamento para quem quiser ir além.</div>
+      <div class="livro-desc">An advanced reference for selective consultation. More demanding and analytic, covering Riemannian geometry with topics from geometric analysis. Should not be treated as mandatory linear reading at this phase, but as enrichment for those who want to go further.</div>
       </div>
     </div>
   </div>
-  <div class="absorver"><b>O que absorver</b><ul>
-    <li>Métricas Riemannianas</li>
-    <li>Conexão de Levi-Civita</li>
-    <li>Derivada covariante</li>
-    <li>Geodésicas e transporte paralelo</li>
-    <li>Curvatura seccional</li>
-    <li>Curvatura de Ricci e curvatura escalar em nível introdutório</li>
-    <li>Exemplos fundamentais: espaços euclidianos, esfera, toro e variedades de baixa dimensão</li>
-    <li>Primeiras ideias de geometria global, quando apropriado</li>
-  </ul><p class="minimo"><span>Mínimo para avançar:</span>entender métricas Riemannianas, conexão de Levi-Civita, geodésicas, transporte paralelo e curvaturas seccional, de Ricci e escalar em exemplos fundamentais, sem precisar dominar comparação, teoremas globais ou análise geométrica avançada</p></div>
-  <div class="gatilho c"><b>Pronto para avançar quando:</b>
+  <div class="absorver"><b>What to Absorb</b><ul>
+    <li>Riemannian metrics</li>
+    <li>Levi-Civita connection</li>
+    <li>Covariant derivative</li>
+    <li>Geodesics and parallel transport</li>
+    <li>Sectional curvature</li>
+    <li>Ricci curvature and scalar curvature at an introductory level</li>
+    <li>Fundamental examples: Euclidean spaces, sphere, torus, and low-dimensional manifolds</li>
+    <li>First ideas of global geometry, where appropriate</li>
+  </ul><p class="minimo"><span>Minimum to Move On:</span>understanding Riemannian metrics, the Levi-Civita connection, geodesics, parallel transport, and sectional, Ricci, and scalar curvatures in fundamental examples — without needing to master comparison geometry, global theorems, or advanced geometric analysis</p></div>
+  <div class="gatilho c"><b>Ready to Move On When:</b>
   <ul>
-    <li>Consegue explicar como uma métrica Riemanniana permite medir comprimentos, ângulos e volumes</li>
-    <li>Entende a conexão de Levi-Civita como conexão compatível com a métrica e sem torção</li>
-    <li>Consegue trabalhar com geodésicas e transporte paralelo em exemplos básicos</li>
-    <li>Reconhece as diferenças entre curvatura seccional, de Ricci e escalar em nível introdutório</li>
-    <li>Consegue calcular ou interpretar exemplos simples como espaço euclidiano, esfera e toro</li>
+    <li>You can explain how a Riemannian metric allows measuring lengths, angles, and volumes</li>
+    <li>You understand the Levi-Civita connection as the connection compatible with the metric and torsion-free</li>
+    <li>You can work with geodesics and parallel transport in basic examples</li>
+    <li>You recognize the distinctions between sectional, Ricci, and scalar curvature at an introductory level</li>
+    <li>You can compute or interpret simple examples such as Euclidean space, the sphere, and the torus</li>
   </ul>
 </div>
 </div>
@@ -3490,48 +3490,48 @@ flowchart LR
   <div class="fase-top">
     <div class="fase-num">32</div>
     <div class="fase-hd">
-      <div class="fase-marker"><span class="dot dc"></span><span style="color:var(--t3)">Completa</span></div>
-      <div class="fase-titulo">Variedades, Feixes e Cohomologia</div>
+      <div class="fase-marker"><span class="dot dc"></span><span style="color:var(--t3)">Complete</span></div>
+      <div class="fase-titulo">Manifolds, Sheaves, and Cohomology</div>
     </div>
   </div>
-  <div class="fase-meta"><span class="meta">📚 1 livro</span></div>
-  <div class="prereq">Fases 9, 12 e 30 (Álgebra I; Topologia; Variedades Diferenciáveis)</div>
+  <div class="fase-meta"><span class="meta">📚 1 book</span></div>
+  <div class="prereq">Phases 9, 12, and 30 (Algebra I; Topology; Differentiable Manifolds)</div>
 
-  <div class="nota aviso"><b>Nota</b>Esta fase requer boa familiaridade com variedades diferenciáveis e álgebra, cobertas pelas fases anteriores. É uma leitura avançada que conecta geometria diferencial com a linguagem moderna de feixes, a mesma que aparece em geometria algébrica. Não é necessária para a maioria das direções de pesquisa em geometria diferencial clássica ou análise.</div>
-  <div class="nota"><b>Como estudar</b>Esta fase é avançada, mas o objetivo inicial não é dominar toda a teoria de feixes ou cohomologia em máxima generalidade. Use Wedhorn como uma ponte entre variedades, geometria global e linguagem local-global. Leia com atenção a motivação: por que dados locais nem sempre colam globalmente, como feixes organizam seções locais e por que cohomologia detecta obstruções. Apêndices e partes mais homológicas podem ser usados seletivamente para consulta.</div>
+  <div class="nota aviso"><b>Note</b>This phase requires good familiarity with differentiable manifolds and algebra, covered by the preceding phases. It is an advanced reading that connects differential geometry with the modern language of sheaves — the same language that appears in algebraic geometry. It is not necessary for most research directions in classical differential geometry or analysis.</div>
+  <div class="nota"><b>How to Study</b>This phase is advanced, but the initial goal is not to master the full theory of sheaves or cohomology in maximum generality. Use Wedhorn as a bridge between manifolds, global geometry, and the local-to-global language. Read the motivation carefully: why local data does not always glue globally, how sheaves organize local sections, and why cohomology detects obstructions. Appendices and the more homological parts can be used selectively for consultation.</div>
 
-  <p class="fase-desc">Introdução à linguagem de feixes e cohomologia no contexto das variedades diferenciáveis. O Wedhorn constrói a teoria de feixes de forma rigorosa e a aplica ao estudo de variedades, preparando o terreno para a geometria algébrica moderna e a geometria complexa.</p>
-  <p class="livros-label">Livros</p>
+  <p class="fase-desc">An introduction to the language of sheaves and cohomology in the context of differentiable manifolds. Wedhorn builds sheaf theory rigorously and applies it to the study of manifolds, preparing the ground for modern algebraic geometry and complex geometry.</p>
+  <p class="livros-label">Books</p>
   <div class="livros">
     <div class="livro">
       <img class="livro-capa" src="../assets/covers/wedhorn.webp" alt="capa">
       <div class="livro-content">
-      <div class="livro-top"><span class="livro-titulo">Manifolds, Sheaves and Cohomology</span><span class="tag tp">Principal</span></div>
+      <div class="livro-top"><span class="livro-titulo">Manifolds, Sheaves and Cohomology</span><span class="tag tp">Main</span></div>
       <div class="livro-autor">Torsten Wedhorn</div>
-      <div class="livro-desc">Introdução rigorosa à teoria de feixes no contexto das variedades diferenciáveis. Cobre feixes, cohomologia de De Rham, cohomologia de feixes e suas relações. É o texto mais acessível que conheço para entrar nessa linguagem sem abrir mão do rigor.
+      <div class="livro-desc">A rigorous introduction to sheaf theory in the context of differentiable manifolds. Covers sheaves, de Rham cohomology, sheaf cohomology, and their relationships. The most accessible text I know for entering this language without sacrificing rigor.
       </div>
       </div>
     </div>
   </div>
-  <div class="absorver"><b>O que absorver</b>
+  <div class="absorver"><b>What to Absorb</b>
   <ul>
-    <li>Variedades como espaços geométricos globais</li>
-    <li>Pré-feixes, feixes e exemplos concretos</li>
-    <li>Seções locais, seções globais e condição de colagem</li>
-    <li>Morfismos de feixes e sequências exatas curtas</li>
-    <li>Feixes de funções, formas diferenciais, feixes constantes e exemplos geométricos</li>
-    <li>Ideia de cohomologia como medida de obstruções globais</li>
-    <li>Primeiro contato com cohomologia de Čech ou cohomologia de feixes, sem exigir domínio técnico completo</li>
+    <li>Manifolds as global geometric spaces</li>
+    <li>Presheaves, sheaves, and concrete examples</li>
+    <li>Local sections, global sections, and the gluing condition</li>
+    <li>Morphisms of sheaves and short exact sequences</li>
+    <li>Sheaves of functions, differential forms, constant sheaves, and geometric examples</li>
+    <li>The idea of cohomology as a measure of global obstructions</li>
+    <li>First contact with Cech cohomology or sheaf cohomology, without requiring complete technical mastery</li>
   </ul>
-  <p class="minimo"><span>Mínimo para avançar:</span>entender o que é um feixe, como seções locais se colam, por que a cohomologia mede informação global que não aparece apenas localmente, e como essa linguagem prepara para geometria algébrica e topologia algébrica</p>
+  <p class="minimo"><span>Minimum to Move On:</span>understanding what a sheaf is, how local sections glue together, why cohomology measures global information not visible locally, and how this language prepares for algebraic geometry and algebraic topology</p>
 </div>
-  <div class="gatilho c"><b>Pronto para avançar quando:</b>
+  <div class="gatilho c"><b>Ready to Move On When:</b>
   <ul>
-    <li>Consegue explicar a diferença entre dados locais e dados globais</li>
-    <li>Entende a condição de colagem de seções locais compatíveis</li>
-    <li>Consegue dar exemplos simples de feixes de funções, formas diferenciais e feixe constante</li>
-    <li>Reconhece sequências exatas curtas de feixes em nível conceitual</li>
-    <li>Entende por que cohomologia aparece como linguagem natural para obstruções globais</li>
+    <li>You can explain the difference between local and global data</li>
+    <li>You understand the gluing condition for compatible local sections</li>
+    <li>You can give simple examples of function sheaves, differential form sheaves, and the constant sheaf</li>
+    <li>You recognize short exact sequences of sheaves at a conceptual level</li>
+    <li>You understand why cohomology appears as the natural language for global obstructions</li>
   </ul>
 </div>
 </div>
@@ -3543,72 +3543,72 @@ flowchart LR
   <div class="fase-top">
     <div class="fase-num">33</div>
     <div class="fase-hd">
-      <div class="fase-marker"><span class="dot dc"></span><span style="color:var(--t3)">Completa</span></div>
-      <div class="fase-titulo">Topologia Algébrica e Categorias</div>
-      <div class="fase-sub">Álgebra, Topologia e linguagem unificadora</div>
+      <div class="fase-marker"><span class="dot dc"></span><span style="color:var(--t3)">Complete</span></div>
+      <div class="fase-titulo">Algebraic Topology and Category Theory</div>
+      <div class="fase-sub">Algebra, topology, and a unifying language</div>
     </div>
   </div>
-  <div class="fase-meta"><span class="meta">📚 4 livros: 2 principais + 2 alternativos</span></div>
-  <div class="prereq">Fases 9 e 12 (Álgebra I; Topologia)</div>
-  <p class="fase-desc">Topologia Algébrica usa ferramentas algébricas para distinguir espaços topológicos. O grupo fundamental e a homologia contam buracos de diferentes dimensões. Teoria das Categorias entra aqui como linguagem unificadora, não antes, quando vira formalismo vazio sem exemplos suficientes.</p>
-  <div class="nota"><b>Como estudar</b>Para Topologia Algébrica, use Rotman como referência principal: é exigente, mas tem progressão cuidadosa e estrutura favorável ao estudo autodidata. Hatcher é uma alternativa gratuita, geométrica e muito influente, mas seu estilo divide opiniões: para alguns leitores, a abordagem é extremamente iluminadora; para outros, pode parecer pouco linear para estudar sozinho. Para Categorias, Riehl é uma das melhores referências modernas; Awodey é uma alternativa mais acessível para uma primeira passagem.</div>
-  <p class="livros-label">Topologia Algébrica</p>
+  <div class="fase-meta"><span class="meta">📚 4 books: 2 main + 2 alternative</span></div>
+  <div class="prereq">Phases 9 and 12 (Algebra I; Topology)</div>
+  <p class="fase-desc">Algebraic Topology uses algebraic tools to distinguish topological spaces. The fundamental group and homology count holes in different dimensions. Category Theory enters here as a unifying language — not before, when it becomes empty formalism without enough examples to give it meaning.</p>
+  <div class="nota"><b>How to Study</b>For Algebraic Topology, use Rotman as the main reference: demanding, but with careful progression and a structure well suited to self-study. Hatcher is a free, geometric, and highly influential alternative, but its style divides opinions: for some readers, the approach is deeply illuminating; for others, it can feel non-linear for studying alone. For Category Theory, Riehl is one of the best modern references; Awodey is a more accessible alternative for a first pass.</div>
+  <p class="livros-label">Algebraic Topology</p>
   <div class="livros">
     <div class="livro">
       <img class="livro-capa" src="../assets/covers/rotman.webp" alt="capa">
       <div class="livro-content">
-      <div class="livro-top"><span class="livro-titulo">An Introduction to Algebraic Topology</span><span class="tag tp">Principal</span></div>
+      <div class="livro-top"><span class="livro-titulo">An Introduction to Algebraic Topology</span><span class="tag tp">Main</span></div>
       <div class="livro-autor">Joseph Rotman</div>
-      <div class="livro-desc">Exigente, mas sólido. A progressão é cuidadosa, o rigor é total e a estrutura favorece quem estuda sozinho. Um dos melhores livros para entrar em topologia algébrica com seriedade.
+      <div class="livro-desc">Demanding, but solid. The progression is careful, the rigor is complete, and the structure favors self-study readers. One of the best books for entering algebraic topology seriously.
       </div>
       </div>
     </div>
     <div class="livro">
       <img class="livro-capa" src="../assets/covers/hatcher.jpg" alt="capa">
       <div class="livro-content">
-      <div class="livro-top"><span class="livro-titulo">Algebraic Topology</span><span class="tag to">Alternativo</span><a href="https://pi.math.cornell.edu/~hatcher/AT/ATpage.html" target="_blank" class="tag-free">Grátis ↗</a></div>
+      <div class="livro-top"><span class="livro-titulo">Algebraic Topology</span><span class="tag to">Alternative</span><a href="https://pi.math.cornell.edu/~hatcher/AT/ATpage.html" target="_blank" class="tag-free">Free ↗</a></div>
       <div class="livro-autor">Allen Hatcher</div>
-      <div class="livro-desc">Disponível gratuitamente no site do autor. É uma referência clássica, geométrica e muito influente. Seu estilo divide opiniões: pode ser excelente para quem gosta de intuição geométrica forte, mas menos previsível para estudo autodidata linear. Vale conhecer e decidir por si mesmo.
+      <div class="livro-desc">Freely available on the author's website. A classic, geometric, and highly influential reference. Its style divides opinions: it can be excellent for those who enjoy strong geometric intuition, but less predictable for linear self-study. Worth exploring and deciding for yourself.
       </div>
       </div>
     </div>
   </div>
-  <p class="livros-label" style="margin-top:16px">Teoria das Categorias</p>
+  <p class="livros-label" style="margin-top:16px">Category Theory</p>
   <div class="livros">
     <div class="livro">
       <img class="livro-capa" src="../assets/covers/riehl.jpg" alt="capa">
       <div class="livro-content">
-      <div class="livro-top"><span class="livro-titulo">Category Theory in Context</span><span class="tag tp">Principal</span><a href="https://emilyriehl.github.io/files/context.pdf" target="_blank" class="tag-free">Grátis ↗</a></div>
+      <div class="livro-top"><span class="livro-titulo">Category Theory in Context</span><span class="tag tp">Main</span><a href="https://emilyriehl.github.io/files/context.pdf" target="_blank" class="tag-free">Free ↗</a></div>
       <div class="livro-autor">Emily Riehl</div>
-      <div class="livro-desc">Uma das melhores referências modernas para estudar categorias com contexto matemático real. Exemplos ricos em Álgebra e Topologia, adjunções e lema de Yoneda tratados com elegância. Disponível gratuitamente no site da autora.
+      <div class="livro-desc">One of the best modern references for studying categories with genuine mathematical context. Rich examples from Algebra and Topology, adjunctions and the Yoneda lemma treated with elegance. Freely available on the author's website.
       </div>
       </div>
     </div>
     <div class="livro">
       <img class="livro-capa" src="../assets/covers/awodey.jpg" alt="capa">
       <div class="livro-content">
-      <div class="livro-top"><span class="livro-titulo">Category Theory</span><span class="tag to">Alternativo</span></div>
+      <div class="livro-top"><span class="livro-titulo">Category Theory</span><span class="tag to">Alternative</span></div>
       <div class="livro-autor">Steve Awodey</div>
-      <div class="livro-desc">Introdução clara e bem motivada à teoria das categorias. Menos densa que o Riehl, com mais espaço para exemplos e intuição antes da formalidade. Cobre categorias, funtores, transformações naturais e adjunções com bom ritmo para quem chega do zero na área.
+      <div class="livro-desc">A clear and well-motivated introduction to category theory. Less dense than Riehl, with more room for examples and intuition before formality. Covers categories, functors, natural transformations, and adjunctions at a good pace for those coming to the subject fresh.
       </div>
       </div>
     </div>
   </div>
-  <div class="absorver"><b>O que absorver</b><ul>
-    <li>Grupo fundamental π₁ e cálculo em espaços simples</li>
-    <li>Teoria de recobrimentos e levantamento de caminhos</li>
-    <li>Homologia singular: definição e cálculo</li>
-    <li>Sequência exata longa de um par</li>
-    <li>Categorias, funtores e transformações naturais</li>
-    <li>Adjunções e lema de Yoneda</li>
-  </ul><p class="minimo"><span>Mínimo para avançar:</span>os tópicos acima; um livro de topologia algébrica e um de categorias são suficientes</p></div>
-  <div class="gatilho c"><b>Pronto para avançar quando:</b>
+  <div class="absorver"><b>What to Absorb</b><ul>
+    <li>Fundamental group π₁ and computation in simple spaces</li>
+    <li>Covering space theory and path lifting</li>
+    <li>Singular homology: definition and computation</li>
+    <li>Long exact sequence of a pair</li>
+    <li>Categories, functors, and natural transformations</li>
+    <li>Adjunctions and the Yoneda lemma</li>
+  </ul><p class="minimo"><span>Minimum to Move On:</span>the topics above; one algebraic topology book and one category theory book are sufficient</p></div>
+  <div class="gatilho c"><b>Ready to Move On When:</b>
   <ul>
-    <li>Consegue calcular grupos fundamentais de espaços simples e interpretar recobrimentos básicos</li>
-    <li>Entende a ideia de homologia como invariante topológico computável</li>
-    <li>Consegue usar sequências exatas longas em exemplos simples</li>
-    <li>Entende categorias, funtores e transformações naturais como linguagem estrutural</li>
-    <li>Reconhece adjunções e o lema de Yoneda em exemplos básicos, sem precisar dominar teoria de categorias avançada</li>
+    <li>You can compute fundamental groups of simple spaces and interpret basic covering spaces</li>
+    <li>You understand the idea of homology as a computable topological invariant</li>
+    <li>You can use long exact sequences in simple examples</li>
+    <li>You understand categories, functors, and natural transformations as a structural language</li>
+    <li>You recognize adjunctions and the Yoneda lemma in basic examples, without needing to master advanced category theory</li>
   </ul>
 </div>
 </div>
@@ -3621,46 +3621,46 @@ flowchart LR
   <div class="fase-top">
     <div class="fase-num">34</div>
     <div class="fase-hd">
-      <div class="fase-marker"><span class="dot dc"></span><span style="color:var(--t3)">Completa</span></div>
-      <div class="fase-titulo">Álgebra Comutativa</div>
-      <div class="fase-sub">Pré-requisito para Geometria Algébrica</div>
+      <div class="fase-marker"><span class="dot dc"></span><span style="color:var(--t3)">Complete</span></div>
+      <div class="fase-titulo">Commutative Algebra</div>
+      <div class="fase-sub">A prerequisite for Algebraic Geometry</div>
     </div>
   </div>
-  <div class="fase-meta"><span class="meta">📚 2 livros: 1 principal + 1 complementar</span></div>
-  <div class="prereq">Fases 18 e 28 (Álgebra II; Álgebra Avançada)</div>
-  <p class="fase-desc">Álgebra Comutativa é a linguagem algébrica da Geometria Algébrica. Anéis noetherianos, módulos, localização, completamento e dimensão de Krull aparecem em toda a geometria algébrica moderna. É uma fase curta em número de livros, mas densa em ideias: não deve ser apressada.</p>
-  <div class="nota"><b>Como estudar</b>O Atiyah-MacDonald é um clássico absoluto: curto, denso, com exercícios fundamentais. Pode ser áspero na primeira leitura, mas é o livro canônico da área e não há substituto. O Reid é mais gentil e serve bem como leitura preparatória ou paralela para suavizar os pontos mais áridos do AM.</div>
-  <p class="livros-label">Livros</p>
+  <div class="fase-meta"><span class="meta">📚 2 books: 1 main + 1 complementary</span></div>
+  <div class="prereq">Phases 18 and 28 (Algebra II; Advanced Algebra)</div>
+  <p class="fase-desc">Commutative Algebra is the algebraic language of Algebraic Geometry. Noetherian rings, modules, localization, completion, and Krull dimension appear throughout modern algebraic geometry. This phase is short in number of books but dense in ideas: it should not be rushed.</p>
+  <div class="nota"><b>How to Study</b>Atiyah-MacDonald is an absolute classic: short, dense, with exercises that are an essential part of the text. It can be rough on a first reading, but it is the canonical book in the field and there is no substitute. Reid is gentler and works well as preparatory or parallel reading to soften the harder passages of AM.</div>
+  <p class="livros-label">Books</p>
   <div class="livros">
     <div class="livro">
       <img class="livro-capa" src="../assets/covers/atiyah.jpg" alt="capa">
       <div class="livro-body">
-        <div class="livro-top"><span class="livro-titulo">Introduction to Commutative Algebra</span><span class="tag tp">Principal</span></div>
+        <div class="livro-top"><span class="livro-titulo">Introduction to Commutative Algebra</span><span class="tag tp">Main</span></div>
         <div class="livro-autor">M. F. Atiyah e I. G. MacDonald</div>
-        <div class="livro-desc">Um clássico absoluto. Curto, denso e com exercícios que são parte essencial do texto. Pode ser áspero, mas é o livro canônico da álgebra comutativa. Quem dominar o AM está bem preparado para qualquer texto de geometria algébrica moderna.</div>
+        <div class="livro-desc">An absolute classic. Short, dense, and with exercises that are an essential part of the text. It can be rough, but it is the canonical book on commutative algebra. Those who master AM are well prepared for any text in modern algebraic geometry.</div>
       </div>
     </div>
     <div class="livro">
       <img class="livro-capa" src="../assets/covers/reid.jpg" alt="capa">
       <div class="livro-body">
-        <div class="livro-top"><span class="livro-titulo">Undergraduate Commutative Algebra</span><span class="tag tc">Complementar</span></div>
+        <div class="livro-top"><span class="livro-titulo">Undergraduate Commutative Algebra</span><span class="tag tc">Complementary</span></div>
         <div class="livro-autor">Miles Reid</div>
-        <div class="livro-desc">Mais acessível que o Atiyah-MacDonald, com mais motivação e contexto geométrico. Leitura paralela útil para quem quer entender o porquê dos conceitos antes de mergulhar na densidade do AM.</div>
+        <div class="livro-desc">More accessible than Atiyah-MacDonald, with more motivation and geometric context. A useful parallel reading for those who want to understand why the concepts are necessary before diving into the density of AM.</div>
       </div>
     </div>
   </div>
-  <div class="absorver"><b>O que absorver</b><ul>
-    <li>Anéis noetherianos e artinianos</li>
-    <li>Módulos: localização e completamento</li>
-    <li>Ideais primários e decomposição primária</li>
-    <li>Dimensão de Krull</li>
-    <li>Lema de Nakayama</li>
-    <li>Teorema dos zeros de Hilbert (Nullstellensatz)</li>
-  </ul><p class="minimo"><span>Mínimo para avançar:</span>os tópicos acima pelo AM ou Reid</p></div>
-  <div class="gatilho c"><b>Pronto para avançar quando:</b><ul>
-    <li>Trabalha com localização e módulos com conforto</li>
-    <li>Entende decomposição primária e dimensão de Krull</li>
-    <li>Consegue enunciar e aplicar o Nullstellensatz</li>
+  <div class="absorver"><b>What to Absorb</b><ul>
+    <li>Noetherian and Artinian rings</li>
+    <li>Modules: localization and completion</li>
+    <li>Primary ideals and primary decomposition</li>
+    <li>Krull dimension</li>
+    <li>Nakayama's lemma</li>
+    <li>Hilbert's Nullstellensatz</li>
+  </ul><p class="minimo"><span>Minimum to Move On:</span>the topics above via AM or Reid</p></div>
+  <div class="gatilho c"><b>Ready to Move On When:</b><ul>
+    <li>You work with localization and modules with confidence</li>
+    <li>You understand primary decomposition and Krull dimension</li>
+    <li>You can state and apply the Nullstellensatz</li>
   </ul></div>
 </div>
 
@@ -3671,51 +3671,51 @@ flowchart LR
   <div class="fase-top">
     <div class="fase-num">35</div>
     <div class="fase-hd">
-      <div class="fase-marker"><span class="dot dc"></span><span style="color:var(--t3)">Completa</span></div>
-      <div class="fase-titulo">Geometria Algébrica Introdutória</div>
-      <div class="fase-sub">Álgebra e Geometria em sua forma mais profunda</div>
+      <div class="fase-marker"><span class="dot dc"></span><span style="color:var(--t3)">Complete</span></div>
+      <div class="fase-titulo">Algebraic Geometry I</div>
+      <div class="fase-sub">Algebra and geometry in their most profound form</div>
     </div>
   </div>
-  <div class="fase-meta"><span class="meta">📚 2 livros: 1 principal + 1 complementar</span></div>
-  <div class="prereq">Fase 34 (Álgebra Comutativa)</div>
-  <p class="fase-desc">Geometria Algébrica estuda os conjuntos de zeros de sistemas de equações polinomiais, conectando álgebra comutativa, topologia e geometria de forma profunda. Esta fase cobre uma introdução acessível antes da referência avançada da fase seguinte.</p>
-  <div class="nota"><b>Como estudar</b>Use esta fase como entrada geométrica na álgebra comutativa. O objetivo é aprender a traduzir entre equações polinomiais e objetos algébricos: ideais, anéis de coordenadas, morfismos e topologia de Zariski. Não tente antecipar toda a linguagem de esquemas aqui. Trabalhe muitos exemplos afins e projetivos simples antes de avançar para a fase seguinte.</div>
-  <p class="livros-label">Livros</p>
+  <div class="fase-meta"><span class="meta">📚 2 books: 1 main + 1 complementary</span></div>
+  <div class="prereq">Phase 34 (Commutative Algebra)</div>
+  <p class="fase-desc">Algebraic Geometry studies the zero sets of systems of polynomial equations, connecting commutative algebra, topology, and geometry in a deep way. This phase covers an accessible introduction before the advanced reference of the following phase.</p>
+  <div class="nota"><b>How to Study</b>Use this phase as a geometric entry into commutative algebra. The goal is to learn to translate between polynomial equations and algebraic objects: ideals, coordinate rings, morphisms, and the Zariski topology. Do not try to anticipate the full language of schemes here. Work through many simple affine and projective examples before advancing to the next phase.</div>
+  <p class="livros-label">Books</p>
   <div class="livros">
     <div class="livro">
       <img class="livro-capa" src="../assets/covers/clader_ross.webp" alt="capa">
       <div class="livro-content">
-      <div class="livro-top"><span class="livro-titulo">Algebraic Geometry: A First Course</span><span class="tag tp">Principal</span></div>
+      <div class="livro-top"><span class="livro-titulo">Algebraic Geometry: A First Course</span><span class="tag tp">Main</span></div>
       <div class="livro-autor">Emily Clader e Jonathan Ross</div>
-      <div class="livro-desc">Introdução moderna e concisa à geometria algébrica. Apresenta variedades afins e projetivas, morfismos e os primeiros exemplos de esquemas de forma acessível, sem pressupor o maquinário completo de álgebra comutativa avançada. Boa porta de entrada antes do Bosch ou do Vakil.
+      <div class="livro-desc">A modern and concise introduction to algebraic geometry. Presents affine and projective varieties, morphisms, and the first examples of schemes in an accessible way, without presupposing the full machinery of advanced commutative algebra. A good entry point before Bosch or Vakil.
       </div>
       </div>
     </div>
     <div class="livro">
       <img class="livro-capa" src="../assets/covers/bosch.webp" alt="capa">
       <div class="livro-content">
-      <div class="livro-top"><span class="livro-titulo">Algebraic Geometry and Commutative Algebra</span><span class="tag tc">Complementar</span></div>
+      <div class="livro-top"><span class="livro-titulo">Algebraic Geometry and Commutative Algebra</span><span class="tag tc">Complementary</span></div>
       <div class="livro-autor">Siegfried Bosch</div>
-      <div class="livro-desc">Cobre álgebra comutativa e geometria algébrica de forma integrada. Boa progressão para quem vem de um background sólido em álgebra.
+      <div class="livro-desc">Covers commutative algebra and algebraic geometry in an integrated way. Good progression for those coming from a solid algebra background.
       </div>
       </div>
     </div>
   </div>
-  <div class="absorver"><b>O que absorver</b><ul>
-    <li>Variedades algébricas afins e projetivas em nível introdutório</li>
-    <li>Ideais, anéis de coordenadas e correspondência álgebra-geometria</li>
-    <li>Topologia de Zariski</li>
-    <li>Morfismos regulares e aplicações racionais em exemplos simples</li>
-    <li>Noções iniciais de variedades projetivas</li>
-    <li>Primeiro contato com feixes ou esquemas, apenas se o texto escolhido chegar até lá</li>
-  </ul><p class="minimo"><span>Mínimo para avançar:</span>entender a correspondência entre ideais e conjuntos algébricos, anéis de coordenadas, topologia de Zariski e exemplos básicos de variedades afins e projetivas</p></div>
-  <div class="gatilho c"><b>Pronto para avançar quando:</b>
+  <div class="absorver"><b>What to Absorb</b><ul>
+    <li>Affine and projective algebraic varieties at an introductory level</li>
+    <li>Ideals, coordinate rings, and the algebra-geometry correspondence</li>
+    <li>Zariski topology</li>
+    <li>Regular morphisms and rational maps in simple examples</li>
+    <li>Initial notions of projective varieties</li>
+    <li>First contact with sheaves or schemes, only if the chosen text reaches that far</li>
+  </ul><p class="minimo"><span>Minimum to Move On:</span>understanding the correspondence between ideals and algebraic sets, coordinate rings, the Zariski topology, and basic examples of affine and projective varieties</p></div>
+  <div class="gatilho c"><b>Ready to Move On When:</b>
   <ul>
-    <li>Consegue passar de um conjunto definido por polinômios para seu ideal e anel de coordenadas</li>
-    <li>Entende a topologia de Zariski em exemplos afins e projetivos simples</li>
-    <li>Consegue interpretar morfismos regulares e aplicações racionais em exemplos básicos</li>
-    <li>Reconhece por que álgebra comutativa é a linguagem natural da geometria algébrica</li>
-    <li>Está preparado para ver esquemas como uma ampliação sistemática das variedades algébricas</li>
+    <li>You can move from a set defined by polynomials to its ideal and coordinate ring</li>
+    <li>You understand the Zariski topology in simple affine and projective examples</li>
+    <li>You can interpret regular morphisms and rational maps in basic examples</li>
+    <li>You recognize why commutative algebra is the natural language of algebraic geometry</li>
+    <li>You are prepared to see schemes as a systematic extension of algebraic varieties</li>
   </ul>
 </div>
 </div>
@@ -3727,48 +3727,48 @@ flowchart LR
   <div class="fase-top">
     <div class="fase-num">36</div>
     <div class="fase-hd">
-      <div class="fase-marker"><span class="dot dc"></span><span style="color:var(--t3)">Completa</span></div>
-      <div class="fase-titulo">Geometria Algébrica Avançada</div>
-      <div class="fase-sub">Fase final · Território de especialista</div>
+      <div class="fase-marker"><span class="dot dc"></span><span style="color:var(--t3)">Complete</span></div>
+      <div class="fase-titulo">Algebraic Geometry II</div>
+      <div class="fase-sub">Final phase · Expert territory</div>
     </div>
   </div>
-  <div class="fase-meta"><span class="meta">📚 1 livro</span></div>
-  <div class="prereq">Fases 32 e 35 (Variedades, Feixes e Cohomologia; Geometria Algébrica Introdutória)</div>
+  <div class="fase-meta"><span class="meta">📚 1 book</span></div>
+  <div class="prereq">Phases 32 and 35 (Manifolds, Sheaves, and Cohomology; Algebraic Geometry I)</div>
 
-  <div class="nota aviso"><b>Aviso</b>Esta é a área mais avançada e especializada de todo o roadmap. O livro de Vakil é famoso por sua profundidade e exigência. Não é uma leitura linear que se conclui, mas um texto com o qual se convive por anos. Só deve ser abordado depois da fase anterior bem consolidada e, idealmente, com orientação de um pesquisador da área. Está aqui como horizonte, não como meta obrigatória.</div>
+  <div class="nota aviso"><b>Note</b>This is the most advanced and specialized area of the entire roadmap. Vakil's book is renowned for its depth and demands. It is not a linear text one finishes, but one that is lived with for years. It should only be approached after the previous phase is well consolidated and, ideally, with guidance from a researcher in the area. It is here as a horizon, not as a required destination.</div>
 
-  <p class="fase-desc">A Geometria Algébrica no nível dos esquemas de Grothendieck: a linguagem moderna que unifica geometria, álgebra e aritmética numa só teoria.</p>
-  <div class="nota"><b>Como estudar</b>Esta fase deve ser tratada como horizonte de longo prazo. Vakil é excelente, mas não deve ser lido como uma obrigação linear de curto prazo. O objetivo é entender por que esquemas ampliam a geometria algébrica clássica: espectros de anéis, feixe estrutural, morfismos, colagem e propriedades locais. Avance devagar, fazendo exemplos pequenos, e use o texto como mapa de pesquisa, não como lista de tarefas.</div>
-  <p class="livros-label">Livros</p>
+  <p class="fase-desc">Algebraic Geometry at the level of Grothendieck's schemes: the modern language that unifies geometry, algebra, and arithmetic into a single theory.</p>
+  <div class="nota"><b>How to Study</b>This phase should be treated as a long-term horizon. Vakil is excellent, but should not be read as a short-term linear obligation. The goal is to understand why schemes extend classical algebraic geometry: spectra of rings, structure sheaves, morphisms, gluing, and local properties. Advance slowly, working through small examples, and use the text as a research map rather than a task list.</div>
+  <p class="livros-label">Books</p>
   <div class="livros">
     <div class="livro">
       <img class="livro-capa" src="../assets/covers/vakil.jpg" alt="capa">
       <div class="livro-content">
-      <div class="livro-top"><span class="livro-titulo">The Rising Sea: Foundations of Algebraic Geometry</span><span class="tag ta">Avançado</span><a href="https://math.stanford.edu/~vakil/216blog" target="_blank" class="tag-free">Grátis ↗</a></div>
+      <div class="livro-top"><span class="livro-titulo">The Rising Sea: Foundations of Algebraic Geometry</span><span class="tag ta">Advanced</span><a href="https://math.stanford.edu/~vakil/216blog" target="_blank" class="tag-free">Free ↗</a></div>
       <div class="livro-autor">Ravi Vakil</div>
-      <div class="livro-desc">Um dos textos mais ambiciosos da matemática contemporânea. Cobre a teoria dos esquemas do zero com rigor e abundância de exemplos. Disponível gratuitamente no site do autor (math.stanford.edu/~vakil). Não é um livro que se termina: é um livro com o qual se convive por anos.
+      <div class="livro-desc">One of the most ambitious texts in contemporary mathematics. Covers scheme theory from scratch with rigor and an abundance of examples. Freely available on the author's website (math.stanford.edu/~vakil). This is not a book one finishes: it is a book one lives with for years.
       </div>
       </div>
     </div>
   </div>
 
-  <div class="absorver"><b>O que absorver</b><ul>
-    <li>Esquemas afins e o espectro de um anel</li>
-    <li>Topologia de Zariski em Spec(A)</li>
-    <li>Feixes estruturais e espaços localmente anelados</li>
-    <li>Morfismos de esquemas</li>
-    <li>Colagem de esquemas</li>
-    <li>Propriedades locais e globais em exemplos fundamentais</li>
-    <li>Primeiras ideias de cohomologia de feixes, se houver maturidade suficiente</li>
-  </ul><p class="minimo"><span>Mínimo para avançar:</span>entender esquemas afins, feixe estrutural, morfismos e colagem de esquemas em exemplos básicos; o Vakil deve ser tratado como horizonte de longo prazo, não como leitura linear obrigatória</p></div>
+  <div class="absorver"><b>What to Absorb</b><ul>
+    <li>Affine schemes and the spectrum of a ring</li>
+    <li>Zariski topology on Spec(A)</li>
+    <li>Structure sheaves and locally ringed spaces</li>
+    <li>Morphisms of schemes</li>
+    <li>Gluing of schemes</li>
+    <li>Local and global properties in fundamental examples</li>
+    <li>First ideas on sheaf cohomology, if sufficient maturity is present</li>
+  </ul><p class="minimo"><span>Minimum to Move On:</span>understanding affine schemes, structure sheaves, morphisms, and gluing of schemes in basic examples; Vakil should be treated as a long-term horizon, not as mandatory linear reading</p></div>
 </div>
-<div class="gatilho c" style="margin-top:8px"><b>Como usar a Trilha Completa</b><ul>
-  <li>A Trilha Completa não precisa ser concluída integralmente para ter valor. Ela é melhor entendida como um mapa de aprofundamento, não como uma lista obrigatória a ser zerada.</li>
-  <li>Quem segue análise pode priorizar Teoria da Medida, Probabilidade, Análise Funcional, Operadores, Fourier e EDP. Quem segue geometria pode priorizar Variedades, Riemanniana, Feixes, Topologia Algébrica e Geometria Complexa futura. Quem segue álgebra pode priorizar Álgebra Avançada, Álgebra Comutativa e Geometria Algébrica.</li>
-  <li>Concluir toda a Trilha Completa seria um projeto de muitos anos e não é o objetivo esperado para a maioria dos leitores. O objetivo real é usar a curadoria para escolher bons caminhos, bons livros e boas referências conforme a direção matemática escolhida.</li>
-  <li>Se você chegou ao ponto de transitar com autonomia por algumas dessas fases, consultar textos avançados e escolher uma direção própria, a Trilha Completa já cumpriu seu papel.</li>
+<div class="gatilho c" style="margin-top:8px"><b>How to Use the Complete Track</b><ul>
+  <li>The Complete Track does not need to be completed in full to have value. It is best understood as a map for deepening, not as an obligatory checklist to be finished.</li>
+  <li>Those following analysis can prioritize Measure Theory, Probability, Functional Analysis, Operators, Fourier, and PDE. Those following geometry can prioritize Manifolds, Riemannian Geometry, Sheaves, Algebraic Topology, and future Complex Geometry. Those following algebra can prioritize Advanced Algebra, Commutative Algebra, and Algebraic Geometry.</li>
+  <li>Completing the entire Complete Track would be a project of many years and is not the expected goal for most readers. The real aim is to use the curation to choose good paths, good books, and good references according to your chosen mathematical direction.</li>
+  <li>If you have reached the point of moving with autonomy through some of these phases, consulting advanced texts, and choosing your own direction, the Complete Track has already served its purpose.</li>
 </ul></div>
-<a href="#mapa-fases" class="back-to-map">↑ Voltar ao mapa das fases</a>
+<a href="#mapa-fases" class="back-to-map">↑ Back to phase map</a>
 
 </div><!-- /section-comp -->
 
@@ -3776,60 +3776,60 @@ flowchart LR
 
 <div class="wrap">
 <section class="metodo-section" id="extensoes-futuras">
-  <p class="sec-label">Depois do percurso principal</p>
-  <h2>Possíveis extensões futuras</h2>
+  <p class="sec-label">After the main path</p>
+  <h2>Possible Future Extensions</h2>
 
-  <p>O roadmap principal já cobre uma formação ampla em matemática pura e estrutural, indo da base de graduação até temas avançados de análise, álgebra, geometria e topologia. As áreas abaixo não são necessárias para concluir o percurso, mas são continuações naturais para versões futuras, dependendo dos interesses do leitor.</p>
+  <p>The main roadmap already covers a broad formation in pure and structural mathematics, from undergraduate foundations to advanced topics in analysis, algebra, geometry, and topology. The areas below are not required to complete the path, but are natural continuations for future versions, depending on the reader's interests.</p>
 
-  <p>Elas foram deixadas fora da sequência principal para evitar que o roadmap se torne excessivamente longo antes da primeira publicação. Algumas delas podem virar fases próprias em uma versão posterior; outras funcionam melhor como trilhas laterais de aprofundamento.</p>
+  <p>They were left outside the main sequence to avoid making the roadmap excessively long before its first publication. Some of them may become phases of their own in a later version; others work better as lateral deepening routes.</p>
 
   <div class="extensoes-grid">
     <article class="extensao-card">
-      <h3>Várias Variáveis Complexas</h3>
-      <p>Continuação natural de Análise Complexa Avançada, conectando funções holomorfas em várias variáveis, domínios de holomorfia, problemas de extensão, formas diferenciais e métodos analíticos que aparecem em geometria complexa e geometria algébrica analítica.</p>
-      <p class="extensao-livros"><strong>Exemplos:</strong><br>Joseph L. Taylor — Several Complex Variables with Connections to Algebraic Geometry and Lie Groups<br>Steven G. Krantz — Function Theory of Several Complex Variables<br>Grauert &amp; Remmert — Theory of Stein Spaces</p>
+      <h3>Several Complex Variables</h3>
+      <p>A natural continuation of Advanced Complex Analysis, connecting holomorphic functions in several variables, domains of holomorphy, extension problems, differential forms, and analytic methods that appear in complex geometry and analytic algebraic geometry.</p>
+      <p class="extensao-livros"><strong>Examples:</strong><br>Joseph L. Taylor — Several Complex Variables with Connections to Algebraic Geometry and Lie Groups<br>Steven G. Krantz — Function Theory of Several Complex Variables<br>Grauert &amp; Remmert — Theory of Stein Spaces</p>
     </article>
 
     <article class="extensao-card">
-      <h3>Geometria Complexa</h3>
-      <p>Trilha posterior para estudar variedades complexas, formas diferenciais complexas, fibrados holomorfos, cohomologia, métricas hermitianas e geometria Kähler. Faz sentido depois de variedades, análise complexa avançada, feixes e alguma maturidade em geometria diferencial.</p>
-      <p class="extensao-livros"><strong>Exemplos:</strong><br>Daniel Huybrechts — Complex Geometry<br>Fangyang Zheng — Complex Differential Geometry<br>Griffiths &amp; Harris — Principles of Algebraic Geometry</p>
+      <h3>Complex Geometry</h3>
+      <p>A later route for studying complex manifolds, complex differential forms, holomorphic bundles, cohomology, Hermitian metrics, and Kähler geometry. Natural after manifolds, advanced complex analysis, sheaves, and some maturity in differential geometry.</p>
+      <p class="extensao-livros"><strong>Examples:</strong><br>Daniel Huybrechts — Complex Geometry<br>Fangyang Zheng — Complex Differential Geometry<br>Griffiths &amp; Harris — Principles of Algebraic Geometry</p>
     </article>
 
     <article class="extensao-card">
-      <h3>Análise em Variedades e Operadores Diferenciais</h3>
-      <p>Extensão natural da análise funcional, EDP, geometria diferencial e variedades. O foco seria estudar operadores diferenciais em variedades, Laplacianos, espaços de Sobolev em variedades, operadores elípticos e a ponte entre análise global e geometria.</p>
-      <p class="extensao-livros"><strong>Exemplos:</strong><br>Erik van den Ban — Analysis on Manifolds<br>Ramanan — Global Calculus<br>Bleecker &amp; Booss-Bavnbek — Index Theory with Applications to Mathematics and Physics</p>
+      <h3>Analysis on Manifolds and Differential Operators</h3>
+      <p>A natural extension of functional analysis, PDE, differential geometry, and manifolds. The focus would be on differential operators on manifolds, Laplacians, Sobolev spaces on manifolds, elliptic operators, and the bridge between global analysis and geometry.</p>
+      <p class="extensao-livros"><strong>Examples:</strong><br>Erik van den Ban — Analysis on Manifolds<br>Ramanan — Global Calculus<br>Bleecker &amp; Booss-Bavnbek — Index Theory with Applications to Mathematics and Physics</p>
     </article>
 
     <article class="extensao-card">
-      <h3>Teoria do Índice</h3>
-      <p>Continuação avançada da análise em variedades, conectando operadores elípticos, geometria diferencial, topologia, K-teoria e o teorema do índice de Atiyah–Singer. É uma direção profunda e de longo prazo, melhor estudada após análise funcional, EDP, variedades, topologia algébrica e operadores diferenciais.</p>
-      <p class="extensao-livros"><strong>Exemplos:</strong><br>Bleecker &amp; Booss-Bavnbek — Index Theory with Applications to Mathematics and Physics<br>Roe — Elliptic Operators, Topology and Asymptotic Methods<br>Mukherjee — Atiyah-Singer Index Theorem: An Introduction</p>
+      <h3>Index Theory</h3>
+      <p>An advanced continuation of analysis on manifolds, connecting elliptic operators, differential geometry, topology, K-theory, and the Atiyah–Singer index theorem. A deep and long-term direction, best approached after functional analysis, PDE, manifolds, algebraic topology, and differential operators.</p>
+      <p class="extensao-livros"><strong>Examples:</strong><br>Bleecker &amp; Booss-Bavnbek — Index Theory with Applications to Mathematics and Physics<br>Roe — Elliptic Operators, Topology and Asymptotic Methods<br>Mukherjee — Atiyah-Singer Index Theorem: An Introduction</p>
     </article>
 
     <article class="extensao-card">
-      <h3>Teoria Ergódica</h3>
-      <p>Continuação natural de medida, probabilidade e sistemas dinâmicos. Estuda transformações que preservam medida, recorrência, ergodicidade, médias temporais e comportamento assintótico de sistemas dinâmicos. Pode aparecer como uma trilha futura depois de Teoria da Medida, Probabilidade e EDO Avançada/Sistemas Dinâmicos.</p>
-      <p class="extensao-livros"><strong>Exemplos:</strong><br>Mañé — Ergodic Theory and Differentiable Dynamics<br>Viana &amp; Oliveira — Foundations of Ergodic Theory<br>Walters — An Introduction to Ergodic Theory</p>
+      <h3>Ergodic Theory</h3>
+      <p>A natural continuation of measure theory, probability, and dynamical systems. Studies measure-preserving transformations, recurrence, ergodicity, time averages, and the asymptotic behavior of dynamical systems. Could appear as a future route after Measure Theory, Probability, and Advanced ODE and Dynamical Systems.</p>
+      <p class="extensao-livros"><strong>Examples:</strong><br>Mañé — Ergodic Theory and Differentiable Dynamics<br>Viana &amp; Oliveira — Foundations of Ergodic Theory<br>Walters — An Introduction to Ergodic Theory</p>
     </article>
 
     <article class="extensao-card">
-      <h3>Análise Harmônica Avançada</h3>
-      <p>Aprofundamento da análise de Fourier, conectando operadores singulares, teoria de Calderón–Zygmund, espaços de Hardy, multiplicadores, estimativas oscilatórias e aplicações a EDP. É uma continuação natural para quem quiser seguir a direção analítica depois de Fourier, medida, funcional e EDP.</p>
-      <p class="extensao-livros"><strong>Exemplos:</strong><br>Folland — A Course in Abstract Harmonic Analysis<br>Grafakos — Classical Fourier Analysis<br>Stein — Singular Integrals and Differentiability Properties of Functions</p>
+      <h3>Advanced Harmonic Analysis</h3>
+      <p>A deepening of Fourier analysis, connecting singular operators, Calderón–Zygmund theory, Hardy spaces, multipliers, oscillatory estimates, and applications to PDE. A natural continuation for those who want to follow the analytic direction after Fourier, measure theory, functional analysis, and PDE.</p>
+      <p class="extensao-livros"><strong>Examples:</strong><br>Folland — A Course in Abstract Harmonic Analysis<br>Grafakos — Classical Fourier Analysis<br>Stein — Singular Integrals and Differentiability Properties of Functions</p>
     </article>
 
     <article class="extensao-card">
-      <h3>Teoria de Representações</h3>
-      <p>Extensão algébrica e geométrica importante, conectando grupos, álgebras, simetrias, módulos, análise harmônica e geometria. Pode ser estudada depois de Álgebra II, Álgebra Avançada e alguma maturidade em análise ou geometria, dependendo da direção escolhida.</p>
-      <p class="extensao-livros"><strong>Exemplos:</strong><br>Fulton &amp; Harris — Representation Theory<br>Serre — Linear Representations of Finite Groups<br>Etingof et al. — Introduction to Representation Theory</p>
+      <h3>Representation Theory</h3>
+      <p>An important algebraic and geometric extension, connecting groups, algebras, symmetries, modules, harmonic analysis, and geometry. Can be studied after Algebra II, Advanced Algebra, and some maturity in analysis or geometry, depending on the chosen direction.</p>
+      <p class="extensao-livros"><strong>Examples:</strong><br>Fulton &amp; Harris — Representation Theory<br>Serre — Linear Representations of Finite Groups<br>Etingof et al. — Introduction to Representation Theory</p>
     </article>
 
     <article class="extensao-card">
-      <h3>Geometria Simplética e Mecânica Geométrica</h3>
-      <p>Trilha futura ligada a formas diferenciais, variedades, sistemas dinâmicos e física matemática. O foco seria estudar variedades simpléticas, formas de Hamilton, colchetes de Poisson, ações hamiltonianas e a formulação geométrica da mecânica clássica.</p>
-      <p class="extensao-livros"><strong>Exemplos:</strong><br>Cannas da Silva — Lectures on Symplectic Geometry<br>Arnold — Mathematical Methods of Classical Mechanics<br>Abraham &amp; Marsden — Foundations of Mechanics</p>
+      <h3>Symplectic Geometry and Geometric Mechanics</h3>
+      <p>A future route connected to differential forms, manifolds, dynamical systems, and mathematical physics. The focus would be on symplectic manifolds, Hamiltonian forms, Poisson brackets, Hamiltonian actions, and the geometric formulation of classical mechanics.</p>
+      <p class="extensao-livros"><strong>Examples:</strong><br>Cannas da Silva — Lectures on Symplectic Geometry<br>Arnold — Mathematical Methods of Classical Mechanics<br>Abraham &amp; Marsden — Foundations of Mechanics</p>
     </article>
   </div>
 </section>
@@ -3837,51 +3837,51 @@ flowchart LR
 
 <div class="wrap">
 <section class="alem" id="alem">
-  <p class="sec-label">Para continuar</p>
-  <h2>Quer ir além?</h2>
-  <p class="alem-sub">Alguns recursos para quem terminou as fases e quer entrar em contato com matemática de pesquisa de verdade.</p>
+  <p class="sec-label">To continue</p>
+  <h2>Want to go further?</h2>
+  <p class="alem-sub">A few resources for those who have worked through the phases and want to engage with genuine research-level mathematics.</p>
   <div class="alem-grid">
 
     <a class="alem-card" href="https://arxiv.org/archive/math" target="_blank">
       <h4>arXiv — math</h4>
       <span class="alem-url">arxiv.org/archive/math</span>
-      <p>O repositório padrão de preprints em matemática. Toda pesquisa relevante aparece aqui antes de ser publicada. Organizado por área: math.FA para análise funcional, math.AT para topologia algébrica, e assim por diante.</p>
+      <p>The standard preprint repository for mathematics. All relevant research appears here before publication. Organized by area: math.FA for functional analysis, math.AT for algebraic topology, and so on.</p>
     </a>
 
     <a class="alem-card" href="https://mathoverflow.net" target="_blank">
       <h4>MathOverflow</h4>
       <span class="alem-url">mathoverflow.net</span>
-      <p>Fórum de perguntas e respostas em nível de pesquisa. Diferente do Stack Exchange, as questões aqui são feitas e respondidas por matemáticos profissionais. Útil tanto para aprender quanto para entender o que está sendo pesquisado.</p>
+      <p>A question-and-answer forum at research level. Unlike Stack Exchange, questions here are asked and answered by professional mathematicians. Useful both for learning and for understanding what is currently being researched.</p>
     </a>
 
     <a class="alem-card" href="https://terrytao.wordpress.com" target="_blank">
-      <h4>Blog do Terence Tao</h4>
+      <h4>Terence Tao's Blog</h4>
       <span class="alem-url">terrytao.wordpress.com</span>
-      <p>Um dos melhores recursos gratuitos de matemática avançada disponíveis. Tao publica notas de cursos, expositórios sobre resultados recentes e discussões sobre técnicas de pesquisa com clareza excepcional.</p>
+      <p>One of the best freely available resources for advanced mathematics. Tao publishes course notes, expository pieces on recent results, and discussions of research techniques with exceptional clarity.</p>
     </a>
 
     <a class="alem-card" href="https://math.stackexchange.com" target="_blank">
       <h4>Mathematics Stack Exchange</h4>
       <span class="alem-url">math.stackexchange.com</span>
-      <p>Para dúvidas técnicas durante o estudo. Nível abaixo do MathOverflow, mais adequado para quem ainda está percorrendo as fases deste roadmap. O arquivo de respostas antigas é um recurso valioso por si só.</p>
+      <p>For technical questions during study. A level below MathOverflow, more suitable for those still working through the phases of this roadmap. The archive of past answers is a valuable resource in its own right.</p>
     </a>
 
     <a class="alem-card" href="https://www.youtube.com/@impabr/courses" target="_blank" rel="noopener noreferrer">
-      <h4>Vídeos e cursos do IMPA</h4>
-      <span class="alem-url">IMPA no YouTube · cursos</span>
-      <p>Acervo amplo de aulas, cursos regulares, conferências e eventos matemáticos do IMPA. Útil como apoio em várias fases do roadmap, especialmente análise, geometria, topologia, sistemas dinâmicos e temas de pós-graduação. Os vídeos não substituem os livros e exercícios, mas ajudam na intuição, na revisão e na orientação de estudo.</p>
+      <h4>IMPA Videos and Courses</h4>
+      <span class="alem-url">IMPA on YouTube · courses</span>
+      <p>A broad archive of lectures, regular courses, conferences, and mathematical events from IMPA. Useful as support in several phases of the roadmap, especially analysis, geometry, topology, dynamical systems, and graduate-level topics. The videos do not replace books and exercises, but they help with intuition, review, and study orientation.</p>
     </a>
 
     <a class="alem-card" href="https://proofwiki.org/wiki/Main_Page" target="_blank" rel="noopener noreferrer">
       <h4>ProofWiki</h4>
       <span class="alem-url">proofwiki.org</span>
-      <p>Compêndio colaborativo de demonstrações matemáticas, definições e resultados relacionados. Útil para consultar provas específicas, verificar dependências entre teoremas e encontrar argumentos alternativos. Não substitui livros nem exercícios, mas funciona bem como apoio durante o estudo.</p>
+      <p>A collaborative compendium of mathematical proofs, definitions, and related results. Useful for looking up specific proofs, verifying dependencies between theorems, and finding alternative arguments. Does not replace books or exercises, but works well as support during study.</p>
     </a>
 
     <a class="alem-card" href="https://ncatlab.org/nlab/show/HomePage" target="_blank" style="grid-column: 1 / -1;">
       <h4>nLab</h4>
       <span class="alem-url">ncatlab.org</span>
-      <p>Uma enciclopédia colaborativa de matemática, física e filosofia, especialmente forte em teoria das categorias, homotopia, lógica, geometria, física matemática e estruturas superiores. Não é uma referência introdutória: muitas páginas são densas e pressupõem maturidade. Ainda assim, é uma fonte extraordinária para perceber como ideias avançadas se conectam e enxergar a matemática como uma rede de estruturas.</p>
+      <p>A collaborative encyclopedia of mathematics, physics, and philosophy, especially strong in category theory, homotopy, logic, geometry, mathematical physics, and higher structures. Not an introductory reference: many pages are dense and presuppose mathematical maturity. Even so, it is an extraordinary source for seeing how advanced ideas connect and for viewing mathematics as a network of structures.</p>
     </a>
 
   </div>
@@ -3892,78 +3892,78 @@ flowchart LR
 <footer>
   <div class="wrap">
     <div class="footer-inner">
-      <p>Os livros listados são escolhas pessoais, cada um selecionado por ser bom para self study, não apenas por ser canônico.</p>
-      <p style="margin-top:18px;font-size:.95rem;color:var(--text2);font-weight:300;line-height:1.85;max-width:600px;margin-left:auto;margin-right:auto">Espero que este roadmap seja útil para quem deseja se aventurar na matemática além do que o ensino convencional oferece. Não existe caminho único, e este é apenas o que eu percorreria se começasse do zero hoje. Cada fase tem seu tempo, cada livro tem seu ritmo. O importante é começar, ser honesto sobre o que não entendeu e não ter pressa para avançar antes da hora. Se este guia ajudar alguém a descobrir que matemática é mais do que cálculo e fórmulas, já terá cumprido seu propósito.</p>
+      <p>The books listed are personal choices, each selected for being genuinely good for self-study — not only for being canonical.</p>
+      <p style="margin-top:18px;font-size:.95rem;color:var(--text2);font-weight:300;line-height:1.85;max-width:600px;margin-left:auto;margin-right:auto">I hope this roadmap is useful to anyone who wants to venture into mathematics beyond what conventional education offers. There is no single path, and this is simply the one I would follow if I were starting from scratch today. Every phase takes its own time, every book its own pace. What matters is to begin, to be honest about what you have not yet understood, and not to rush forward before you are ready. If this guide helps someone discover that mathematics is more than calculus and formulas, it will have served its purpose.</p>
       <div class="footer-meta">
-        <span>Organizado por Ricardo Bertolucci</span>
-        <span>36 fases · 3 trilhas</span>
+        <span>Organized by Ricardo Bertolucci</span>
+        <span>36 phases · 3 tracks</span>
         <span>v1.0</span>
       </div>
     </div>
   </div>
 </footer>
 
-<button class="toc-btn" onclick="document.querySelector('.toc').classList.toggle('open')" title="Índice">☰ Índice</button>
+<button class="toc-btn" onclick="document.querySelector('.toc').classList.toggle('open')" title="Contents">☰ Contents</button>
 <nav class="toc">
-  <h4>Índice</h4>
-  <a href="#inicio">↑ Início</a>
-  <a href="#como-usar">Como usar este guia</a>
-  <a href="#dicas">Antes de começar</a>
-  <a href="#quando-avancar">Quando avançar de fase</a>
-  <a href="#mapa-fases">Mapa geral das fases</a>
-  <a href="#semestres">Blocos e rotas</a>
-  <a href="#fluxograma">Fluxograma das fases</a>
-  <div class="toc-sep b">Trilha Básica</div>
-  <a href="#t-basica" style="font-size:.73rem;color:var(--t1)">Fases 1–7</a>
-  <a href="#f1">01 · Pré-Cálculo</a>
-  <a href="#f2">02 · Lógica e Demonstrações</a>
-  <a href="#f3">03 · Teoria Elementar dos Números</a>
-  <a href="#f4">04 · Cálculo I</a>
-  <a href="#f5">05 · Álgebra Linear Elementar</a>
-  <a href="#f6">06 · Cálculo a Várias Variáveis</a>
-  <a href="#f7">07 · Análise na Reta</a>
-  <div class="toc-sep g">Trilha Graduação</div>
-  <a href="#t-grad" style="font-size:.73rem;color:var(--t2)">Fases 8–19</a>
-  <a href="#f8">08 · Álgebra Linear</a>
-  <a href="#f9">09 · Álgebra I</a>
-  <a href="#f10">10 · Teoria dos Números</a>
-  <a href="#f11">11 · Análise em Várias Variáveis</a>
-  <a href="#f12">12 · Topologia</a>
-  <a href="#f13">13 · Variável Complexa</a>
-  <a href="#f14">14 · Geom. Curvas e Superfícies</a>
-  <a href="#f15">15 · Equações Diferenciais</a>
-  <a href="#f16">16 · Fourier e EDP Elementar</a>
-  <a href="#f17">17 · Análise em Espaços Métricos</a>
-  <a href="#f18">18 · Álgebra II</a>
-  <a href="#f19">19 · Teoria de Corpos e Galois</a>
-  <div class="toc-sep c">Trilha Completa</div>
-  <a href="#t-completa" style="font-size:.73rem;color:var(--t3)">Fases 20–36</a>
-  <a href="#f20">20 · Teoria da Medida</a>
-  <a href="#f21">21 · Teoria das Probabilidades</a>
-  <a href="#f22">22 · Análise Funcional</a>
-  <a href="#f23">23 · Teoria de Operadores</a>
-  <a href="#f24">24 · Análise Complexa Avançada</a>
-  <a href="#f25">25 · Mecânica Quântica Mat.</a>
-  <a href="#f26">26 · EDO Avançada e Sist. Dinâmicos</a>
-  <a href="#f27">27 · EDP Avançada</a>
-  <a href="#f28">28 · Álgebra Avançada</a>
-  <a href="#f29">29 · Geometria Diferencial</a>
-  <a href="#f30">30 · Variedades Diferenciáveis</a>
-  <a href="#f31">31 · Geometria Riemanniana</a>
-  <a href="#f32">32 · Variedades e Feixes</a>
-  <a href="#f33">33 · Topologia Algébrica</a>
-  <a href="#f34">34 · Álgebra Comutativa</a>
-  <a href="#f35">35 · Geometria Algébrica I</a>
-  <a href="#f36">36 · Geometria Algébrica II</a>
-  <div class="toc-sep" style="color:var(--text3);border-top-color:var(--border2)">Recursos</div>
-  <a href="#extensoes-futuras">Extensões futuras</a>
-  <a href="#alem">Quer ir além?</a>
+  <h4>Contents</h4>
+  <a href="#inicio">↑ Top</a>
+  <a href="#como-usar">How to Use This Guide</a>
+  <a href="#dicas">Before You Begin</a>
+  <a href="#quando-avancar">When to Move to the Next Phase</a>
+  <a href="#mapa-fases">General Phase Map</a>
+  <a href="#semestres">Blocks and Routes</a>
+  <a href="#fluxograma">Phase Flowchart</a>
+  <div class="toc-sep b">Basic Track</div>
+  <a href="#t-basica" style="font-size:.73rem;color:var(--t1)">Phases 1–7</a>
+  <a href="#f1">01 · Precalculus</a>
+  <a href="#f2">02 · Logic and Proofs</a>
+  <a href="#f3">03 · Elementary Number Theory</a>
+  <a href="#f4">04 · Calculus I</a>
+  <a href="#f5">05 · Elementary Linear Algebra</a>
+  <a href="#f6">06 · Multivariable Calculus</a>
+  <a href="#f7">07 · Real Analysis on the Line</a>
+  <div class="toc-sep g">Undergraduate Track</div>
+  <a href="#t-grad" style="font-size:.73rem;color:var(--t2)">Phases 8–19</a>
+  <a href="#f8">08 · Linear Algebra</a>
+  <a href="#f9">09 · Algebra I</a>
+  <a href="#f10">10 · Number Theory</a>
+  <a href="#f11">11 · Multivariable Analysis</a>
+  <a href="#f12">12 · Topology</a>
+  <a href="#f13">13 · Complex Variables</a>
+  <a href="#f14">14 · Curves and Surfaces</a>
+  <a href="#f15">15 · Differential Equations</a>
+  <a href="#f16">16 · Fourier and Elementary PDE</a>
+  <a href="#f17">17 · Metric Spaces</a>
+  <a href="#f18">18 · Algebra II</a>
+  <a href="#f19">19 · Fields and Galois Theory</a>
+  <div class="toc-sep c">Complete Track</div>
+  <a href="#t-completa" style="font-size:.73rem;color:var(--t3)">Phases 20–36</a>
+  <a href="#f20">20 · Measure Theory</a>
+  <a href="#f21">21 · Probability Theory</a>
+  <a href="#f22">22 · Functional Analysis</a>
+  <a href="#f23">23 · Operator Theory</a>
+  <a href="#f24">24 · Advanced Complex Analysis</a>
+  <a href="#f25">25 · Math. Quantum Mech.</a>
+  <a href="#f26">26 · Adv. ODE and Dyn. Systems</a>
+  <a href="#f27">27 · Advanced PDE</a>
+  <a href="#f28">28 · Advanced Algebra</a>
+  <a href="#f29">29 · Differential Geometry</a>
+  <a href="#f30">30 · Differentiable Manifolds</a>
+  <a href="#f31">31 · Riemannian Geometry</a>
+  <a href="#f32">32 · Manifolds and Sheaves</a>
+  <a href="#f33">33 · Algebraic Topology</a>
+  <a href="#f34">34 · Commutative Algebra</a>
+  <a href="#f35">35 · Algebraic Geometry I</a>
+  <a href="#f36">36 · Algebraic Geometry II</a>
+  <div class="toc-sep" style="color:var(--text3);border-top-color:var(--border2)">Resources</div>
+  <a href="#extensoes-futuras">Future Extensions</a>
+  <a href="#alem">Want to go further?</a>
 </nav>
 
 
-<dialog id="cover-lightbox" class="cover-lightbox" aria-label="Capa ampliada">
+<dialog id="cover-lightbox" class="cover-lightbox" aria-label="Enlarged cover">
   <div class="cover-lightbox-inner">
-    <button type="button" class="cover-lightbox-close" aria-label="Fechar capa ampliada">×</button>
+    <button type="button" class="cover-lightbox-close" aria-label="Close enlarged cover">×</button>
     <img id="cover-lightbox-img" src="" alt="">
     <p id="cover-lightbox-caption" class="cover-lightbox-caption"></p>
   </div>
@@ -3976,7 +3976,7 @@ function toggleSection(id, btn) {
   if (isCollapsed) {
     sec.style.maxHeight = sec.scrollHeight + 'px';
     sec.classList.remove('collapsed');
-    btn.textContent = '▴ Recolher';
+    btn.textContent = '▴ Collapse';
     sec.addEventListener('transitionend', function handler() {
       sec.style.maxHeight = 'none';
       sec.removeEventListener('transitionend', handler);
@@ -3989,7 +3989,7 @@ function toggleSection(id, btn) {
         sec.classList.add('collapsed');
       });
     });
-    btn.textContent = '▾ Expandir';
+    btn.textContent = '▾ Expand';
   }
 }
 </script>
@@ -4024,7 +4024,7 @@ function toggleSection(id, btn) {
   if (!lightbox || !lightboxImg || !caption || !closeBtn) return;
 
   function openCover(img) {
-    const alt = img.getAttribute('alt') || 'Capa do livro';
+    const alt = img.getAttribute('alt') || 'Book cover';
     lightboxImg.src = img.src;
     lightboxImg.alt = alt;
     caption.textContent = alt;
@@ -4041,8 +4041,8 @@ function toggleSection(id, btn) {
   document.querySelectorAll('.livro-capa').forEach(function(img) {
     img.setAttribute('tabindex', '0');
     img.setAttribute('role', 'button');
-    const alt = img.getAttribute('alt') || 'capa do livro';
-    img.setAttribute('aria-label', 'Ampliar capa: ' + alt);
+    const alt = img.getAttribute('alt') || 'book cover';
+    img.setAttribute('aria-label', 'Enlarge cover: ' + alt);
 
     img.addEventListener('click', function() { openCover(img); });
     img.addEventListener('keydown', function(e) {
