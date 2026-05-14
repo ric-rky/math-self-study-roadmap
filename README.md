@@ -6,7 +6,7 @@ This project was built based on my experience during my BSc and MSc in Mathemati
 
 ## Live Version
 
-- English: https://ric-rky.github.io/math-self-study-roadmap/
+- English: https://ric-rky.github.io/math-self-study-roadmap/en/
 - Portuguese: https://ric-rky.github.io/math-self-study-roadmap/pt/
 
 ## Overview
