@@ -1,20 +1,20 @@
 # Mathematics Self-Study Roadmap
 
-A structured roadmap for self-studying mathematics through books, from foundational topics to advanced undergraduate and graduate-level mathematics.
+A bilingual, structured roadmap for self-studying mathematics through books, from foundational topics to advanced undergraduate and graduate-level mathematics.
 
 This project was built based on my experience during my BSc and MSc in Mathematics. It focuses on books that are suitable for self-study, with a clear progression, study strategy, and transition criteria between phases.
 
 ## Live Version
 
-- English: https://ric-rky.github.io/math-self-study-roadmap/en/
 - Portuguese: https://ric-rky.github.io/math-self-study-roadmap/
+- English: https://ric-rky.github.io/math-self-study-roadmap/en/
 
 ## Overview
 
 The roadmap is divided into three tracks:
 
 1. **Basic Track**  
-   Foundations, pre-calculus, mathematical proofs, calculus, and real analysis.
+   Foundations, precalculus, mathematical proofs, calculus, and real analysis.
 
 2. **Undergraduate Track**  
    Core areas of a mathematics degree: analysis, algebra, geometry, and topology.
@@ -47,9 +47,9 @@ This roadmap may be useful for:
 
 ```text
 math-self-study-roadmap/
-├── index.html
-├── pt/
-│   └── index.html
+├── index.html          # Portuguese version
+├── en/
+│   └── index.html      # English version
 ├── assets/
 │   └── covers/
 ├── README.md
