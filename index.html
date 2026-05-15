@@ -889,6 +889,169 @@ footer a:hover { color: var(--text2) !important; }
   .cover-lightbox img { max-width: 90vw; max-height: 78vh; }
   .cover-lightbox-close { top: -10px; right: -8px; }
 }
+
+/* ── PAINEL DE FASE ── */
+#phase-panel {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  width: 280px;
+  max-height: 80vh;
+  overflow-y: auto;
+  background: var(--bg);
+  border: 1px solid var(--border2);
+  padding: 20px 18px 16px;
+  z-index: 200;
+  box-shadow: 0 8px 32px rgba(0,0,0,.18);
+  font-family: 'Crimson Pro', Georgia, serif;
+}
+.phase-panel-close {
+  position: absolute;
+  top: 10px;
+  right: 12px;
+  background: none;
+  border: none;
+  font-size: 18px;
+  color: var(--text3);
+  cursor: pointer;
+  line-height: 1;
+  padding: 2px 4px;
+}
+.phase-panel-close:hover { color: var(--accent); }
+.phase-panel-num {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 10px;
+  letter-spacing: .1em;
+  color: var(--text4);
+  display: block;
+  margin-bottom: 1px;
+}
+.phase-panel-track {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 9px;
+  letter-spacing: .08em;
+  color: var(--text4);
+  display: block;
+  margin-bottom: 6px;
+}
+.phase-panel-title {
+  font-family: 'EB Garamond', serif;
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: var(--text);
+  margin-bottom: 14px;
+  line-height: 1.3;
+  padding-right: 20px;
+}
+.phase-panel-label {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 9px;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  color: var(--text4);
+  display: block;
+  margin-bottom: 2px;
+}
+.phase-panel-value {
+  font-size: .88rem;
+  color: var(--text2);
+  font-weight: 300;
+  display: block;
+  margin-bottom: 10px;
+  line-height: 1.4;
+}
+.phase-panel-goto {
+  display: inline-block;
+  margin-top: 6px;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 9px;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  color: var(--text3);
+  border: 1px solid var(--border2);
+  padding: 5px 10px;
+  background: var(--bg2);
+  text-decoration: none;
+}
+.phase-panel-goto:hover {
+  color: var(--accent);
+  border-color: var(--accent);
+}
+.phase-panel-leg {
+  margin-top: 14px;
+  padding-top: 10px;
+  border-top: 1px solid var(--border);
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 9px;
+  letter-spacing: .1em;
+}
+.hl-leg { display: flex; align-items: center; gap: 5px; }
+.hl-dot {
+  width: 10px; height: 10px; border-radius: 1px; flex-shrink: 0; border: 1.5px solid;
+}
+.hl-dot-sel { background: #fff1b8; border-color: #b7791f; }
+.hl-dot-pre { background: #dff3e6; border-color: #2e6044; }
+.hl-dot-unl { background: #dcecff; border-color: #2d5472; }
+.hl-leg span { color: var(--text3); }
+.phase-node-selected rect,
+.phase-node-selected polygon,
+.phase-node-selected path,
+.phase-node-selected circle,
+.phase-node-selected ellipse {
+  fill: #fff1b8 !important;
+  stroke: #b7791f !important;
+  stroke-width: 3px !important;
+}
+.phase-node-prereq rect,
+.phase-node-prereq polygon,
+.phase-node-prereq path,
+.phase-node-prereq circle,
+.phase-node-prereq ellipse {
+  fill: #dff3e6 !important;
+  stroke: #2e6044 !important;
+  stroke-width: 2.5px !important;
+}
+.phase-node-unlock rect,
+.phase-node-unlock polygon,
+.phase-node-unlock path,
+.phase-node-unlock circle,
+.phase-node-unlock ellipse {
+  fill: #dcecff !important;
+  stroke: #2d5472 !important;
+  stroke-width: 2.5px !important;
+}
+.phase-node-dimmed { opacity: .32; }
+.phase-node-selected,
+.phase-node-prereq,
+.phase-node-unlock { opacity: 1 !important; }
+.phase-node-selected text,
+.phase-node-prereq text,
+.phase-node-unlock text { fill: #18140e !important; font-weight: 600; }
+.phase-chip-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  margin-bottom: 10px;
+}
+.phase-chip {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 9px;
+  letter-spacing: .05em;
+  padding: 3px 7px;
+  border-radius: 2px;
+  border: 1px solid;
+  line-height: 1.5;
+}
+.phase-chip-selected { background: #fff1b8; border-color: #b7791f; color: #5a3010; }
+.phase-chip-prereq   { background: #dff3e6; border-color: #2e6044; color: #1c3d2a; }
+.phase-chip-unlock   { background: #dcecff; border-color: #2d5472; color: #1a3349; }
+.phase-dash { font-size: .88rem; color: var(--text3); font-weight: 300; }
+@media (max-width: 480px) {
+  #phase-panel { width: calc(100vw - 32px); right: 16px; bottom: 16px; }
+}
 </style>
 </head>
 <body>
@@ -919,6 +1082,8 @@ footer a:hover { color: var(--text2) !important; }
   <p>O plano pode parecer overkill, e de certa forma é. Trinta e seis fases não é algo que se faz em dois anos, nem que a maioria das pessoas precisa fazer por completo. Por isso as trilhas existem: para que cada um encontre um ponto de chegada realista antes de começar.</p>
 
   <p>Uma observação importante sobre o escopo: este roadmap privilegia matemática pura e estrutural. Áreas aplicadas, computacionais ou competitivas, como ciência de dados, machine learning, inteligência artificial, estatística aplicada e matemática olímpica, ficam fora por enquanto e poderão ser exploradas em outro roadmap. A exceção são disciplinas matemáticas fundamentais, como probabilidade, equações diferenciais e análise de Fourier, que aparecem aqui quando fazem parte natural da formação matemática avançada.</p>
+
+  <p>Além da lista de livros, o roadmap inclui um grafo interativo de dependências entre as fases, permitindo visualizar pré-requisitos e caminhos naturais de avanço.</p>
 </section>
 
   <div class="tcards">
@@ -965,7 +1130,7 @@ footer a:hover { color: var(--text2) !important; }
 <section class="mapa-fases" id="mapa-fases">
   <p class="sec-label">Visão geral</p>
   <h2>Mapa geral das fases</h2>
-  <p style="font-size:.9rem;color:var(--text3);font-weight:300;margin-bottom:26px">Cada item leva diretamente à fase correspondente. As cores indicam a trilha.</p>
+  <p style="font-size:.9rem;color:var(--text3);font-weight:300;margin-bottom:26px">Clique em uma fase para ver pré-requisitos e caminhos antes de abrir a seção completa. As cores indicam a trilha.</p>
 
   <div class="mapa-grupo">
     <div class="mapa-grupo-label b">Trilha Básica · Fases 1–7</div>
@@ -1025,7 +1190,7 @@ footer a:hover { color: var(--text2) !important; }
 <section class="semestres" id="semestres">
   <p class="sec-label">Como navegar pelo roadmap</p>
   <h2>Blocos de estudo e rotas avançadas</h2>
-  <p class="sem-nota">Esta seção não é um cronograma nem uma promessa de duração. Ela organiza o roadmap em blocos de estudo pensados para self-study: menores do que semestres tradicionais, mas menos fragmentados do que uma lista fase por fase. Até a graduação, os blocos sugerem agrupamentos de disciplinas que conversam entre si. Na Trilha Completa, aparecem rotas avançadas seletivas: escolha uma direção principal, sem tentar transformar tudo em uma lista para "zerar". Clique em qualquer fase para ir diretamente ao trecho correspondente.</p>
+  <p class="sem-nota">Esta seção não é um cronograma nem uma promessa de duração. Ela organiza o roadmap em blocos de estudo pensados para self-study: menores do que semestres tradicionais, mas menos fragmentados do que uma lista fase por fase. Até a graduação, os blocos sugerem agrupamentos de disciplinas que conversam entre si. Na Trilha Completa, aparecem rotas avançadas seletivas: escolha uma direção principal, sem tentar transformar tudo em uma lista para "zerar". Clique em uma fase para ver pré-requisitos e caminhos antes de abrir a seção completa.</p>
 
   <div class="sem-grid">
     <div class="sem-card">
@@ -1200,7 +1365,7 @@ footer a:hover { color: var(--text2) !important; }
 <section class="fluxo-section" id="fluxograma">
   <p class="sec-label">Grafo de dependências</p>
   <h2>Fluxograma das fases</h2>
-  <p class="fluxo-nota">Cada seta indica um pré-requisito direto. Clique em qualquer fase para navegar até ela. Role horizontalmente se necessário.</p>
+  <p class="fluxo-nota">Cada seta indica um pré-requisito direto. Clique em qualquer fase para abrir um painel com pré-requisitos, fases desbloqueadas e acesso direto à seção correspondente. Use o zoom se necessário.</p>
   <div class="fluxo-controls">
     <button type="button" onclick="zoomFluxo(-0.1)">−</button>
     <button type="button" onclick="resetFluxoZoom()">Reset</button>
@@ -1274,42 +1439,42 @@ flowchart LR
   F34 --> F35
   F35 --> F36
 
-  click F1 "#f1"
-  click F2 "#f2"
-  click F3 "#f3"
-  click F4 "#f4"
-  click F5 "#f5"
-  click F6 "#f6"
-  click F7 "#f7"
-  click F8 "#f8"
-  click F9 "#f9"
-  click F10 "#f10"
-  click F11 "#f11"
-  click F12 "#f12"
-  click F13 "#f13"
-  click F14 "#f14"
-  click F15 "#f15"
-  click F16 "#f16"
-  click F17 "#f17"
-  click F18 "#f18"
-  click F19 "#f19"
-  click F20 "#f20"
-  click F21 "#f21"
-  click F22 "#f22"
-  click F23 "#f23"
-  click F24 "#f24"
-  click F25 "#f25"
-  click F26 "#f26"
-  click F27 "#f27"
-  click F28 "#f28"
-  click F29 "#f29"
-  click F30 "#f30"
-  click F31 "#f31"
-  click F32 "#f32"
-  click F33 "#f33"
-  click F34 "#f34"
-  click F35 "#f35"
-  click F36 "#f36"
+  click F1 showPhaseInfo "Ver detalhes da fase"
+  click F2 showPhaseInfo "Ver detalhes da fase"
+  click F3 showPhaseInfo "Ver detalhes da fase"
+  click F4 showPhaseInfo "Ver detalhes da fase"
+  click F5 showPhaseInfo "Ver detalhes da fase"
+  click F6 showPhaseInfo "Ver detalhes da fase"
+  click F7 showPhaseInfo "Ver detalhes da fase"
+  click F8 showPhaseInfo "Ver detalhes da fase"
+  click F9 showPhaseInfo "Ver detalhes da fase"
+  click F10 showPhaseInfo "Ver detalhes da fase"
+  click F11 showPhaseInfo "Ver detalhes da fase"
+  click F12 showPhaseInfo "Ver detalhes da fase"
+  click F13 showPhaseInfo "Ver detalhes da fase"
+  click F14 showPhaseInfo "Ver detalhes da fase"
+  click F15 showPhaseInfo "Ver detalhes da fase"
+  click F16 showPhaseInfo "Ver detalhes da fase"
+  click F17 showPhaseInfo "Ver detalhes da fase"
+  click F18 showPhaseInfo "Ver detalhes da fase"
+  click F19 showPhaseInfo "Ver detalhes da fase"
+  click F20 showPhaseInfo "Ver detalhes da fase"
+  click F21 showPhaseInfo "Ver detalhes da fase"
+  click F22 showPhaseInfo "Ver detalhes da fase"
+  click F23 showPhaseInfo "Ver detalhes da fase"
+  click F24 showPhaseInfo "Ver detalhes da fase"
+  click F25 showPhaseInfo "Ver detalhes da fase"
+  click F26 showPhaseInfo "Ver detalhes da fase"
+  click F27 showPhaseInfo "Ver detalhes da fase"
+  click F28 showPhaseInfo "Ver detalhes da fase"
+  click F29 showPhaseInfo "Ver detalhes da fase"
+  click F30 showPhaseInfo "Ver detalhes da fase"
+  click F31 showPhaseInfo "Ver detalhes da fase"
+  click F32 showPhaseInfo "Ver detalhes da fase"
+  click F33 showPhaseInfo "Ver detalhes da fase"
+  click F34 showPhaseInfo "Ver detalhes da fase"
+  click F35 showPhaseInfo "Ver detalhes da fase"
+  click F36 showPhaseInfo "Ver detalhes da fase"
 
   classDef b fill:#deeee6,stroke:#2e6044,color:#1c3d2a
   classDef g fill:#dce8f2,stroke:#2d5472,color:#1a3349
@@ -1322,6 +1487,24 @@ flowchart LR
     <div class="fluxo-leg"><div class="fluxo-leg-dot c"></div><span>Trilha Completa (F20–F36)</span></div>
   </div>
 </section>
+
+<div id="phase-panel" style="display:none;" aria-live="polite">
+  <button class="phase-panel-close" id="phase-panel-close" aria-label="Fechar painel" type="button">&#215;</button>
+  <span class="phase-panel-num" id="phase-panel-num"></span>
+  <span class="phase-panel-track" id="phase-panel-track"></span>
+  <span class="phase-panel-label">Selecionada</span>
+  <div class="phase-chip-wrap" id="phase-panel-sel"></div>
+  <span class="phase-panel-label">Pré-requisitos</span>
+  <div class="phase-chip-wrap" id="phase-panel-prereqs"></div>
+  <span class="phase-panel-label">Desbloqueia</span>
+  <div class="phase-chip-wrap" id="phase-panel-unlocks"></div>
+  <a class="phase-panel-goto" id="phase-panel-goto" href="#">Ir para a fase</a>
+  <div class="phase-panel-leg">
+    <div class="hl-leg"><div class="hl-dot hl-dot-sel"></div><span>Selecionada</span></div>
+    <div class="hl-leg"><div class="hl-dot hl-dot-pre"></div><span>Pré-requisito</span></div>
+    <div class="hl-leg"><div class="hl-dot hl-dot-unl"></div><span>Desbloqueia</span></div>
+  </div>
+</div>
 
 <section class="metodo-section" id="como-livros">
   <p class="sec-label">Curadoria</p>
@@ -4055,6 +4238,190 @@ function toggleSection(id, btn) {
     if (e.target === lightbox) closeCover();
   });
 })();
+</script>
+<script>
+(function () {
+  var PD = {
+    F1:  {n:1,  t:'Pré-Cálculo',                                   tr:'Trilha Básica',    s:'Pré-Cálculo',           pr:[],                                   ul:['F4','F5']},
+    F2:  {n:2,  t:'Lógica e Demonstrações',                        tr:'Trilha Básica',    s:'Lógica / Dem.',         pr:[],                                   ul:['F3','F4','F5']},
+    F3:  {n:3,  t:'Teoria Elementar dos Números',                  tr:'Trilha Básica',    s:'T. Núm. Elem.',         pr:['F2'],                               ul:['F10']},
+    F4:  {n:4,  t:'Cálculo I',                                     tr:'Trilha Básica',    s:'Cálculo I',             pr:['F1','F2'],                          ul:['F6','F7']},
+    F5:  {n:5,  t:'Álgebra Linear Elementar',                      tr:'Trilha Básica',    s:'Álg. Linear Elem.',     pr:['F1','F2'],                          ul:['F8','F9','F14','F15']},
+    F6:  {n:6,  t:'Cálculo a Várias Variáveis',                    tr:'Trilha Básica',    s:'Cálculo ℝⁿ',  pr:['F4'],                               ul:['F11','F13','F14','F20']},
+    F7:  {n:7,  t:'Análise na Reta',                               tr:'Trilha Básica',    s:'Análise ℝ',        pr:['F4'],                               ul:['F11','F12','F13','F16','F20']},
+    F8:  {n:8,  t:'Álgebra Linear',                                tr:'Trilha Graduação', s:'Álg. Linear',           pr:['F5'],                               ul:['F11','F18']},
+    F9:  {n:9,  t:'Álgebra I',                                     tr:'Trilha Graduação', s:'Álgebra I',             pr:['F5'],                               ul:['F10','F18','F32','F33']},
+    F10: {n:10, t:'Teoria dos Números',                            tr:'Trilha Graduação', s:'T. dos Números',        pr:['F3','F9'],                          ul:[]},
+    F11: {n:11, t:'Análise em Várias Variáveis',                   tr:'Trilha Graduação', s:'Análise ℝⁿ',  pr:['F6','F7','F8'],                     ul:['F17','F22','F29','F30']},
+    F12: {n:12, t:'Topologia',                                     tr:'Trilha Graduação', s:'Topologia',             pr:['F7'],                               ul:['F22','F24','F30','F32','F33']},
+    F13: {n:13, t:'Variável Complexa',                             tr:'Trilha Graduação', s:'Var. Complexa',         pr:['F6','F7'],                          ul:['F24']},
+    F14: {n:14, t:'Geometria Diferencial de Curvas e Superfícies', tr:'Trilha Graduação', s:'Geom. Curvas/Sup.',     pr:['F5','F6'],                          ul:['F29']},
+    F15: {n:15, t:'Equações Diferenciais Ordinárias',              tr:'Trilha Graduação', s:'Eq. Diferenciais',      pr:['F5'],                               ul:['F16','F26']},
+    F16: {n:16, t:'Análise de Fourier e EDP Elementar',            tr:'Trilha Graduação', s:'Fourier / EDP',         pr:['F7','F15'],                         ul:['F22','F23','F25','F27']},
+    F17: {n:17, t:'Análise em Espaços Métricos',                   tr:'Trilha Graduação', s:'Espaços Métricos',      pr:['F11'],                              ul:['F22','F26']},
+    F18: {n:18, t:'Álgebra II',                                    tr:'Trilha Graduação', s:'Álgebra II',            pr:['F8','F9'],                          ul:['F19','F28','F34']},
+    F19: {n:19, t:'Teoria de Corpos e Galois',                     tr:'Trilha Graduação', s:'Corpos / Galois',       pr:['F18'],                              ul:[]},
+    F20: {n:20, t:'Teoria da Medida e Integração',                 tr:'Trilha Completa',  s:'T. da Medida',          pr:['F6','F7'],                          ul:['F21','F22']},
+    F21: {n:21, t:'Teoria das Probabilidades',                     tr:'Trilha Completa',  s:'Probabilidade',         pr:['F20'],                              ul:['F22']},
+    F22: {n:22, t:'Análise Funcional',                             tr:'Trilha Completa',  s:'An. Funcional',         pr:['F11','F12','F16','F17','F20','F21'],ul:['F23','F25','F27']},
+    F23: {n:23, t:'Teoria de Operadores',                          tr:'Trilha Completa',  s:'T. de Operadores',      pr:['F16','F22'],                        ul:[]},
+    F24: {n:24, t:'Análise Complexa Avançada',                     tr:'Trilha Completa',  s:'An. Complexa Av.',      pr:['F12','F13'],                        ul:[]},
+    F25: {n:25, t:'Mecânica Quântica Matemática',                  tr:'Trilha Completa',  s:'Mec. Quântica Mat.',    pr:['F16','F22'],                        ul:[]},
+    F26: {n:26, t:'EDO Avançada e Sistemas Dinâmicos',             tr:'Trilha Completa',  s:'EDO Av. / Din.',        pr:['F15','F17'],                        ul:[]},
+    F27: {n:27, t:'EDP Avançada',                                  tr:'Trilha Completa',  s:'EDP Avançada',          pr:['F16','F22'],                        ul:[]},
+    F28: {n:28, t:'Álgebra Avançada',                              tr:'Trilha Completa',  s:'Álg. Avançada',    pr:['F18'],                              ul:['F34']},
+    F29: {n:29, t:'Geometria Diferencial',                         tr:'Trilha Completa',  s:'Geom. Diferencial',     pr:['F11','F14'],                        ul:['F31']},
+    F30: {n:30, t:'Variedades Diferenciáveis',                     tr:'Trilha Completa',  s:'Variedades Dif.',       pr:['F11','F12'],                        ul:['F31','F32']},
+    F31: {n:31, t:'Geometria Riemanniana',                         tr:'Trilha Completa',  s:'Riemanniana',           pr:['F29','F30'],                        ul:['F32']},
+    F32: {n:32, t:'Variedades, Feixes e Cohomologia',              tr:'Trilha Completa',  s:'Var. e Feixes',         pr:['F9','F12','F30','F31'],             ul:[]},
+    F33: {n:33, t:'Topologia Algébrica e Categorias',              tr:'Trilha Completa',  s:'Top. Algébrica',        pr:['F9','F12'],                         ul:[]},
+    F34: {n:34, t:'Álgebra Comutativa',                            tr:'Trilha Completa',  s:'Álg. Comutativa',  pr:['F18','F28'],                        ul:['F35']},
+    F35: {n:35, t:'Geometria Algébrica Introdutória',              tr:'Trilha Completa',  s:'Geom. Algébrica I',     pr:['F34'],                              ul:['F36']},
+    F36: {n:36, t:'Geometria Algébrica Avançada',                  tr:'Trilha Completa',  s:'Geom. Algébrica II',    pr:['F35'],                              ul:[]}
+  };
+
+  function pad(n) { return n < 10 ? '0' + n : '' + n; }
+
+  function ref(id) {
+    var d = PD[id];
+    return d ? 'F' + pad(d.n) + ' · ' + d.s : id;
+  }
+
+  var HL = {
+    sel: { fill: '#fff1b8', stroke: '#b7791f', sw: '3px' },
+    pre: { fill: '#dff3e6', stroke: '#2e6044', sw: '2.5px' },
+    unl: { fill: '#dcecff', stroke: '#2d5472', sw: '2.5px' }
+  };
+
+  function applyShapeHL(nodeEl, colors) {
+    if (!nodeEl) return;
+    nodeEl.querySelectorAll('rect, polygon, path, circle, ellipse').forEach(function (s) {
+      s.setAttribute('data-hl', '1');
+      s.style.setProperty('fill', colors.fill, 'important');
+      s.style.setProperty('stroke', colors.stroke, 'important');
+      s.style.setProperty('stroke-width', colors.sw, 'important');
+    });
+    nodeEl.style.setProperty('opacity', '1', 'important');
+    nodeEl.setAttribute('data-hl-node', '1');
+  }
+
+  function getSvgNode(id) {
+    var svg = document.querySelector('.fluxo-box svg');
+    if (!svg) return null;
+    var el = svg.querySelector('[id^="flowchart-' + id + '-"]');
+    if (el) return el;
+    return svg.querySelector('[data-id="' + id + '"]');
+  }
+
+  function clearHL() {
+    var svg = document.querySelector('.fluxo-box svg');
+    if (!svg) return;
+    svg.querySelectorAll('.phase-node-selected,.phase-node-prereq,.phase-node-unlock,.phase-node-dimmed').forEach(function (el) {
+      el.classList.remove('phase-node-selected', 'phase-node-prereq', 'phase-node-unlock', 'phase-node-dimmed');
+    });
+    svg.querySelectorAll('[data-hl]').forEach(function (s) {
+      s.style.removeProperty('fill');
+      s.style.removeProperty('stroke');
+      s.style.removeProperty('stroke-width');
+      s.removeAttribute('data-hl');
+    });
+    svg.querySelectorAll('[data-hl-node],[data-hl-dim]').forEach(function (g) {
+      g.style.removeProperty('opacity');
+      g.removeAttribute('data-hl-node');
+      g.removeAttribute('data-hl-dim');
+    });
+  }
+
+  function makeChip(phaseId, cls, useLong) {
+    var data = PD[phaseId];
+    var label = data
+      ? 'F' + pad(data.n) + ' · ' + (useLong ? data.t : data.s)
+      : phaseId;
+    var s = document.createElement('span');
+    s.className = 'phase-chip ' + cls;
+    s.textContent = label;
+    return s;
+  }
+
+  function fillChips(containerId, ids, cls) {
+    var el = document.getElementById(containerId);
+    if (!el) return;
+    el.innerHTML = '';
+    if (!ids.length) {
+      var dash = document.createElement('span');
+      dash.className = 'phase-dash';
+      dash.textContent = '—';
+      el.appendChild(dash);
+      return;
+    }
+    ids.forEach(function (pid) { el.appendChild(makeChip(pid, cls, false)); });
+  }
+
+  window.showPhaseInfo = function (id) {
+    var d = PD[id];
+    if (!d) return;
+    var panel = document.getElementById('phase-panel');
+    if (!panel) return;
+    document.getElementById('phase-panel-num').textContent = 'Fase ' + pad(d.n);
+    document.getElementById('phase-panel-track').textContent = d.tr;
+    document.getElementById('phase-panel-goto').href = '#f' + d.n;
+    var selWrap = document.getElementById('phase-panel-sel');
+    if (selWrap) { selWrap.innerHTML = ''; selWrap.appendChild(makeChip(id, 'phase-chip-selected', true)); }
+    fillChips('phase-panel-prereqs', d.pr, 'phase-chip-prereq');
+    fillChips('phase-panel-unlocks', d.ul, 'phase-chip-unlock');
+    panel.style.display = 'block';
+    clearHL();
+    var svg = document.querySelector('.fluxo-box svg');
+    if (svg) {
+      svg.querySelectorAll('.node').forEach(function (el) {
+        el.classList.add('phase-node-dimmed');
+        el.setAttribute('data-hl-dim', '1');
+        el.style.setProperty('opacity', '0.32', 'important');
+      });
+      var sel = getSvgNode(id);
+      if (sel) {
+        sel.classList.remove('phase-node-dimmed');
+        sel.classList.add('phase-node-selected');
+        applyShapeHL(sel, HL.sel);
+      }
+      d.pr.forEach(function (pid) {
+        var el = getSvgNode(pid);
+        if (el) {
+          el.classList.remove('phase-node-dimmed');
+          el.classList.add('phase-node-prereq');
+          applyShapeHL(el, HL.pre);
+        }
+      });
+      d.ul.forEach(function (uid) {
+        var el = getSvgNode(uid);
+        if (el) {
+          el.classList.remove('phase-node-dimmed');
+          el.classList.add('phase-node-unlock');
+          applyShapeHL(el, HL.unl);
+        }
+      });
+    }
+  };
+
+  var closeBtn = document.getElementById('phase-panel-close');
+  if (closeBtn) {
+    closeBtn.addEventListener('click', function () {
+      var panel = document.getElementById('phase-panel');
+      if (panel) panel.style.display = 'none';
+      clearHL();
+    });
+  }
+
+  document.addEventListener('DOMContentLoaded', function () {
+    document.querySelectorAll('a.mapa-item[href^="#f"], a.sem-fase[href^="#f"]').forEach(function (link) {
+      link.addEventListener('click', function (e) {
+        e.preventDefault();
+        var href = link.getAttribute('href');
+        window.showPhaseInfo('F' + href.slice(2));
+      });
+    });
+  });
+}());
 </script>
 </body>
 </html>
