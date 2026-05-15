@@ -29,11 +29,21 @@
   border: 1px solid var(--border2);
   padding: 6px 10px;
   background: var(--bg2);
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
 }
 
 .lang-switch:hover {
   color: var(--accent);
   border-color: var(--accent);
+}
+
+.flag-icon {
+  width: 16px;
+  height: 16px;
+  display: inline-block;
+  vertical-align: -3px;
 }
 :root {
   --bg:       #f8f5f0;
@@ -1058,7 +1068,10 @@ footer a:hover { color: var(--text2) !important; }
 
 <!-- HERO -->
 <div class="hero" id="inicio">
-  <a href="../" class="lang-switch">🇧🇷 PT</a>
+  <a href="../" class="lang-switch">
+    <img src="../assets/icons/br.svg" alt="Brazil flag" class="flag-icon">
+    PT
+  </a>
   <p class="eyebrow">Self-Study Guide · Mathematics</p>
   <h1>From Zero to<br><em>Real Mathematics</em></h1>
   <p class="hero-sub">A gradual roadmap for those who want to learn mathematics seriously, from high school foundations to the early stages of graduate-level mathematics, at their own pace.</p>
